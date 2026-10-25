@@ -5,15 +5,15 @@
   .center { position:absolute; left:0; width:100%; text-align:center; }
   .y { color:var(--accent); } .r { color:var(--red); }
 
-  #in-card { position:absolute; left:110px; top:330px; width:860px; height:820px; background:var(--paper); color:#1b1b1b; border-radius:10px; padding:60px 64px; box-shadow:0 30px 80px rgba(0,0,0,.5); }
+  #in-card { position:absolute; left:110px; top:330px; width:860px; height:700px; background:var(--paper); color:#1b1b1b; border-radius:10px; padding:60px 64px; box-shadow:0 30px 80px rgba(0,0,0,.5); }
   #in-card .hd { font-family:'Space Mono',monospace; font-size:30px; letter-spacing:.12em; border-bottom:3px solid #1b1b1b; padding-bottom:18px; }
-  #in-card .row { font-family:'Space Mono',monospace; font-size:30px; margin-top:34px; color:#555; }
-  #in-card .val { font-family:'Oswald',sans-serif; font-size:66px; font-weight:600; color:#111; line-height:1.1; margin-top:6px; }
-  #in-stamp { position:absolute; left:250px; top:1180px; font-family:'Oswald',sans-serif; font-size:64px; font-weight:700; color:var(--red); border:8px solid var(--red); padding:4px 26px; border-radius:8px; }
+  #in-card .row { font-family:'Space Mono',monospace; font-size:28px; margin-top:24px; color:#555; }
+  #in-card .val { font-family:'Oswald',sans-serif; font-size:58px; font-weight:600; color:#111; line-height:1.1; margin-top:6px; }
+  #in-stamp { position:absolute; left:250px; top:1075px; font-family:'Oswald',sans-serif; font-size:64px; font-weight:700; color:var(--red); border:8px solid var(--red); padding:4px 26px; border-radius:8px; }
 </style>
   <div id="root" data-composition-id="insider" data-width="1080" data-height="1920">
 
-    <div id="in-wrap" class="clip" data-start="0" data-duration="12">
+    <div id="in-wrap" class="clip" data-start="0" data-duration="14.6">
       <div id="in-card">
         <div class="hd">AKTE · MIETER · DIAMOND CENTRE</div>
         <div class="row">NAME</div><div class="val" id="in-name">Leonardo Notarbartolo</div>
@@ -30,13 +30,13 @@
 
     tl.fromTo("#in-card", {y:120, rotation:-4, opacity:0}, {y:0, rotation:-1.5, opacity:1, duration:0.6, ease:"power3.out"}, 0);
     ["#in-zeit","#in-her","#in-name","#in-tarn"].forEach((s,i)=>{});
-    tl.fromTo("#in-zeit", {opacity:0}, {opacity:1, duration:0.3}, 0.6);
-    tl.fromTo("#in-her", {opacity:0}, {opacity:1, duration:0.3}, 2.2);
-    tl.fromTo("#in-name", {opacity:0}, {opacity:1, duration:0.3}, 3.2);
-    tl.fromTo("#in-tarn", {opacity:0}, {opacity:1, duration:0.3}, 5.2);
-    tl.fromTo("#in-stamp", {scale:2.2, rotation:-14, opacity:0}, {scale:1, rotation:-9, opacity:1, duration:0.25, ease:"power4.in"}, 8.0);
-    tl.fromTo("#in-card", {scale:1}, {scale:1.04, duration:10.8, ease:"none"}, 0.6);
-    tl.to("#in-wrap > *", {opacity:0, duration:0.3}, 11.6);
+    tl.fromTo("#in-zeit", {opacity:0}, {opacity:1, duration:0.3}, 0.3);
+    tl.fromTo("#in-her", {opacity:0}, {opacity:1, duration:0.3}, 2.4);
+    tl.fromTo("#in-name", {opacity:0}, {opacity:1, duration:0.3}, 4.6);
+    tl.fromTo("#in-tarn", {opacity:0}, {opacity:1, duration:0.3}, 6.9);
+    tl.fromTo("#in-stamp", {scale:2.2, rotation:-14, opacity:0}, {scale:1, rotation:-9, opacity:1, duration:0.25, ease:"power4.in"}, 10.2);
+    tl.fromTo("#in-card", {scale:1}, {scale:1.04, duration:13.4, ease:"none"}, 0.6);
+    tl.to("#in-wrap > *", {opacity:0, duration:0.3}, 14.3);
 
     window.__timelines["insider"] = tl;
   </script>

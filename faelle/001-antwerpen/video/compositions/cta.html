@@ -11,21 +11,21 @@
 </style>
   <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
 
-    <div id="ct-q" class="center clip" data-start="0" data-duration="5">Wo sind die<br/><span class="y">Diamanten?</span></div>
-    <div id="ct-s" class="center clip" data-start="0.8" data-duration="4.2">Schreib deine Theorie in die Kommentare</div>
-    <div id="ct-arrow" class="center clip y" data-start="1.2" data-duration="3.8">↓</div>
+    <div id="ct-q" class="center clip" data-start="0" data-duration="5.7">Wo sind die<br/><span class="y">Diamanten?</span></div>
+    <div id="ct-s" class="center clip" data-start="2.1" data-duration="3.6">Schreib deine Theorie in die Kommentare</div>
+    <div id="ct-arrow" class="center clip y" data-start="2.4" data-duration="3.3">↓</div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
 
-    tl.fromTo("#ct-q", {scale:1.15, opacity:0}, {scale:1, opacity:1, duration:0.4, ease:"power4.out"}, 0);
-    tl.fromTo("#ct-s", {opacity:0, y:20}, {opacity:1, y:0, duration:0.35}, 0.8);
-    tl.fromTo("#ct-arrow", {y:-20, opacity:0}, {y:20, opacity:1, duration:0.6, ease:"sine.inOut"}, 1.2);
-    tl.to("#ct-arrow", {y:-10, duration:0.6, ease:"sine.inOut"}, 1.8);
-    tl.to("#ct-arrow", {y:20, duration:0.6, ease:"sine.inOut"}, 2.4);
+    tl.fromTo("#ct-q", {scale:1.15, opacity:0}, {scale:1, opacity:1, duration:0.4, ease:"power4.out"}, 0.3);
+    tl.fromTo("#ct-s", {opacity:0, y:20}, {opacity:1, y:0, duration:0.35}, 2.1);
+    tl.fromTo("#ct-arrow", {y:-20, opacity:0}, {y:20, opacity:1, duration:0.6, ease:"sine.inOut"}, 2.4);
     tl.to("#ct-arrow", {y:-10, duration:0.6, ease:"sine.inOut"}, 3.0);
     tl.to("#ct-arrow", {y:20, duration:0.6, ease:"sine.inOut"}, 3.6);
+    tl.to("#ct-arrow", {y:-10, duration:0.6, ease:"sine.inOut"}, 4.2);
+    tl.to("#ct-arrow", {y:20, duration:0.6, ease:"sine.inOut"}, 4.8);
 
     window.__timelines["cta"] = tl;
   </script>

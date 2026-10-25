@@ -11,9 +11,9 @@
 </style>
   <div id="root" data-composition-id="montag" data-width="1080" data-height="1920">
 
-    <div id="mo-a" class="center clip lbl y" data-start="0" data-duration="4">Montag, 17.02.2003</div>
-    <div id="mo-b" class="center clip" data-start="0" data-duration="4">EINBRUCH<br/>ENTDECKT</div>
-    <div id="mo-c" class="center clip r" data-start="1.8" data-duration="2.2">Die Täter: längst weg</div>
+    <div id="mo-a" class="center clip lbl y" data-start="0" data-duration="4.7">Montag, 17.02.2003</div>
+    <div id="mo-b" class="center clip" data-start="0" data-duration="4.7">EINBRUCH<br/>ENTDECKT</div>
+    <div id="mo-c" class="center clip r" data-start="2.6" data-duration="2.1">Die Täter: längst weg</div>
 
   </div>
   <script>
@@ -21,8 +21,8 @@
 
     tl.fromTo("#mo-a", {opacity:0}, {opacity:1, duration:0.3}, 0);
     tl.fromTo("#mo-b", {scale:1.15, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0.1);
-    tl.fromTo("#mo-c", {opacity:0, y:20}, {opacity:1, y:0, duration:0.3}, 1.8);
-    tl.to(["#mo-a","#mo-b","#mo-c"], {opacity:0, duration:0.25}, 3.7);
+    tl.fromTo("#mo-c", {opacity:0, y:20}, {opacity:1, y:0, duration:0.3}, 2.6);
+    tl.to(["#mo-a","#mo-b","#mo-c"], {opacity:0, duration:0.25}, 4.4);
 
     window.__timelines["montag"] = tl;
   </script>
