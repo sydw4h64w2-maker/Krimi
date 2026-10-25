@@ -1,0 +1,37 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #fs-d { top:300px; font-size:130px; font-weight:700; }
+  #fs-booth { position:absolute; left:390px; top:470px; width:300px; height:500px; }
+  #fs-o { top:990px; font-size:46px; }
+  #fs-st { position:absolute; left:150px; top:1090px; width:780px; text-align:center; border:10px solid var(--red); border-radius:12px; color:var(--red); font-size:70px; font-weight:700; padding:6px 0; white-space:nowrap; }
+</style>
+  <div id="root" data-composition-id="fest" data-width="1080" data-height="1920">
+
+    <div id="fs-w" class="clip" data-start="0" data-duration="12.3">
+      <div id="fs-d" class="center">22.04.1994</div>
+      <svg id="fs-booth" viewBox="0 0 300 500"><rect x="20" y="20" width="260" height="470" rx="10" fill="#C8B400" opacity=".9"/><rect x="45" y="90" width="210" height="370" fill="#1b2430"/><rect x="20" y="20" width="260" height="60" rx="10" fill="#e8d400"/><text x="150" y="62" text-anchor="middle" fill="#111" font-family="Oswald" font-size="38" font-weight="700">TELEFON</text><rect x="110" y="170" width="80" height="120" rx="8" fill="#888"/><rect id="fs-hs" x="90" y="150" width="24" height="90" rx="10" fill="#333"/></svg>
+      <div id="fs-o" class="center lbl y">Berlin-Johannisthal</div>
+      <div id="fs-st">POLIZEI IST SCHON DA</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fs-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.3);
+
+    tl.fromTo("#fs-booth", {y:60, opacity:0}, {y:0, opacity:1, duration:0.5, ease:"power3.out"}, 4.5);
+    tl.fromTo("#fs-hs", {rotation:0, transformOrigin:"102px 195px"}, {rotation:-10, duration:0.3, yoyo:true, repeat:5, ease:"sine.inOut"}, 6.1);
+    tl.fromTo("#fs-o", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 5.1);
+
+    tl.fromTo("#fs-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 10.15);
+    tl.to("#fs-d", {scale:1.06, duration:11, ease:"none"}, 0.7);
+    tl.to("#fs-w > *", {opacity:0, duration:0.25}, 12.05);
+
+    window.__timelines["fest"] = tl;
+  </script>
+</template>

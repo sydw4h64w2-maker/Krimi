@@ -1,0 +1,56 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #ks-a { top:300px; font-size:52px; }
+  #ks-d { top:380px; font-size:120px; font-weight:700; }
+  #ks-r { top:540px; font-size:64px; font-weight:600; }
+  #ks-m { top:660px; font-size:150px; font-weight:700; }
+  #ks-paper { position:absolute; left:120px; top:340px; width:840px; height:640px; background:#ECE6D3; color:#1a1a1a; box-shadow:0 30px 70px rgba(0,0,0,.55); padding:40px 50px; }
+  #ks-paper .mast { font-family:'EB Garamond',serif; font-size:72px; font-weight:700; text-align:center; border-bottom:4px double #1a1a1a; padding-bottom:10px; }
+  #ks-paper .col { margin-top:26px; height:16px; background:repeating-linear-gradient(90deg,#b9b29f 0 60%, transparent 60% 64%); opacity:.7; }
+  #ks-ad { position:absolute; left:120px; top:300px; width:600px; border:5px solid #1a1a1a; padding:26px; text-align:center; font-family:'EB Garamond',serif; font-size:56px; font-style:italic; line-height:1.15; background:#F7F2E2; }
+  #ks-ad .k { font-family:'Space Mono',monospace; font-style:normal; font-size:28px; letter-spacing:.15em; }
+  #ks-code { top:1080px; font-size:56px; }
+  #ks-name { top:1150px; font-size:120px; font-weight:700; }
+</style>
+  <div id="root" data-composition-id="karstadt" data-width="1080" data-height="1920">
+
+    <div id="ks-a1" class="clip" data-start="0" data-duration="10.2">
+      <div id="ks-a" class="center lbl y">Vier Jahre später</div>
+      <div id="ks-d" class="center">Juni 1992 · Hamburg</div>
+      <div id="ks-r" class="center r">💣 Rohrbombe bei Karstadt</div>
+      <div id="ks-m" class="center y">1,4 Mio. DM</div>
+    </div>
+    <div id="ks-b1" class="clip" data-start="10.2" data-duration="10.8">
+      <div id="ks-paper"><div class="mast">ANZEIGEN</div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+        <div id="ks-ad"><div class="k">KENNWORT</div>Onkel Dagobert grüßt seine Neffen</div>
+      </div>
+      <div id="ks-code" class="center lbl y">Codename</div>
+      <div id="ks-name" class="center">DAGOBERT</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ks-a", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+    tl.fromTo("#ks-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 1.65);
+
+    tl.fromTo("#ks-r", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.25, ease:"power4.out"}, 4.1);
+    tl.fromTo("#ks-m", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 8.1);
+    tl.to("#ks-d", {scale:1.05, duration:8, ease:"none"}, 2.1);
+    tl.to("#ks-a1 > *", {opacity:0, duration:0.25}, 9.95);
+    tl.fromTo("#ks-paper", {y:200, rotation:3, opacity:0}, {y:0, rotation:-1, opacity:1, duration:0.6, ease:"power3.out"}, 10.3);
+    tl.fromTo("#ks-ad", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.4, ease:"back.out(1.8)"}, 14.7);
+    tl.to("#ks-paper", {scale:1.05, duration:9.5, ease:"none"}, 11.0);
+    tl.fromTo("#ks-code", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 17.5);
+
+    tl.fromTo("#ks-name", {scale:1.4, opacity:0}, {scale:1, opacity:1, duration:0.3, ease:"power4.out"}, 20.0);
+    tl.to("#ks-b1 > *", {opacity:0, duration:0.25}, 20.75);
+
+    window.__timelines["karstadt"] = tl;
+  </script>
+</template>

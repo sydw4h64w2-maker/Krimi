@@ -1,0 +1,51 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #sd-d { top:300px; font-size:52px; }
+  #sd-svg { position:absolute; left:140px; top:390px; width:800px; height:760px; }
+  #sd-c1 { top:1170px; font-size:58px; font-weight:600; }
+  #sd-c2 { top:1250px; font-size:46px; }
+</style>
+  <div id="root" data-composition-id="sand" data-width="1080" data-height="1920">
+
+    <div id="sd-w" class="clip" data-start="0" data-duration="18.7">
+      <div id="sd-d" class="center lbl y">April 1993 · Berlin-Steglitz</div>
+      <svg id="sd-svg" viewBox="0 0 800 760">
+        <rect x="0" y="300" width="800" height="460" fill="#2a241c"/>
+        <rect x="0" y="292" width="800" height="12" fill="#5b4a33"/>
+        <g id="sd-shaft"><rect x="330" y="304" width="140" height="300" fill="#0b0b0b"/><rect x="0" y="604" width="800" height="120" fill="#141a20"/><text x="400" y="680" text-anchor="middle" fill="#7d93a8" font-family="Space Mono" font-size="30">KANALISATION</text></g>
+        <g id="sd-box"><rect x="260" y="180" width="280" height="112" fill="#8a6a3d" stroke="#c9a46a" stroke-width="6"/><rect x="275" y="195" width="250" height="40" fill="#d8c08a"/><text x="400" y="160" text-anchor="middle" fill="#EDE6D6" font-family="Oswald" font-size="40">Sandkiste</text></g>
+        <g id="sd-pkg"><rect x="365" y="240" width="70" height="46" fill="#F2C230"/></g>
+        <path id="sd-arrow" d="M400,620 L700,650" stroke="#F2C230" stroke-width="8" fill="none" stroke-dasharray="320" stroke-dashoffset="320" marker-end="url(#sd-ah)"/>
+        <defs><marker id="sd-ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#F2C230"/></marker></defs>
+      </svg>
+      <div id="sd-c1" class="center">Präparierter <span class="y">Gullydeckel</span></div>
+      <div id="sd-c2" class="center lbl r">Im Paket: kein echtes Geld</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#sd-d", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#sd-svg", {opacity:0}, {opacity:1, duration:0.4}, 0.5);
+    tl.fromTo("#sd-box", {y:-60, opacity:0}, {y:0, opacity:1, duration:0.4, ease:"power3.out"}, 4.0);
+    tl.fromTo("#sd-pkg", {opacity:0}, {opacity:1, duration:0.3}, 4.9);
+    tl.fromTo("#sd-shaft", {opacity:0}, {opacity:1, duration:0.6}, 8.1);
+    tl.fromTo("#sd-c1", {opacity:0, y:30}, {opacity:1, y:0, duration:0.3, ease:"power3.out"}, 8.7);
+
+    tl.to("#sd-pkg", {y:330, duration:0.9, ease:"power2.in"}, 11.3);
+    tl.fromTo("#sd-arrow", {strokeDashoffset:320}, {strokeDashoffset:0, duration:1.0, ease:"power2.out"}, 13.6);
+    tl.to("#sd-pkg", {x:260, y:360, duration:1.0, ease:"power2.out"}, 13.6);
+    tl.fromTo("#sd-c2", {opacity:0, y:30}, {opacity:1, y:0, duration:0.3, ease:"power3.out"}, 15.9);
+
+    tl.to("#sd-svg", {scale:1.04, duration:17, ease:"none"}, 0.9);
+    tl.to("#sd-w > *", {opacity:0, duration:0.25}, 18.45);
+
+    window.__timelines["sand"] = tl;
+  </script>
+</template>

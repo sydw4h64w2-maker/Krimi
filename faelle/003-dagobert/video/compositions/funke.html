@@ -1,0 +1,42 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #fk-card { position:absolute; left:110px; top:320px; width:860px; height:780px; background:var(--paper); color:#1b1b1b; border-radius:10px; padding:50px 60px; box-shadow:0 30px 80px rgba(0,0,0,.5); }
+  #fk-card .hd { font-family:'Space Mono',monospace; font-size:28px; letter-spacing:.12em; border-bottom:3px solid #1b1b1b; padding-bottom:16px; }
+  #fk-card .row { font-family:'Space Mono',monospace; font-size:28px; margin-top:18px; color:#555; }
+  #fk-card .val { font-family:'Oswald',sans-serif; font-size:54px; font-weight:600; color:#111; line-height:1.1; margin-top:4px; }
+</style>
+  <div id="root" data-composition-id="funke" data-width="1080" data-height="1920">
+
+    <div id="fk-w" class="clip" data-start="0" data-duration="16.1">
+      <div id="fk-card">
+        <div class="hd">AKTE · „DAGOBERT“</div>
+        <div class="row">NAME</div><div class="val" id="fk-1">Arno Funke</div>
+        <div class="row">BERUF</div><div class="val" id="fk-2">Schildermaler &amp; Autolackierer</div>
+        <div class="row">URTEIL 1996</div><div class="val" id="fk-3">9 Jahre Haft</div>
+        <div class="row">ENTLASSUNG</div><div class="val" id="fk-4">2000 · vorzeitig</div>
+        <div class="row">HEUTE</div><div class="val" id="fk-5">Autor &amp; Cartoonist</div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#fk-card", {y:140, rotation:-4, opacity:0}, {y:0, rotation:-1.5, opacity:1, duration:0.6, ease:"power3.out"}, 0.1);
+    tl.to("#fk-card", {scale:1.04, duration:15, ease:"none"}, 0.7);
+    tl.fromTo("#fk-1", {opacity:0}, {opacity:1, duration:0.3}, 1.4);
+    tl.fromTo("#fk-2", {opacity:0}, {opacity:1, duration:0.3}, 2.8);
+    tl.fromTo("#fk-3", {opacity:0}, {opacity:1, duration:0.3}, 7.4);
+    tl.fromTo("#fk-4", {opacity:0}, {opacity:1, duration:0.3}, 9.9);
+    tl.fromTo("#fk-5", {opacity:0}, {opacity:1, duration:0.3}, 13.4);
+
+    tl.to("#fk-w > *", {opacity:0, duration:0.25}, 15.85);
+
+    window.__timelines["funke"] = tl;
+  </script>
+</template>

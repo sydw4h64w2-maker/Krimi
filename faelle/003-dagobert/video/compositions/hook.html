@@ -1,0 +1,36 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #hk-t { top:340px; font-size:58px; font-weight:600; }
+  #hk-n { top:420px; font-size:200px; font-weight:700; line-height:1; }
+  .chip { position:absolute; left:240px; width:600px; text-align:center; font-size:76px; font-weight:700; border:6px solid var(--accent); border-radius:14px; padding:6px 0; color:var(--accent); }
+</style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+
+    <div id="hk-w" class="clip" data-start="0" data-duration="8.3">
+      <div id="hk-t" class="center">Der Kaufhaus-Erpresser</div>
+      <div id="hk-n" class="center">KaDeWe<br/><span class="y">Karstadt</span></div>
+      <div id="hk-c1" class="chip" style="top:880px">💣 BOMBEN</div>
+      <div id="hk-c2" class="chip" style="top:1010px">🛤 LORE</div>
+      <div id="hk-c3" class="chip" style="top:1140px">🕳 SANDKISTE</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#hk-n", {scale:1.08, opacity:1}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0);
+    tl.to("#hk-n", {scale:1.06, duration:7.5, ease:"none"}, 0.4);
+    tl.fromTo("#hk-t", {y:20, opacity:1}, {y:0, opacity:1, duration:0.4}, 0.1);
+    tl.fromTo("#hk-c1", {x:-80, opacity:0}, {x:0, opacity:1, duration:0.3, ease:"back.out(2)"}, 3.35);
+    tl.fromTo("#hk-c2", {x:80, opacity:0}, {x:0, opacity:1, duration:0.3, ease:"back.out(2)"}, 4.4);
+    tl.fromTo("#hk-c3", {x:-80, opacity:0}, {x:0, opacity:1, duration:0.3, ease:"back.out(2)"}, 6.2);
+    tl.to("#hk-w > *", {opacity:0, duration:0.25}, 8.0);
+
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

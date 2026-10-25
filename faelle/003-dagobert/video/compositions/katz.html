@@ -1,0 +1,24 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #kz-t { top:600px; font-size:150px; font-weight:700; line-height:1.05; }
+</style>
+  <div id="root" data-composition-id="katz" data-width="1080" data-height="1920">
+
+    <div id="kz-t" class="center clip" data-start="0" data-duration="3.3">KATZ <span class="y">&amp;</span><br/>MAUS</div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#kz-t", {scale:1.25, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0.15);
+    tl.to("#kz-t", {scale:1.07, duration:2.5, ease:"none"}, 0.5);
+    tl.to("#kz-t", {opacity:0, duration:0.25}, 3.05);
+
+    window.__timelines["katz"] = tl;
+  </script>
+</template>
