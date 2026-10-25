@@ -32,7 +32,10 @@
 
 ```
 faelle/
-  001-antwerpen/
+  001-antwerpen/   (Folge 1)
+  002-dbcooper/    (Folge 2)
+  003-dagobert/    (Vorrat)
+  <nr>-<fall>/
     skript.md     # Sprechertext + Caption + Quellen
     audio.*       # deine Aufnahme
     video.mp4     # fertiges Video
