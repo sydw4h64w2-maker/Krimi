@@ -41,6 +41,7 @@ faelle/
   006-gardner/     (Folge 6)
   007-alcatraz/    (Folge 7)
   008-monalisa/    (Folge 8)
+  009-hattongarden/ (Folge 9)
   <nr>-<fall>/
     skript.md     # Sprechertext + Caption + Quellen
     audio.*       # deine Aufnahme
