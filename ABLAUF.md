@@ -9,6 +9,11 @@
 | 5. Video bauen (Untertitel, Grafiken, Musik, 9:16) | Claude | fertige `video.mp4` |
 | 6. Posten (TikTok, Reels, Shorts) + Caption & Hashtags | **Du** (Caption liefert Claude) | Video online |
 
+## Ausrichtung
+
+- **Fälle aus der ganzen Welt**, gesprochen auf Deutsch.
+- Bevorzugt abgeschlossene Fälle (Urteil) oder historische Fälle; dazu berühmte ungelöste Fälle.
+
 ## Recherche-Regeln
 
 - Jede Aussage im Skript steht in der Faktencheck-Tabelle mit mindestens einer seriösen Quelle
@@ -16,6 +21,7 @@
 - Was nicht sicher belegt ist, kommt nicht ins Video – auch wenn es spannend wäre.
 - Keine erfundenen Dialoge, Gedanken oder Szenen. Nur was dokumentiert ist.
 - Daten, Orte, Summen und Urteile werden einzeln geprüft.
+- Internationale Fälle: englische Primärquellen (Gericht, große Medien) vor Blogs; Blogs nur ergänzend.
 
 ## Ordnerstruktur
 
