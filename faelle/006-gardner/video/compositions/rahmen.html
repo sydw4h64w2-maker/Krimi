@@ -1,0 +1,41 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #rh-a { top:320px; font-size:52px; }
+  #rh-m { top:390px; font-size:150px; font-weight:700; line-height:1; }
+  #rh-f { position:absolute; left:290px; top:620px; }
+  #rh-c { top:1050px; font-size:40px; }
+  #rh-s { top:1130px; font-size:80px; font-weight:700; }
+</style>
+  <div id="root" data-composition-id="rahmen" data-width="1080" data-height="1920">
+
+    <div id="rh-w" class="clip" data-start="0" data-duration="11.8">
+      <div id="rh-a" class="center lbl">Belohnung bis zu</div>
+      <div id="rh-m" class="center y">$<span id="rh-n">0</span></div>
+      <div id="rh-f"><svg id="rh-fr" viewBox="0 0 500 400" width="500" height="400"><rect x="6" y="6" width="488" height="388" fill="none" stroke="#C9A04A" stroke-width="12"/><rect x="22" y="22" width="456" height="356" fill="none" stroke="#8A6A2A" stroke-width="5"/><rect x="34" y="34" width="432" height="332" fill="#14161a"/></svg></div>
+      <div id="rh-c" class="center lbl p">Testament: die Rahmen bleiben</div>
+      <div id="rh-s" class="center">Sie warten.</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#rh-a", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#rh-m", {opacity:0}, {opacity:1, duration:0.2}, 0.3);
+    const r = {v:0};
+    tl.fromTo(r, {v:0}, {v:10000000, duration:2.4, ease:"power2.out", onUpdate:()=>{ document.querySelector("#rh-n").textContent = Math.round(r.v).toLocaleString("de-DE"); }}, 0.4);
+    tl.fromTo("#rh-f", {y:60, opacity:0}, {y:0, opacity:1, duration:0.6, ease:"power3.out"}, 4.1);
+    tl.to("#rh-f", {scale:1.06, duration:7, ease:"none"}, 4.7);
+    tl.fromTo("#rh-c", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 6.2);
+    tl.fromTo("#rh-s", {opacity:0, y:30}, {opacity:1, y:0, duration:0.3, ease:"power3.out"}, 10.8);
+
+    tl.to("#rh-w > *", {opacity:0, duration:0.25}, 11.55);
+
+    window.__timelines["rahmen"] = tl;
+  </script>
+</template>

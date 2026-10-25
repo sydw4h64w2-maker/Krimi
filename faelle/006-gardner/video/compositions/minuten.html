@@ -1,0 +1,33 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #mn-a { top:340px; font-size:52px; }
+  #mn-t { top:440px; font-size:260px; font-weight:700; line-height:1; font-family:'Space Mono',monospace; }
+  #mn-b { top:760px; font-size:96px; font-weight:700; }
+</style>
+  <div id="root" data-composition-id="minuten" data-width="1080" data-height="1920">
+
+    <div id="mn-w" class="clip" data-start="0" data-duration="4.5">
+      <div id="mn-a" class="center lbl">Das Museum gehört ihnen</div>
+      <div id="mn-t" class="center y"><span id="mn-n">00</span>:00</div>
+      <div id="mn-b" class="center">81 MINUTEN</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#mn-a", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.1);
+
+    tl.fromTo("#mn-t", {opacity:0}, {opacity:1, duration:0.2}, 0.2);
+    const m = {v:0};
+    tl.fromTo(m, {v:0}, {v:81, duration:2.6, ease:"power1.in", onUpdate:()=>{ document.querySelector("#mn-n").textContent = String(Math.round(m.v)).padStart(2,"0"); }}, 0.4);
+    tl.fromTo("#mn-b", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.3, ease:"power4.out"}, 2.6);
+    tl.to("#mn-w > *", {opacity:0, duration:0.25}, 4.25);
+
+    window.__timelines["minuten"] = tl;
+  </script>
+</template>

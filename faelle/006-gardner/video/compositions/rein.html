@@ -1,0 +1,36 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #rn-a { top:330px; font-size:80px; font-weight:700; }
+  #rn-b { top:460px; font-size:50px; }
+  #rn-st { position:absolute; text-align:center; border:12px solid var(--red); border-radius:14px; color:var(--red); font-weight:700; white-space:nowrap; left:270px; top:580px; width:540px; font-size:110px; padding:4px 0; }
+  #rn-c { top:820px; font-size:62px; font-weight:600; line-height:1.2; }
+</style>
+  <div id="root" data-composition-id="rein" data-width="1080" data-height="1920">
+
+    <div id="rn-w" class="clip" data-start="0" data-duration="9.5">
+      <div id="rn-a" class="center">Der Wachmann öffnet</div>
+      <div id="rn-b" class="center lbl y">entgegen der Vorschrift</div>
+      <div id="rn-st">FEHLER</div>
+      <div id="rn-c" class="center">2 Wachleute<br/><span class="r">gefesselt im Keller</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#rn-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.3);
+    tl.fromTo("#rn-b", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 2.2);
+
+    tl.fromTo("#rn-st", {scale:2.2, rotation:-14, opacity:0}, {scale:1, rotation:-5, opacity:1, duration:0.22, ease:"power4.in"}, 4.1);
+    tl.fromTo("#rn-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 5.7);
+
+    tl.to("#rn-a", {scale:1.05, duration:9, ease:"none"}, 0.7);
+    tl.to("#rn-w > *", {opacity:0, duration:0.25}, 9.25);
+
+    window.__timelines["rein"] = tl;
+  </script>
+</template>

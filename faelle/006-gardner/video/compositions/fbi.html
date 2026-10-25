@@ -1,0 +1,39 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #fb-a { top:320px; font-size:140px; font-weight:700; }
+  #fb-b { top:500px; font-size:52px; }
+  #fb-c { top:620px; font-size:58px; font-weight:600; }
+  #fb-d { top:720px; font-size:58px; font-weight:600; }
+  #fb-e { top:880px; font-size:80px; font-weight:700; line-height:1.1; }
+</style>
+  <div id="root" data-composition-id="fbi" data-width="1080" data-height="1920">
+
+    <div id="fb-w" class="clip" data-start="0" data-duration="15.5">
+      <div id="fb-a" class="center">FBI</div>
+      <div id="fb-b" class="center lbl y">seit über 30 Jahren</div>
+      <div id="fb-c" class="center">2013: <span class="y">Täter identifiziert?</span></div>
+      <div id="fb-d" class="center">später: <span class="p">beide tot</span></div>
+      <div id="fb-e" class="center">Die Bilder:<br/><span class="r">nie aufgetaucht</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#fb-a", {scale:1.25, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0.2);
+    tl.to("#fb-a", {scale:1.05, duration:14.5, ease:"none"}, 0.6);
+    tl.fromTo("#fb-b", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 1.2);
+    tl.fromTo("#fb-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 3.8);
+    tl.fromTo("#fb-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 10.2);
+
+    tl.fromTo("#fb-e", {scale:1.25, opacity:0}, {scale:1, opacity:1, duration:0.3, ease:"power4.out"}, 13.6);
+    tl.to("#fb-w > *", {opacity:0, duration:0.25}, 15.25);
+
+    window.__timelines["fbi"] = tl;
+  </script>
+</template>
