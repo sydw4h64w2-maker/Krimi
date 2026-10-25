@@ -1,4 +1,7 @@
-import os, json, subprocess, re
+import os, json, subprocess, sys
+sys.path.insert(0, '/home/user/Krimi/tools')
+from audio_levels import sfx_volume, normalize_voice
+import re
 os.chdir('/home/user/Krimi/faelle/001-antwerpen/video')
 BASE = """
   #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
@@ -361,7 +364,7 @@ aud=[]
 for i,(f,tt,v) in enumerate(sfx):
     d=float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",f"assets/sfx/{f}.mp3"],capture_output=True,text=True).stdout.strip())
     d=round(min(d, TOTAL-tt),2)
-    aud.append(f'      <audio id="sfx{i}" class="clip" src="assets/sfx/{f}.mp3" data-start="{tt}" data-duration="{d}" data-track-index="{10+i}" data-volume="{v}"></audio>')
+    aud.append(f'      <audio id="sfx{i}" class="clip" src="assets/sfx/{f}.mp3" data-start="{tt}" data-duration="{d}" data-track-index="{10+i}" data-volume="{sfx_volume(f, min(1.0, v/0.6))}"></audio>')
 CAPTIONS = False  # Vorgabe: keine Untertitel
 CAPTION_HOST = (f'      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="{TOTAL}" data-track-index="5" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:6"></div>\n') if CAPTIONS else ""
 index=f"""<!doctype html>
@@ -393,7 +396,7 @@ index=f"""<!doctype html>
 {chr(10).join(hosts)}
 {CAPTION_HOST}      <div id="tape" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="3"></div>
       <div id="case" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="4">FALL 001 · ANTWERPEN · 2003</div>
-      <audio id="music" class="clip" src="assets/music.mp3" data-start="0" data-duration="{TOTAL}" data-track-index="8" data-volume="0.55" data-fade-out="2"></audio>
+      <audio id="music" class="clip" src="assets/music.mp3" data-start="0" data-duration="{TOTAL}" data-track-index="8" data-volume="0.35" data-fade-out="2"></audio>
       <audio id="voice" class="clip" src="assets/voice.mp3" data-start="0" data-track-index="9" data-volume="1"></audio>
 {chr(10).join(aud)}
     </div>
@@ -405,5 +408,6 @@ index=f"""<!doctype html>
   </body>
 </html>
 """
+normalize_voice('../audio-elevenlabs.mp3', 'assets/voice.mp3')
 open('index.html','w').write(index)
 print("total", TOTAL)

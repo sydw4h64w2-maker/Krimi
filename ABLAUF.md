@@ -17,6 +17,7 @@
 ## Video-Vorgaben
 
 - **Keine Untertitel** (Wunsch ab Folge 2). Der Text auf dem Bildschirm kommt nur aus den Grafik-Einblendungen.
+- **Lautstärke:** Stimme wird auf −16 LUFS normalisiert; jeder Soundeffekt wird einzeln eingemessen und liegt 13–15 dB unter der Stimme (`tools/audio_levels.py`). Musik nur als leiser Teppich. Kein Effekt darf lauter als die Stimme sein.
 - Hochformat 1080×1920, Akten-Look (dunkel, Absperrband gelb/schwarz, rote Stempel).
 
 ## Recherche-Regeln

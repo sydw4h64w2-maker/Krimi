@@ -1,0 +1,31 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); }
+
+  #ur-y { top:380px; font-size:52px; }
+  #ur-stamp { position:absolute; left:140px; top:500px; width:800px; text-align:center; border:14px solid var(--red); border-radius:16px; color:var(--red); padding:30px 0; }
+  #ur-stamp .a { font-size:200px; font-weight:700; line-height:1; }
+  #ur-stamp .b { font-size:70px; font-weight:600; }
+  #ur-k { top:980px; font-size:56px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="urteil" data-width="1080" data-height="1920">
+
+    <div id="ur-y" class="center clip lbl" data-start="0" data-duration="6.9">Urteil · Belgien · 2005</div>
+    <div id="ur-stamp" class="clip" data-start="0" data-duration="6.9"><div class="a">10 JAHRE</div><div class="b">HAFT · NOTARBARTOLO</div></div>
+    <div id="ur-k" class="center clip" data-start="4.5" data-duration="2.4">3 Komplizen: je <span class="y">5 Jahre</span></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#ur-y", {opacity:0}, {opacity:1, duration:0.3}, 0);
+    tl.fromTo("#ur-stamp", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.25, ease:"power4.in"}, 2.0);
+    tl.fromTo("#ur-k", {y:30, opacity:0}, {y:0, opacity:1, duration:0.35}, 4.5);
+    tl.to(["#ur-y","#ur-stamp","#ur-k"], {opacity:0, duration:0.25}, 6.6);
+
+    window.__timelines["urteil"] = tl;
+  </script>
+</template>

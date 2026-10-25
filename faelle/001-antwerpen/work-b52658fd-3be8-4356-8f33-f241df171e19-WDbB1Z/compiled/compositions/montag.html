@@ -1,0 +1,29 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); }
+
+  #mo-a { top:640px; font-size:52px; }
+  #mo-b { top:720px; font-size:150px; font-weight:700; line-height:1.05; }
+  #mo-c { top:1080px; font-size:60px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="montag" data-width="1080" data-height="1920">
+
+    <div id="mo-a" class="center clip lbl y" data-start="0" data-duration="4.7">Montag, 17.02.2003</div>
+    <div id="mo-b" class="center clip" data-start="0" data-duration="4.7">EINBRUCH<br/>ENTDECKT</div>
+    <div id="mo-c" class="center clip r" data-start="2.6" data-duration="2.1">Die Täter: längst weg</div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#mo-a", {opacity:0}, {opacity:1, duration:0.3}, 0);
+    tl.fromTo("#mo-b", {scale:1.15, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0.1);
+    tl.fromTo("#mo-c", {opacity:0, y:20}, {opacity:1, y:0, duration:0.3}, 2.6);
+    tl.to(["#mo-a","#mo-b","#mo-c"], {opacity:0, duration:0.25}, 4.4);
+
+    window.__timelines["montag"] = tl;
+  </script>
+</template>
