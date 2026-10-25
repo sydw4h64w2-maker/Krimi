@@ -42,6 +42,7 @@ faelle/
   007-alcatraz/    (Folge 7)
   008-monalisa/    (Folge 8)
   009-hattongarden/ (Folge 9)
+  010-vanmeegeren/ (Folge 10)
   <nr>-<fall>/
     skript.md     # Sprechertext + Caption + Quellen
     audio.*       # deine Aufnahme
