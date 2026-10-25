@@ -36,6 +36,8 @@ S['hook'] = (10.6, """
     tl.fromTo("#hk-sub", {y:20, opacity:1}, {y:0, opacity:1, duration:0.4, ease:"power3.out"}, 0.15);
     tl.fromTo("#hk-sub2", {opacity:0}, {opacity:1, duration:0.4}, 2.0);
     tl.fromTo("#hk-and", {y:30, opacity:0}, {y:0, opacity:1, duration:0.4, ease:"back.out(2)"}, 5.1);
+    tl.fromTo("#hk-num", {scale:1}, {scale:1.1, duration:9.8, ease:"none"}, 0.4);
+    tl.fromTo("#hk-and", {scale:1}, {scale:1.06, duration:4.8, ease:"none"}, 5.5);
     tl.to(["#hk-num","#hk-sub","#hk-sub2","#hk-and"], {opacity:0, duration:0.25}, 10.2);
 """)
 # 2 ORT 8-22 (14s)
@@ -360,6 +362,8 @@ for i,(f,tt,v) in enumerate(sfx):
     d=float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",f"assets/sfx/{f}.mp3"],capture_output=True,text=True).stdout.strip())
     d=round(min(d, TOTAL-tt),2)
     aud.append(f'      <audio id="sfx{i}" class="clip" src="assets/sfx/{f}.mp3" data-start="{tt}" data-duration="{d}" data-track-index="{10+i}" data-volume="{v}"></audio>')
+CAPTIONS = False  # Vorgabe: keine Untertitel
+CAPTION_HOST = (f'      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="{TOTAL}" data-track-index="5" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:6"></div>\n') if CAPTIONS else ""
 index=f"""<!doctype html>
 <html lang="de" data-resolution="portrait">
   <head>
@@ -387,8 +391,7 @@ index=f"""<!doctype html>
       <div id="bg" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="0"></div>
       <div id="vig" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="1"></div>
 {chr(10).join(hosts)}
-      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="{TOTAL}" data-track-index="5" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:6"></div>
-      <div id="tape" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="3"></div>
+{CAPTION_HOST}      <div id="tape" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="3"></div>
       <div id="case" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="4">FALL 001 · ANTWERPEN · 2003</div>
       <audio id="music" class="clip" src="assets/music.mp3" data-start="0" data-duration="{TOTAL}" data-track-index="8" data-volume="0.55" data-fade-out="2"></audio>
       <audio id="voice" class="clip" src="assets/voice.mp3" data-start="0" data-track-index="9" data-volume="1"></audio>
