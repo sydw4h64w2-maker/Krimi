@@ -1,0 +1,42 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #hf-y { top:300px; font-size:120px; font-weight:700; }
+  #hf-g { position:absolute; left:80px; top:470px; width:920px; display:flex; justify-content:space-between; }
+  #hf-g .c { width:285px; background:var(--paper); color:#1b1b1b; border-radius:8px; padding:20px 16px; text-align:center; opacity:0; }
+  #hf-g .c .ph { height:230px; background:#d9d2c0; border:4px solid #1b1b1b; }
+  #hf-g .c .nm { font-size:44px; font-weight:700; margin-top:14px; line-height:1.05; }
+  #hf-p { top:950px; font-size:60px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="haeftl" data-width="1080" data-height="1920">
+
+    <div id="hf-w" class="clip" data-start="0" data-duration="10.6">
+      <div id="hf-y" class="center">1962</div>
+      <div id="hf-g">
+        <div class="c" id="hf-c1"><div class="ph"><svg viewBox="0 0 100 100" width="100%" height="100%"><circle cx="50" cy="38" r="20" fill="#6b7079"/><path d="M14,100 Q14,64 50,60 Q86,64 86,100 Z" fill="#6b7079"/></svg></div><div class="nm">Frank<br/>Morris</div></div>
+        <div class="c" id="hf-c2"><div class="ph"><svg viewBox="0 0 100 100" width="100%" height="100%"><circle cx="50" cy="38" r="20" fill="#6b7079"/><path d="M14,100 Q14,64 50,60 Q86,64 86,100 Z" fill="#6b7079"/></svg></div><div class="nm">John<br/>Anglin</div></div>
+        <div class="c" id="hf-c3"><div class="ph"><svg viewBox="0 0 100 100" width="100%" height="100%"><circle cx="50" cy="38" r="20" fill="#6b7079"/><path d="M14,100 Q14,64 50,60 Q86,64 86,100 Z" fill="#6b7079"/></svg></div><div class="nm">Clarence<br/>Anglin</div></div>
+      </div>
+      <div id="hf-p" class="center">Plan: <span class="y">monatelang</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hf-y", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.3);
+
+    tl.fromTo("#hf-c1", {y:80, rotation:-5, opacity:0}, {y:0, rotation:-2, opacity:1, duration:0.45, ease:"power3.out"}, 4.4);
+    tl.fromTo("#hf-c2", {y:80, rotation:4, opacity:0}, {y:0, rotation:1, opacity:1, duration:0.45, ease:"power3.out"}, 6.6);
+    tl.fromTo("#hf-c3", {y:80, rotation:-3, opacity:0}, {y:0, rotation:2, opacity:1, duration:0.45, ease:"power3.out"}, 7.3);
+    tl.fromTo("#hf-p", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 9.4);
+
+    tl.to("#hf-y", {scale:1.06, duration:10, ease:"none"}, 0.7);
+    tl.to("#hf-w > *", {opacity:0, duration:0.25}, 10.35);
+
+    window.__timelines["haeftl"] = tl;
+  </script>
+</template>

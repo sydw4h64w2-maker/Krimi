@@ -1,0 +1,42 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #ak-1 { top:330px; font-size:110px; font-weight:700; }
+  #ak-1b { top:480px; font-size:56px; font-weight:500; }
+  #ak-2 { top:640px; font-size:60px; font-weight:600; }
+  #ak-2b { top:730px; font-size:56px; font-weight:500; }
+  #ak-3 { top:900px; font-size:60px; font-weight:600; }
+  #ak-svg { position:absolute; left:390px; top:1000px; width:300px; height:120px; }
+</style>
+  <div id="root" data-composition-id="akte" data-width="1080" data-height="1920">
+
+    <div id="ak-w" class="clip" data-start="0" data-duration="14.0">
+      <div id="ak-1" class="center">1979 · FBI</div>
+      <div id="ak-1b" class="center">„vermutlich <span class="y">ertrunken</span>“</div>
+      <div id="ak-2" class="center">U.S. Marshals</div>
+      <div id="ak-2b" class="center">Akte <span class="r">offen gehalten</span></div>
+      <div id="ak-3" class="center">1963 · Alcatraz <span class="p">geschlossen</span></div>
+      <svg id="ak-svg" viewBox="0 0 300 120"><rect x="60" y="20" width="180" height="90" rx="10" fill="none" stroke="#F2C230" stroke-width="10"/><path d="M95,20 L95,0 Q150,-30 205,0 L205,20" fill="none" stroke="#F2C230" stroke-width="10"/></svg>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#ak-1", {scale:1.2, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0.3);
+    tl.to("#ak-1", {scale:1.05, duration:13.5, ease:"none"}, 0.7);
+    tl.fromTo("#ak-1b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 3.7);
+    tl.fromTo("#ak-2", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 6.2);
+    tl.fromTo("#ak-2b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 7.6);
+    tl.fromTo("#ak-3", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 11.5);
+
+    tl.fromTo("#ak-svg", {opacity:0, y:-20}, {opacity:1, y:0, duration:0.35, ease:"bounce.out"}, 12.2);
+    tl.to("#ak-w > *", {opacity:0, duration:0.25}, 13.75);
+
+    window.__timelines["akte"] = tl;
+  </script>
+</template>

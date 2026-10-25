@@ -1,0 +1,36 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #nt-d { top:300px; font-size:120px; font-weight:700; }
+  #nt-svg { position:absolute; left:80px; top:500px; width:920px; height:200px; }
+  #nt-c { top:760px; font-size:60px; font-weight:600; }
+  #nt-z { top:880px; font-size:56px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="nacht" data-width="1080" data-height="1920">
+
+    <div id="nt-w" class="clip" data-start="0" data-duration="12.3">
+      <div id="nt-d" class="center">11.06.1962</div>
+      <svg id="nt-svg" viewBox="0 0 920 200"><g transform="translate(30,0)"><rect x="0" y="60" width="220" height="70" rx="8" fill="#5b5f66"/><rect x="0" y="40" width="220" height="30" rx="8" fill="#7d8188"/><g id="nt-h1"><ellipse cx="45" cy="44" rx="28" ry="24" fill="#d8b89a"/><path d="M18,40 Q45,8 72,40 Z" fill="#3a2a1a"/></g><rect x="70" y="36" width="150" height="34" rx="8" fill="#9EA3AC"/></g><g transform="translate(350,0)"><rect x="0" y="60" width="220" height="70" rx="8" fill="#5b5f66"/><rect x="0" y="40" width="220" height="30" rx="8" fill="#7d8188"/><g id="nt-h2"><ellipse cx="45" cy="44" rx="28" ry="24" fill="#d8b89a"/><path d="M18,40 Q45,8 72,40 Z" fill="#3a2a1a"/></g><rect x="70" y="36" width="150" height="34" rx="8" fill="#9EA3AC"/></g><g transform="translate(670,0)"><rect x="0" y="60" width="220" height="70" rx="8" fill="#5b5f66"/><rect x="0" y="40" width="220" height="30" rx="8" fill="#7d8188"/><g id="nt-h3"><ellipse cx="45" cy="44" rx="28" ry="24" fill="#d8b89a"/><path d="M18,40 Q45,8 72,40 Z" fill="#3a2a1a"/></g><rect x="70" y="36" width="150" height="34" rx="8" fill="#9EA3AC"/></g></svg>
+      <div id="nt-c" class="center">Nachgebaute Köpfe – <span class="y">echtes Haar</span></div>
+      <div id="nt-z" class="center p">💤 „Sie schlafen.“</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#nt-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.3);
+
+    tl.fromTo("#nt-svg", {opacity:0}, {opacity:1, duration:0.5}, 4.6);
+    tl.fromTo("#nt-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 8.0);
+    tl.fromTo("#nt-z", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 10.0);
+
+    tl.to("#nt-d", {scale:1.05, duration:11.5, ease:"none"}, 0.7);
+    tl.to("#nt-w > *", {opacity:0, duration:0.25}, 12.05);
+
+    window.__timelines["nacht"] = tl;
+  </script>
+</template>
