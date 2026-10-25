@@ -1,0 +1,48 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #ml-h { top:300px; font-size:46px; }
+  #ml-n { top:370px; font-size:130px; font-weight:700; }
+  #ml-gang { position:absolute; left:140px; top:600px; width:800px; height:260px; display:grid; grid-template-columns:repeat(8, 1fr); gap:10px; }
+  #ml-gang .g { height:120px; background:radial-gradient(circle at 50% 22%, #EDE6D6 0 17%, transparent 18%), radial-gradient(ellipse at 50% 100%, #EDE6D6 0 46%, transparent 47%); opacity:0; }
+  #ml-c { top:900px; font-size:60px; font-weight:600; }
+  #ml-hit { position:absolute; inset:0; background:#D2372E; opacity:0; }
+  #ml-x { top:1010px; font-size:64px; font-weight:700; }
+  #ml-y { top:1110px; font-size:46px; }
+</style>
+  <div id="root" data-composition-id="mills" data-width="1080" data-height="1920">
+
+    <div id="ml-w" class="clip" data-start="0" data-duration="11.5">
+      <div id="ml-h" class="center lbl y">Lokführer</div>
+      <div id="ml-n" class="center">JACK MILLS</div>
+      <div id="ml-gang"><div class="g" id="ml-g0"></div><div class="g" id="ml-g1"></div><div class="g" id="ml-g2"></div><div class="g" id="ml-g3"></div><div class="g" id="ml-g4"></div><div class="g" id="ml-g5"></div><div class="g" id="ml-g6"></div><div class="g" id="ml-g7"></div><div class="g" id="ml-g8"></div><div class="g" id="ml-g9"></div><div class="g" id="ml-g10"></div><div class="g" id="ml-g11"></div><div class="g" id="ml-g12"></div><div class="g" id="ml-g13"></div><div class="g" id="ml-g14"></div></div>
+      <div id="ml-c" class="center">≈ 15 Männer stürmen den Zug</div>
+      <div id="ml-x" class="center r">Schlag auf den Kopf</div>
+      <div id="ml-y" class="center lbl p">erholt sich nie ganz</div>
+      <div id="ml-hit" data-layout-ignore></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ml-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.15);
+    tl.fromTo("#ml-n", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.3);
+
+    for (let i=0;i<15;i++) tl.fromTo("#ml-g"+i, {opacity:0, y:30}, {opacity:0.9, y:0, duration:0.2}, 2.8+i*0.09);
+    tl.fromTo("#ml-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 3.3);
+
+    tl.fromTo("#ml-hit", {opacity:0}, {opacity:0.55, duration:0.05}, 7.6);
+    tl.to("#ml-hit", {opacity:0, duration:0.5}, 7.65);
+    tl.fromTo("#ml-x", {scale:1.4, opacity:0}, {scale:1, opacity:1, duration:0.25, ease:"power4.out"}, 7.6);
+    tl.fromTo("#ml-y", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 8.7);
+
+    tl.to("#ml-n", {scale:1.05, duration:10.5, ease:"none"}, 0.7);
+    tl.to("#ml-w > *:not(#ml-hit)", {opacity:0, duration:0.25}, 11.25);
+
+    window.__timelines["mills"] = tl;
+  </script>
+</template>

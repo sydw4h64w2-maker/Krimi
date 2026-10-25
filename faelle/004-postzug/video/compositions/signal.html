@@ -1,0 +1,52 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #sg-h { top:300px; font-size:56px; font-weight:600; }
+  #sg-svg { position:absolute; left:340px; top:390px; width:400px; height:700px; }
+  #sg-m { top:1100px; font-size:80px; font-weight:700; }
+  #sg-l1 { position:absolute; left:640px; top:520px; width:400px; font-size:46px; font-weight:600; }
+  #sg-l2 { position:absolute; left:640px; top:740px; width:400px; font-size:46px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="signal" data-width="1080" data-height="1920">
+
+    <div id="sg-w" class="clip" data-start="0" data-duration="12.1">
+      <div id="sg-h" class="center">Das Signal zeigt <span class="r">Rot</span></div>
+      <svg id="sg-svg" viewBox="0 0 400 700">
+        <rect x="185" y="380" width="30" height="320" fill="#555"/>
+        <rect x="100" y="40" width="200" height="380" rx="24" fill="#1a1a1a" stroke="#444" stroke-width="6"/>
+        <circle cx="200" cy="130" r="56" fill="#2a3a2a"/><circle id="sg-green" cx="200" cy="130" r="50" fill="#3FBF5F" opacity=".25"/>
+        <circle cx="200" cy="300" r="56" fill="#3a2a2a"/><circle id="sg-red" cx="200" cy="300" r="50" fill="#FF3B30" opacity=".15"/>
+        <g id="sg-glove"><path d="M150,70 Q150,50 170,50 L170,100 L180,45 Q190,35 200,45 L200,100 L210,42 Q222,34 230,46 L228,104 L244,70 Q258,62 262,80 L250,170 Q240,200 200,200 Q150,198 145,160 Z" fill="#111" stroke="#666" stroke-width="3"/></g>
+        <g id="sg-bat"><rect x="290" y="440" width="90" height="140" rx="8" fill="#F2C230"/><rect x="315" y="425" width="40" height="18" fill="#F2C230"/><text x="335" y="525" text-anchor="middle" fill="#111" font-family="Oswald" font-size="40" font-weight="700">6V</text><path d="M335,425 C335,360 300,320 250,305" stroke="#F2C230" stroke-width="5" fill="none"/></g>
+      </svg>
+      <div id="sg-m" class="center r">MANIPULIERT</div>
+      <div id="sg-l1" class="lbl p" style="font-family:'Oswald';font-size:44px;letter-spacing:0;text-transform:none">← Handschuh</div>
+      <div id="sg-l2" class="lbl p" style="font-family:'Oswald';font-size:44px;letter-spacing:0;text-transform:none">← Batterie</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#sg-h", {opacity:0, y:30}, {opacity:1, y:0, duration:0.3, ease:"power3.out"}, 0.1);
+
+    tl.fromTo("#sg-svg", {opacity:0}, {opacity:1, duration:0.4}, 0.2);
+    tl.fromTo("#sg-green", {opacity:0.9}, {opacity:0.9, duration:0.1}, 0.3);
+    tl.to("#sg-green", {opacity:0.15, duration:0.2}, 2.1);
+    tl.to("#sg-red", {opacity:1, duration:0.2}, 2.1);
+    tl.fromTo("#sg-m", {scale:1.4, opacity:0}, {scale:1, opacity:1, duration:0.25, ease:"power4.out"}, 4.4);
+    tl.fromTo("#sg-glove", {y:-300, opacity:0}, {y:0, opacity:1, duration:0.5, ease:"power3.out"}, 7.4);
+    tl.fromTo("#sg-l1", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 7.7);
+
+    tl.fromTo("#sg-bat", {x:80, opacity:0}, {x:0, opacity:1, duration:0.4, ease:"power3.out"}, 10.2);
+    tl.fromTo("#sg-l2", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 10.4);
+
+    tl.to("#sg-svg", {scale:1.04, duration:11, ease:"none"}, 0.6);
+    tl.to("#sg-w > *", {opacity:0, duration:0.25}, 11.85);
+
+    window.__timelines["signal"] = tl;
+  </script>
+</template>

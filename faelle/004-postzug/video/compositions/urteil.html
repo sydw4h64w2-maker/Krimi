@@ -1,0 +1,40 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #ur-g { position:absolute; left:190px; top:320px; width:700px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  #ur-g .m { height:150px; background:#20242b; border:4px solid #4a4f58; position:relative; opacity:0; }
+  #ur-g .m::after { content:""; position:absolute; left:30%; top:18%; width:40%; height:40%; border-radius:50%; background:#6b7079; }
+  #ur-d { top:700px; font-size:52px; }
+  #ur-st { position:absolute; left:160px; top:780px; width:760px; text-align:center; border:14px solid var(--red); border-radius:16px; color:var(--red); padding:14px 0; }
+  #ur-st .a { font-size:150px; font-weight:700; line-height:1; } #ur-st .b { font-size:52px; font-weight:600; }
+  #ur-n { top:1110px; font-size:52px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="urteil" data-width="1080" data-height="1920">
+
+    <div id="ur-w" class="clip" data-start="0" data-duration="11.3">
+      <div id="ur-g"><div class="m" id="ur-m0"></div><div class="m" id="ur-m1"></div><div class="m" id="ur-m2"></div><div class="m" id="ur-m3"></div><div class="m" id="ur-m4"></div><div class="m" id="ur-m5"></div><div class="m" id="ur-m6"></div><div class="m" id="ur-m7"></div></div>
+      <div id="ur-d" class="center lbl y">April 1964</div>
+      <div id="ur-st"><div class="a">7 × 30</div><div class="b">JAHRE HAFT</div></div>
+      <div id="ur-n" class="center">Großteil des Geldes: <span class="r">nie gefunden</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    for (let i=0;i<8;i++) tl.fromTo("#ur-m"+i, {opacity:0, scale:0.8}, {opacity:1, scale:1, duration:0.2}, 0.2+i*0.25);
+    tl.fromTo("#ur-d", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 2.7);
+
+    tl.fromTo("#ur-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 5.4);
+    tl.fromTo("#ur-n", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 8.4);
+
+    tl.to("#ur-g", {scale:1.04, duration:10, ease:"none"}, 0.8);
+    tl.to("#ur-w > *", {opacity:0, duration:0.25}, 11.05);
+
+    window.__timelines["urteil"] = tl;
+  </script>
+</template>

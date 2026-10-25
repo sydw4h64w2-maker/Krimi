@@ -1,0 +1,1481 @@
+{
+"words": [
+{
+"text": "Sie",
+"start": 0.0,
+"end": 0.223
+},
+{
+"text": "überfielen",
+"start": 0.223,
+"end": 1.115
+},
+{
+"text": "einen",
+"start": 1.115,
+"end": 1.561
+},
+{
+"text": "Zug",
+"start": 1.561,
+"end": 1.784
+},
+{
+"text": "und",
+"start": 1.784,
+"end": 2.007
+},
+{
+"text": "erbeuteten",
+"start": 2.007,
+"end": 2.899
+},
+{
+"text": "zwei",
+"start": 2.899,
+"end": 3.122
+},
+{
+"text": "Komma",
+"start": 3.122,
+"end": 3.568
+},
+{
+"text": "sechs",
+"start": 3.568,
+"end": 3.791
+},
+{
+"text": "Millionen",
+"start": 3.791,
+"end": 4.46
+},
+{
+"text": "Pfund.",
+"start": 4.46,
+"end": 4.683
+},
+{
+"text": "Und",
+"start": 5.137,
+"end": 5.366
+},
+{
+"text": "dann",
+"start": 5.366,
+"end": 5.595
+},
+{
+"text": "verrät",
+"start": 5.595,
+"end": 6.054
+},
+{
+"text": "sie",
+"start": 6.054,
+"end": 6.283
+},
+{
+"text": "ein",
+"start": 6.73,
+"end": 6.951
+},
+{
+"text": "Monopoly-Spiel.",
+"start": 6.951,
+"end": 8.054
+},
+{
+"text": "Achter",
+"start": 8.633,
+"end": 9.112
+},
+{
+"text": "August",
+"start": 9.112,
+"end": 9.591
+},
+{
+"text": "neunzehnhundertdreiundsechzig,",
+"start": 9.591,
+"end": 11.268
+},
+{
+"text": "England.",
+"start": 11.592,
+"end": 12.15
+},
+{
+"text": "Ein",
+"start": 12.709,
+"end": 12.935
+},
+{
+"text": "Postzug",
+"start": 12.935,
+"end": 13.387
+},
+{
+"text": "ist",
+"start": 13.387,
+"end": 13.613
+},
+{
+"text": "in",
+"start": 13.613,
+"end": 13.839
+},
+{
+"text": "der",
+"start": 13.839,
+"end": 14.065
+},
+{
+"text": "Nacht",
+"start": 14.065,
+"end": 14.291
+},
+{
+"text": "von",
+"start": 14.291,
+"end": 14.517
+},
+{
+"text": "Glasgow",
+"start": 14.517,
+"end": 14.969
+},
+{
+"text": "nach",
+"start": 14.969,
+"end": 15.196
+},
+{
+"text": "London",
+"start": 15.196,
+"end": 15.648
+},
+{
+"text": "unterwegs.",
+"start": 15.648,
+"end": 16.326
+},
+{
+"text": "An",
+"start": 16.712,
+"end": 17.003
+},
+{
+"text": "Bord:",
+"start": 17.003,
+"end": 17.294
+},
+{
+"text": "Säcke",
+"start": 17.58,
+"end": 18.021
+},
+{
+"text": "voller",
+"start": 18.021,
+"end": 18.463
+},
+{
+"text": "gebrauchter",
+"start": 18.463,
+"end": 19.125
+},
+{
+"text": "Geldscheine.",
+"start": 19.125,
+"end": 19.788
+},
+{
+"text": "Bei",
+"start": 20.275,
+"end": 20.509
+},
+{
+"text": "Buckinghamshire",
+"start": 20.509,
+"end": 21.678
+},
+{
+"text": "zeigt",
+"start": 21.678,
+"end": 21.912
+},
+{
+"text": "ein",
+"start": 21.912,
+"end": 22.146
+},
+{
+"text": "Signal",
+"start": 22.146,
+"end": 22.613
+},
+{
+"text": "plötzlich",
+"start": 22.613,
+"end": 23.081
+},
+{
+"text": "Rot.",
+"start": 23.081,
+"end": 23.315
+},
+{
+"text": "Doch",
+"start": 23.734,
+"end": 23.945
+},
+{
+"text": "das",
+"start": 23.945,
+"end": 24.156
+},
+{
+"text": "Signal",
+"start": 24.156,
+"end": 24.577
+},
+{
+"text": "ist",
+"start": 24.577,
+"end": 24.788
+},
+{
+"text": "manipuliert:",
+"start": 24.788,
+"end": 25.63
+},
+{
+"text": "Über",
+"start": 26.019,
+"end": 26.391
+},
+{
+"text": "das",
+"start": 26.391,
+"end": 26.576
+},
+{
+"text": "grüne",
+"start": 26.576,
+"end": 26.948
+},
+{
+"text": "Licht",
+"start": 26.948,
+"end": 27.134
+},
+{
+"text": "haben",
+"start": 27.134,
+"end": 27.505
+},
+{
+"text": "die",
+"start": 27.505,
+"end": 27.691
+},
+{
+"text": "Täter",
+"start": 27.691,
+"end": 28.063
+},
+{
+"text": "einen",
+"start": 28.063,
+"end": 28.434
+},
+{
+"text": "Handschuh",
+"start": 28.434,
+"end": 28.806
+},
+{
+"text": "gehängt,",
+"start": 28.806,
+"end": 29.177
+},
+{
+"text": "das",
+"start": 29.498,
+"end": 29.7
+},
+{
+"text": "rote",
+"start": 29.7,
+"end": 30.103
+},
+{
+"text": "Licht",
+"start": 30.103,
+"end": 30.304
+},
+{
+"text": "läuft",
+"start": 30.304,
+"end": 30.506
+},
+{
+"text": "über",
+"start": 30.506,
+"end": 30.909
+},
+{
+"text": "eine",
+"start": 30.909,
+"end": 31.311
+},
+{
+"text": "Batterie.",
+"start": 31.311,
+"end": 31.916
+},
+{
+"text": "Der",
+"start": 32.431,
+"end": 32.695
+},
+{
+"text": "Lokführer",
+"start": 32.695,
+"end": 33.484
+},
+{
+"text": "Jack",
+"start": 33.484,
+"end": 33.748
+},
+{
+"text": "Mills",
+"start": 33.748,
+"end": 34.011
+},
+{
+"text": "hält",
+"start": 34.011,
+"end": 34.274
+},
+{
+"text": "an.",
+"start": 34.274,
+"end": 34.538
+},
+{
+"text": "Eine",
+"start": 35.003,
+"end": 35.446
+},
+{
+"text": "Bande",
+"start": 35.446,
+"end": 35.889
+},
+{
+"text": "von",
+"start": 35.889,
+"end": 36.11
+},
+{
+"text": "etwa",
+"start": 36.11,
+"end": 36.553
+},
+{
+"text": "fünfzehn",
+"start": 36.553,
+"end": 36.996
+},
+{
+"text": "Männern",
+"start": 36.996,
+"end": 37.439
+},
+{
+"text": "stürmt",
+"start": 37.439,
+"end": 37.66
+},
+{
+"text": "den",
+"start": 37.66,
+"end": 37.882
+},
+{
+"text": "Zug.",
+"start": 37.882,
+"end": 38.103
+},
+{
+"text": "Mills",
+"start": 38.467,
+"end": 38.691
+},
+{
+"text": "bekommt",
+"start": 38.691,
+"end": 39.14
+},
+{
+"text": "einen",
+"start": 39.14,
+"end": 39.589
+},
+{
+"text": "Schlag",
+"start": 39.589,
+"end": 39.813
+},
+{
+"text": "auf",
+"start": 39.813,
+"end": 40.038
+},
+{
+"text": "den",
+"start": 40.038,
+"end": 40.262
+},
+{
+"text": "Kopf.",
+"start": 40.262,
+"end": 40.487
+},
+{
+"text": "Von",
+"start": 40.838,
+"end": 41.053
+},
+{
+"text": "dieser",
+"start": 41.053,
+"end": 41.484
+},
+{
+"text": "Verletzung",
+"start": 41.484,
+"end": 42.129
+},
+{
+"text": "erholt",
+"start": 42.129,
+"end": 42.56
+},
+{
+"text": "er",
+"start": 42.56,
+"end": 42.775
+},
+{
+"text": "sich",
+"start": 42.775,
+"end": 42.99
+},
+{
+"text": "nie",
+"start": 42.99,
+"end": 43.205
+},
+{
+"text": "ganz.",
+"start": 43.205,
+"end": 43.42
+},
+{
+"text": "An",
+"start": 43.929,
+"end": 44.119
+},
+{
+"text": "der",
+"start": 44.119,
+"end": 44.308
+},
+{
+"text": "Bridego-Brücke",
+"start": 44.308,
+"end": 45.256
+},
+{
+"text": "laden",
+"start": 45.256,
+"end": 45.635
+},
+{
+"text": "die",
+"start": 45.635,
+"end": 45.824
+},
+{
+"text": "Täter",
+"start": 45.824,
+"end": 46.203
+},
+{
+"text": "die",
+"start": 46.203,
+"end": 46.393
+},
+{
+"text": "Geldsäcke",
+"start": 46.393,
+"end": 46.961
+},
+{
+"text": "in",
+"start": 46.961,
+"end": 47.151
+},
+{
+"text": "ihre",
+"start": 47.151,
+"end": 47.53
+},
+{
+"text": "Fahrzeuge.",
+"start": 47.53,
+"end": 48.098
+},
+{
+"text": "Beute:",
+"start": 48.496,
+"end": 48.929
+},
+{
+"text": "rund",
+"start": 49.183,
+"end": 49.454
+},
+{
+"text": "zwei",
+"start": 49.454,
+"end": 49.725
+},
+{
+"text": "Komma",
+"start": 49.725,
+"end": 50.267
+},
+{
+"text": "sechs",
+"start": 50.267,
+"end": 50.538
+},
+{
+"text": "Millionen",
+"start": 50.538,
+"end": 51.351
+},
+{
+"text": "Pfund.",
+"start": 51.351,
+"end": 51.622
+},
+{
+"text": "Nach",
+"start": 52.001,
+"end": 52.233
+},
+{
+"text": "heutigem",
+"start": 52.233,
+"end": 52.93
+},
+{
+"text": "Wert:",
+"start": 52.93,
+"end": 53.163
+},
+{
+"text": "etwa",
+"start": 53.163,
+"end": 53.628
+},
+{
+"text": "fünfzig",
+"start": 53.628,
+"end": 54.092
+},
+{
+"text": "Millionen.",
+"start": 54.092,
+"end": 54.789
+},
+{
+"text": "Die",
+"start": 55.336,
+"end": 55.525
+},
+{
+"text": "Bande",
+"start": 55.525,
+"end": 55.905
+},
+{
+"text": "versteckt",
+"start": 55.905,
+"end": 56.284
+},
+{
+"text": "sich",
+"start": 56.284,
+"end": 56.474
+},
+{
+"text": "auf",
+"start": 56.474,
+"end": 56.663
+},
+{
+"text": "einem",
+"start": 56.663,
+"end": 57.043
+},
+{
+"text": "abgelegenen",
+"start": 57.043,
+"end": 57.991
+},
+{
+"text": "Bauernhof:",
+"start": 57.991,
+"end": 58.37
+},
+{
+"text": "Leatherslade",
+"start": 58.665,
+"end": 59.514
+},
+{
+"text": "Farm.",
+"start": 59.514,
+"end": 59.727
+},
+{
+"text": "Doch",
+"start": 60.169,
+"end": 60.394
+},
+{
+"text": "ein",
+"start": 60.394,
+"end": 60.62
+},
+{
+"text": "Mann",
+"start": 60.62,
+"end": 60.845
+},
+{
+"text": "aus",
+"start": 60.845,
+"end": 61.071
+},
+{
+"text": "der",
+"start": 61.071,
+"end": 61.296
+},
+{
+"text": "Gegend",
+"start": 61.296,
+"end": 61.747
+},
+{
+"text": "wird",
+"start": 61.747,
+"end": 61.973
+},
+{
+"text": "misstrauisch",
+"start": 61.973,
+"end": 62.424
+},
+{
+"text": "und",
+"start": 62.424,
+"end": 62.649
+},
+{
+"text": "ruft",
+"start": 62.649,
+"end": 62.875
+},
+{
+"text": "die",
+"start": 62.875,
+"end": 63.1
+},
+{
+"text": "Polizei.",
+"start": 63.1,
+"end": 63.777
+},
+{
+"text": "Fünf",
+"start": 64.197,
+"end": 64.402
+},
+{
+"text": "Tage",
+"start": 64.402,
+"end": 64.813
+},
+{
+"text": "nach",
+"start": 64.813,
+"end": 65.018
+},
+{
+"text": "dem",
+"start": 65.018,
+"end": 65.223
+},
+{
+"text": "Überfall",
+"start": 65.223,
+"end": 65.839
+},
+{
+"text": "stehen",
+"start": 65.839,
+"end": 66.25
+},
+{
+"text": "die",
+"start": 66.25,
+"end": 66.455
+},
+{
+"text": "Ermittler",
+"start": 66.455,
+"end": 67.071
+},
+{
+"text": "auf",
+"start": 67.071,
+"end": 67.276
+},
+{
+"text": "dem",
+"start": 67.276,
+"end": 67.481
+},
+{
+"text": "Hof.",
+"start": 67.481,
+"end": 67.687
+},
+{
+"text": "Die",
+"start": 68.084,
+"end": 68.348
+},
+{
+"text": "Täter",
+"start": 68.348,
+"end": 68.876
+},
+{
+"text": "sind",
+"start": 68.876,
+"end": 69.14
+},
+{
+"text": "weg.",
+"start": 69.14,
+"end": 69.404
+},
+{
+"text": "Aber",
+"start": 69.796,
+"end": 70.167
+},
+{
+"text": "sie",
+"start": 70.167,
+"end": 70.352
+},
+{
+"text": "haben",
+"start": 70.352,
+"end": 70.723
+},
+{
+"text": "etwas",
+"start": 70.723,
+"end": 71.093
+},
+{
+"text": "vergessen:",
+"start": 71.093,
+"end": 71.65
+},
+{
+"text": "Fingerabdrücke.",
+"start": 72.032,
+"end": 73.014
+},
+{
+"text": "Unter",
+"start": 73.373,
+"end": 73.761
+},
+{
+"text": "anderem",
+"start": 73.761,
+"end": 74.345
+},
+{
+"text": "auf",
+"start": 74.345,
+"end": 74.539
+},
+{
+"text": "einem",
+"start": 74.539,
+"end": 74.928
+},
+{
+"text": "Monopoly-Spiel.",
+"start": 74.928,
+"end": 75.9
+},
+{
+"text": "Einer",
+"start": 76.366,
+"end": 76.783
+},
+{
+"text": "nach",
+"start": 76.783,
+"end": 76.991
+},
+{
+"text": "dem",
+"start": 76.991,
+"end": 77.2
+},
+{
+"text": "anderen",
+"start": 77.2,
+"end": 77.825
+},
+{
+"text": "wird",
+"start": 77.825,
+"end": 78.033
+},
+{
+"text": "gefasst.",
+"start": 78.033,
+"end": 78.45
+},
+{
+"text": "April",
+"start": 78.871,
+"end": 79.279
+},
+{
+"text": "neunzehnhundertvierundsechzig:",
+"start": 79.279,
+"end": 80.914
+},
+{
+"text": "Sieben",
+"start": 81.254,
+"end": 81.67
+},
+{
+"text": "der",
+"start": 81.67,
+"end": 81.879
+},
+{
+"text": "Männer",
+"start": 81.879,
+"end": 82.295
+},
+{
+"text": "bekommen",
+"start": 82.295,
+"end": 82.92
+},
+{
+"text": "je",
+"start": 82.92,
+"end": 83.128
+},
+{
+"text": "dreißig",
+"start": 83.128,
+"end": 83.545
+},
+{
+"text": "Jahre",
+"start": 83.545,
+"end": 83.962
+},
+{
+"text": "Haft.",
+"start": 83.962,
+"end": 84.17
+},
+{
+"text": "Ein",
+"start": 84.517,
+"end": 84.77
+},
+{
+"text": "Großteil",
+"start": 84.77,
+"end": 85.277
+},
+{
+"text": "des",
+"start": 85.277,
+"end": 85.53
+},
+{
+"text": "Geldes",
+"start": 85.53,
+"end": 86.036
+},
+{
+"text": "taucht",
+"start": 86.036,
+"end": 86.289
+},
+{
+"text": "nie",
+"start": 86.289,
+"end": 86.542
+},
+{
+"text": "wieder",
+"start": 86.542,
+"end": 87.048
+},
+{
+"text": "auf.",
+"start": 87.048,
+"end": 87.301
+},
+{
+"text": "Und",
+"start": 87.684,
+"end": 87.995
+},
+{
+"text": "dann",
+"start": 87.995,
+"end": 88.305
+},
+{
+"text": "wird",
+"start": 88.305,
+"end": 88.616
+},
+{
+"text": "es",
+"start": 88.616,
+"end": 88.926
+},
+{
+"text": "filmreif.",
+"start": 88.926,
+"end": 89.547
+},
+{
+"text": "Einer",
+"start": 89.908,
+"end": 90.322
+},
+{
+"text": "der",
+"start": 90.322,
+"end": 90.529
+},
+{
+"text": "Verurteilten,",
+"start": 90.529,
+"end": 91.358
+},
+{
+"text": "Ronnie",
+"start": 91.358,
+"end": 91.772
+},
+{
+"text": "Biggs,",
+"start": 91.772,
+"end": 91.979
+},
+{
+"text": "flieht",
+"start": 91.979,
+"end": 92.186
+},
+{
+"text": "am",
+"start": 92.186,
+"end": 92.394
+},
+{
+"text": "achten",
+"start": 92.394,
+"end": 92.808
+},
+{
+"text": "Juli",
+"start": 92.808,
+"end": 93.222
+},
+{
+"text": "neunzehnhundertfünfundsechzig",
+"start": 93.222,
+"end": 94.879
+},
+{
+"text": "mit",
+"start": 94.879,
+"end": 95.086
+},
+{
+"text": "einer",
+"start": 95.086,
+"end": 95.501
+},
+{
+"text": "Leiter",
+"start": 95.501,
+"end": 95.915
+},
+{
+"text": "über",
+"start": 95.915,
+"end": 96.329
+},
+{
+"text": "die",
+"start": 96.329,
+"end": 96.536
+},
+{
+"text": "Gefängnismauer.",
+"start": 96.536,
+"end": 97.365
+},
+{
+"text": "Er",
+"start": 97.721,
+"end": 97.902
+},
+{
+"text": "lässt",
+"start": 97.902,
+"end": 98.083
+},
+{
+"text": "sich",
+"start": 98.083,
+"end": 98.264
+},
+{
+"text": "in",
+"start": 98.264,
+"end": 98.445
+},
+{
+"text": "Paris",
+"start": 98.445,
+"end": 98.807
+},
+{
+"text": "das",
+"start": 98.807,
+"end": 98.988
+},
+{
+"text": "Gesicht",
+"start": 98.988,
+"end": 99.351
+},
+{
+"text": "operieren,",
+"start": 99.351,
+"end": 100.075
+},
+{
+"text": "lebt",
+"start": 100.373,
+"end": 100.562
+},
+{
+"text": "in",
+"start": 100.562,
+"end": 100.75
+},
+{
+"text": "Australien",
+"start": 100.75,
+"end": 101.316
+},
+{
+"text": "–",
+"start": 101.316,
+"end": 101.505
+},
+{
+"text": "und",
+"start": 101.802,
+"end": 102.053
+},
+{
+"text": "schließlich",
+"start": 102.053,
+"end": 102.554
+},
+{
+"text": "in",
+"start": 102.554,
+"end": 102.804
+},
+{
+"text": "Brasilien.",
+"start": 102.804,
+"end": 103.556
+},
+{
+"text": "Über",
+"start": 103.956,
+"end": 104.395
+},
+{
+"text": "dreißig",
+"start": 104.395,
+"end": 104.833
+},
+{
+"text": "Jahre",
+"start": 104.833,
+"end": 105.272
+},
+{
+"text": "ist",
+"start": 105.272,
+"end": 105.492
+},
+{
+"text": "er",
+"start": 105.492,
+"end": 105.711
+},
+{
+"text": "auf",
+"start": 105.711,
+"end": 105.93
+},
+{
+"text": "der",
+"start": 105.93,
+"end": 106.15
+},
+{
+"text": "Flucht.",
+"start": 106.15,
+"end": 106.369
+},
+{
+"text": "Zweitausendeins",
+"start": 106.764,
+"end": 107.594
+},
+{
+"text": "kehrt",
+"start": 107.594,
+"end": 107.801
+},
+{
+"text": "er",
+"start": 107.801,
+"end": 108.008
+},
+{
+"text": "freiwillig",
+"start": 108.008,
+"end": 108.631
+},
+{
+"text": "nach",
+"start": 108.631,
+"end": 108.838
+},
+{
+"text": "England",
+"start": 108.838,
+"end": 109.253
+},
+{
+"text": "zurück",
+"start": 109.253,
+"end": 109.668
+},
+{
+"text": "–",
+"start": 109.668,
+"end": 109.875
+},
+{
+"text": "und",
+"start": 110.212,
+"end": 110.429
+},
+{
+"text": "wird",
+"start": 110.429,
+"end": 110.646
+},
+{
+"text": "sofort",
+"start": 110.646,
+"end": 111.08
+},
+{
+"text": "festgenommen.",
+"start": 111.08,
+"end": 111.948
+},
+{
+"text": "Genialer",
+"start": 112.406,
+"end": 113.013
+},
+{
+"text": "Coup",
+"start": 113.013,
+"end": 113.215
+},
+{
+"text": "oder",
+"start": 113.215,
+"end": 113.941
+},
+{
+"text": "brutaler",
+"start": 113.941,
+"end": 114.547
+},
+{
+"text": "Überfall?",
+"start": 114.547,
+"end": 115.154
+},
+{
+"text": "Schreib's",
+"start": 115.525,
+"end": 115.714
+},
+{
+"text": "in",
+"start": 115.714,
+"end": 115.904
+},
+{
+"text": "die",
+"start": 115.904,
+"end": 116.093
+},
+{
+"text": "Kommentare.",
+"start": 116.093,
+"end": 116.85
+}
+],
+"units": [
+[
+0.0,
+"Sie überfielen einen Zug und erbeuteten zwei Komma sechs Millionen Pfund."
+],
+[
+5.137,
+"Und dann verrät sie"
+],
+[
+6.73,
+"ein Monopoly-Spiel."
+],
+[
+8.633,
+"Achter August neunzehnhundertdreiundsechzig,"
+],
+[
+11.592,
+"England."
+],
+[
+12.709,
+"Ein Postzug ist in der Nacht von Glasgow nach London unterwegs."
+],
+[
+16.712,
+"An Bord:"
+],
+[
+17.58,
+"Säcke voller gebrauchter Geldscheine."
+],
+[
+20.275,
+"Bei Buckinghamshire zeigt ein Signal plötzlich Rot."
+],
+[
+23.734,
+"Doch das Signal ist manipuliert:"
+],
+[
+26.019,
+"Über das grüne Licht haben die Täter einen Handschuh gehängt,"
+],
+[
+29.498,
+"das rote Licht läuft über eine Batterie."
+],
+[
+32.431,
+"Der Lokführer Jack Mills hält an."
+],
+[
+35.003,
+"Eine Bande von etwa fünfzehn Männern stürmt den Zug."
+],
+[
+38.467,
+"Mills bekommt einen Schlag auf den Kopf."
+],
+[
+40.838,
+"Von dieser Verletzung erholt er sich nie ganz."
+],
+[
+43.929,
+"An der Bridego-Brücke laden die Täter die Geldsäcke in ihre Fahrzeuge."
+],
+[
+48.496,
+"Beute:"
+],
+[
+49.183,
+"rund zwei Komma sechs Millionen Pfund."
+],
+[
+52.001,
+"Nach heutigem Wert:"
+],
+[
+53.163,
+"etwa fünfzig Millionen."
+],
+[
+55.336,
+"Die Bande versteckt sich auf einem abgelegenen Bauernhof:"
+],
+[
+58.665,
+"Leatherslade Farm."
+],
+[
+60.169,
+"Doch ein Mann aus der Gegend wird misstrauisch und ruft die Polizei."
+],
+[
+64.197,
+"Fünf Tage nach dem Überfall stehen die Ermittler auf dem Hof."
+],
+[
+68.084,
+"Die Täter sind weg."
+],
+[
+69.796,
+"Aber sie haben etwas vergessen:"
+],
+[
+72.032,
+"Fingerabdrücke."
+],
+[
+73.373,
+"Unter anderem auf einem Monopoly-Spiel."
+],
+[
+76.366,
+"Einer nach dem anderen wird gefasst."
+],
+[
+78.871,
+"April neunzehnhundertvierundsechzig:"
+],
+[
+81.254,
+"Sieben der Männer bekommen je dreißig Jahre Haft."
+],
+[
+84.517,
+"Ein Großteil des Geldes taucht nie wieder auf."
+],
+[
+87.684,
+"Und dann wird es filmreif."
+],
+[
+89.908,
+"Einer der Verurteilten,"
+],
+[
+91.358,
+"Ronnie Biggs,"
+],
+[
+91.979,
+"flieht am achten Juli neunzehnhundertfünfundsechzig mit einer Leiter über die Gefängnismauer."
+],
+[
+97.721,
+"Er lässt sich in Paris das Gesicht operieren,"
+],
+[
+100.373,
+"lebt in Australien –"
+],
+[
+101.802,
+"und schließlich in Brasilien."
+],
+[
+103.956,
+"Über dreißig Jahre ist er auf der Flucht."
+],
+[
+106.764,
+"Zweitausendeins kehrt er freiwillig nach England zurück –"
+],
+[
+110.212,
+"und wird sofort festgenommen."
+],
+[
+112.406,
+"Genialer Coup oder brutaler Überfall?"
+],
+[
+115.525,
+"Schreib's in die Kommentare."
+]
+]
+}

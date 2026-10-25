@@ -1,0 +1,46 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #br-h { top:300px; font-size:52px; }
+  #br-svg { position:absolute; left:90px; top:390px; width:900px; height:380px; }
+  #br-b { top:800px; font-size:56px; }
+  #br-m { top:880px; font-size:160px; font-weight:700; }
+  #br-t { top:1080px; font-size:56px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="bruecke" data-width="1080" data-height="1920">
+
+    <div id="br-w" class="clip" data-start="0" data-duration="11.4">
+      <div id="br-h" class="center lbl y">Bridego Bridge</div>
+      <svg id="br-svg" viewBox="0 0 900 380">
+        <rect x="0" y="110" width="900" height="40" fill="#6d6f75"/><rect x="0" y="100" width="900" height="10" fill="#9EA3AC"/>
+        <path d="M320,150 L320,380 L580,380 L580,150 Q450,240 320,150 Z" fill="#4a4c52"/>
+        <rect x="350" y="300" width="200" height="70" rx="6" fill="#2b3a4a"/><text x="450" y="345" text-anchor="middle" fill="#cfe0f0" font-family="Oswald" font-size="30">FAHRZEUG</text>
+        <g id="br-s0"><ellipse cx="380" cy="85" rx="20" ry="24" fill="#c9b28a"/><rect x="372" y="58" width="16" height="10" fill="#8a6a3d"/></g><g id="br-s1"><ellipse cx="425" cy="85" rx="20" ry="24" fill="#c9b28a"/><rect x="417" y="58" width="16" height="10" fill="#8a6a3d"/></g><g id="br-s2"><ellipse cx="470" cy="85" rx="20" ry="24" fill="#c9b28a"/><rect x="462" y="58" width="16" height="10" fill="#8a6a3d"/></g><g id="br-s3"><ellipse cx="515" cy="85" rx="20" ry="24" fill="#c9b28a"/><rect x="507" y="58" width="16" height="10" fill="#8a6a3d"/></g>
+      </svg>
+      <div id="br-b" class="center lbl">Beute</div>
+      <div id="br-m" class="center y">£2,6 Mio.</div>
+      <div id="br-t" class="center">heute ≈ <span class="y">£50 Mio.</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#br-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#br-svg", {opacity:0}, {opacity:1, duration:0.4}, 0.3);
+    for (let i=0;i<4;i++) tl.fromTo("#br-s"+i, {y:0, opacity:1}, {y:250, opacity:0.0, duration:0.7, ease:"power2.in"}, 1.2+i*0.6);
+    tl.fromTo("#br-b", {opacity:0}, {opacity:1, duration:0.25, ease:"power3.out"}, 4.7);
+
+    tl.fromTo("#br-m", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 5.5);
+    tl.fromTo("#br-t", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 8.3);
+
+    tl.to("#br-m", {scale:1.05, duration:5.5, ease:"none"}, 5.9);
+    tl.to("#br-w > *", {opacity:0, duration:0.25}, 11.15);
+
+    window.__timelines["bruecke"] = tl;
+  </script>
+</template>

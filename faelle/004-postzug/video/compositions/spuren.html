@@ -1,0 +1,45 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #sp-d { top:330px; font-size:140px; font-weight:700; }
+  #sp-w2 { top:520px; font-size:60px; font-weight:600; }
+  #sp-board { position:absolute; left:240px; top:420px; width:600px; height:600px; background:#CFE3CF; border:10px solid #1b1b1b; }
+  #sp-board .in { position:absolute; inset:90px; background:#BFD8C0; border:4px solid #1b1b1b; display:flex; align-items:center; justify-content:center; }
+  #sp-board .in span { font-size:72px; font-weight:700; color:#B3261E; transform:rotate(-30deg); letter-spacing:.05em; }
+  #sp-fp { position:absolute; left:560px; top:620px; width:240px; height:300px; }
+  #sp-t { top:1070px; font-size:66px; font-weight:700; }
+</style>
+  <div id="root" data-composition-id="spuren" data-width="1080" data-height="1920">
+
+    <div id="sp-a" class="clip" data-start="0" data-duration="5.7">
+      <div id="sp-d" class="center y">+5 TAGE</div>
+      <div id="sp-w2" class="center">Polizei auf dem Hof · <span class="r">Täter weg</span></div>
+    </div>
+    <div id="sp-b" class="clip" data-start="5.7" data-duration="6.5">
+      <div id="sp-board" data-layout-allow-overlap><div class="in"><span>MONOPOLY</span></div></div>
+      <svg id="sp-fp" viewBox="0 0 240 300" data-layout-allow-overlap><ellipse cx="120" cy="160" rx="30" ry="40" fill="none" stroke="#1b1b1b" stroke-width="5" stroke-dasharray="60 14" opacity=".85"/><ellipse cx="120" cy="160" rx="44" ry="57" fill="none" stroke="#1b1b1b" stroke-width="5" stroke-dasharray="69 14" opacity=".85"/><ellipse cx="120" cy="160" rx="58" ry="74" fill="none" stroke="#1b1b1b" stroke-width="5" stroke-dasharray="78 14" opacity=".85"/><ellipse cx="120" cy="160" rx="72" ry="91" fill="none" stroke="#1b1b1b" stroke-width="5" stroke-dasharray="87 14" opacity=".85"/><ellipse cx="120" cy="160" rx="86" ry="108" fill="none" stroke="#1b1b1b" stroke-width="5" stroke-dasharray="96 14" opacity=".85"/><ellipse cx="120" cy="160" rx="100" ry="125" fill="none" stroke="#1b1b1b" stroke-width="5" stroke-dasharray="105 14" opacity=".85"/></svg>
+      <div id="sp-t" class="center">FINGERABDRÜCKE</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#sp-d", {scale:1.25, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0.3);
+    tl.to("#sp-d", {scale:1.06, duration:5, ease:"none"}, 0.7);
+    tl.fromTo("#sp-w2", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 2.0);
+
+    tl.to("#sp-a > *", {opacity:0, duration:0.25}, 5.45);
+    tl.fromTo("#sp-board", {rotation:-8, scale:0.9, opacity:0}, {rotation:-3, scale:1, opacity:1, duration:0.5, ease:"power3.out"}, 5.85);
+    tl.fromTo("#sp-t", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.3, ease:"power4.out"}, 8.05);
+    tl.fromTo("#sp-fp", {scale:0.4, opacity:0}, {scale:1, opacity:1, duration:0.4, ease:"back.out(1.6)"}, 9.4);
+    tl.to("#sp-board", {scale:1.05, duration:5.6, ease:"none"}, 6.4);
+    tl.to("#sp-b > *", {opacity:0, duration:0.25}, 11.95);
+
+    window.__timelines["spuren"] = tl;
+  </script>
+</template>

@@ -1,0 +1,54 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #wl-svg { position:absolute; left:40px; top:330px; width:1000px; height:560px; }
+  #wl-y { top:920px; font-size:110px; font-weight:700; }
+  #wl-t { top:1060px; font-size:52px; font-weight:500; }
+  #wl-st { position:absolute; left:190px; top:1150px; width:700px; text-align:center; border:10px solid var(--red); border-radius:12px; color:var(--red); font-size:56px; font-weight:700; padding:4px 0; white-space:nowrap; }
+</style>
+  <div id="root" data-composition-id="welt" data-width="1080" data-height="1920">
+
+    <div id="wl-w" class="clip" data-start="0" data-duration="14.6">
+      <svg id="wl-svg" viewBox="0 0 1000 560">
+        <path id="wl-p1" d="M420,140 C420,150 440,160 450,170" fill="none" stroke="#F2C230" stroke-width="6" stroke-dasharray="80" stroke-dashoffset="80"/>
+        <path id="wl-p2" d="M450,170 C650,200 820,320 880,430" fill="none" stroke="#F2C230" stroke-width="6" stroke-dasharray="620" stroke-dashoffset="620"/>
+        <path id="wl-p3" d="M880,430 C700,520 450,520 330,400" fill="none" stroke="#F2C230" stroke-width="6" stroke-dasharray="680" stroke-dashoffset="680"/>
+        <path id="wl-p4" d="M330,400 C330,300 380,180 420,140" fill="none" stroke="#EDE6D6" stroke-width="6" stroke-dasharray="320" stroke-dashoffset="320"/>
+        <g><circle cx="420" cy="140" r="12" fill="#EDE6D6"/><text x="380" y="118" fill="#EDE6D6" font-family="Oswald" font-size="38">London</text></g>
+        <g id="wl-c1"><circle cx="450" cy="170" r="12" fill="#F2C230"/><text x="470" y="200" fill="#F2C230" font-family="Oswald" font-size="38">Paris · neues Gesicht</text></g>
+        <g id="wl-c2"><circle cx="880" cy="430" r="12" fill="#F2C230"/><text x="740" y="480" fill="#F2C230" font-family="Oswald" font-size="38">Australien</text></g>
+        <g id="wl-c3"><circle cx="330" cy="400" r="12" fill="#F2C230"/><text x="120" y="440" fill="#F2C230" font-family="Oswald" font-size="38">Brasilien</text></g>
+      </svg>
+      <div id="wl-y" class="center y"><span id="wl-yr">1965</span></div>
+      <div id="wl-t" class="center">über 30 Jahre auf der Flucht</div>
+      <div id="wl-st">ZURÜCK · FESTGENOMMEN</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#wl-svg", {opacity:0}, {opacity:1, duration:0.4}, 0.1);
+    tl.fromTo("#wl-p1", {strokeDashoffset:80}, {strokeDashoffset:0, duration:0.6}, 0.2);
+    tl.fromTo("#wl-c1", {opacity:0}, {opacity:1, duration:0.3}, 0.6);
+    tl.fromTo("#wl-p2", {strokeDashoffset:620}, {strokeDashoffset:0, duration:1.0, ease:"power1.inOut"}, 2.7);
+    tl.fromTo("#wl-c2", {opacity:0}, {opacity:1, duration:0.3}, 3.3);
+    tl.fromTo("#wl-p3", {strokeDashoffset:680}, {strokeDashoffset:0, duration:1.0, ease:"power1.inOut"}, 4.2);
+    tl.fromTo("#wl-c3", {opacity:0}, {opacity:1, duration:0.3}, 4.9);
+    tl.fromTo("#wl-y", {opacity:0}, {opacity:1, duration:0.3}, 6.4);
+    const yr = {v:1965};
+    tl.fromTo(yr, {v:1965}, {v:2001, duration:2.4, ease:"power1.inOut", onUpdate:()=>{ document.querySelector("#wl-yr").textContent = Math.round(yr.v); }}, 6.5);
+    tl.fromTo("#wl-t", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 6.7);
+
+    tl.fromTo("#wl-p4", {strokeDashoffset:320}, {strokeDashoffset:0, duration:1.2, ease:"power1.inOut"}, 9.2);
+    tl.fromTo("#wl-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 12.7);
+    tl.to("#wl-svg", {scale:1.04, duration:14, ease:"none"}, 0.5);
+    tl.to("#wl-w > *", {opacity:0, duration:0.25}, 14.35);
+
+    window.__timelines["welt"] = tl;
+  </script>
+</template>
