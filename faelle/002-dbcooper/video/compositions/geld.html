@@ -1,0 +1,42 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #gd-city { top:300px; font-size:110px; font-weight:700; }
+  #gd-stack { position:absolute; left:290px; top:470px; width:500px; height:360px; }
+  #gd-stack .bill { position:absolute; left:0; width:500px; height:210px; background:#3E6B47; border:6px solid #9CC3A2; border-radius:10px; }
+  #gd-stack .bill span { position:absolute; left:30px; top:40px; font-size:110px; font-weight:700; color:#D9EBDC; }
+  #gd-n { top:880px; font-size:96px; font-weight:700; }
+  #gd-ser { position:absolute; left:120px; top:1020px; width:840px; text-align:center; font-family:'Space Mono',monospace; font-size:34px; color:var(--paper); }
+  #gd-ser b { color:var(--accent); font-weight:400; }
+  #gd-pax { top:1130px; font-size:60px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="geld" data-width="1080" data-height="1920">
+
+    <div id="gd-w" class="clip" data-start="0" data-duration="12.2">
+      <div id="gd-city" class="center">SEATTLE</div>
+      <div id="gd-stack" data-layout-allow-overlap><div class="bill" id="gd-b1" style="top:150px"><span>$20</span></div><div class="bill" id="gd-b2" style="top:90px"><span>$20</span></div><div class="bill" id="gd-b3" style="top:30px"><span>$20</span></div></div>
+      <div id="gd-n" class="center">10.000 <span class="y">×</span> $20</div>
+      <div id="gd-ser">📷 jede Seriennummer <b>fotografiert</b></div>
+      <div id="gd-pax" class="center">36 Passagiere <span class="y">frei</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#gd-city", {opacity:0, y:30}, {opacity:1, y:0, duration:0.45, ease:"power3.out"}, 0.1);
+
+    ["#gd-b1","#gd-b2","#gd-b3"].forEach((s,i)=>{ tl.fromTo(s, {y:-400, opacity:0, rotation:-6+i*5}, {y:0, opacity:1, rotation:-3+i*3, duration:0.4, ease:"power3.out"}, 2.25+i*0.25); });
+    tl.fromTo("#gd-n", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 3.1);
+    tl.fromTo("#gd-ser", {opacity:0, y:30}, {opacity:1, y:0, duration:0.3, ease:"power3.out"}, 4.8);
+    tl.fromTo("#gd-pax", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 9.3);
+
+    tl.to("#gd-stack", {scale:1.05, duration:8.5, ease:"none"}, 3.4);
+    tl.to("#gd-w > *", {opacity:0, duration:0.25}, 11.9);
+
+    window.__timelines["geld"] = tl;
+  </script>
+</template>

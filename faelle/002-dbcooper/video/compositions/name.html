@@ -1,0 +1,39 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #nm-h { top:380px; font-size:46px; }
+  #nm-a { top:470px; font-size:130px; font-weight:700; color:var(--paper); }
+  #nm-x { position:absolute; left:250px; top:545px; width:580px; height:14px; background:var(--red); transform-origin:left center; }
+  #nm-b { top:690px; font-size:170px; font-weight:700; }
+  #nm-c { top:930px; font-size:56px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="name" data-width="1080" data-height="1920">
+
+    <div id="nm-w" class="clip" data-start="0" data-duration="7.1">
+      <div id="nm-h" class="center lbl">Ein Reporter hört falsch</div>
+      <div id="nm-a" class="center">Dan Cooper</div>
+      <div id="nm-x"></div>
+      <div id="nm-b" class="center y">D. B. COOPER</div>
+      <div id="nm-c" class="center">So kennt ihn die ganze Welt</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#nm-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.1);
+    tl.fromTo("#nm-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 0.4);
+
+    tl.fromTo("#nm-x", {scaleX:0}, {scaleX:1, duration:0.35, ease:"power2.out"}, 2.0);
+    tl.fromTo("#nm-b", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 2.8);
+    tl.to("#nm-b", {scale:1.05, duration:3.8, ease:"none"}, 3.15);
+    tl.fromTo("#nm-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 4.35);
+
+    tl.to("#nm-w > *", {opacity:0, duration:0.25}, 6.85);
+
+    window.__timelines["name"] = tl;
+  </script>
+</template>

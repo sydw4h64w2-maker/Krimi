@@ -1,0 +1,45 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #tk-date { top:320px; font-size:110px; font-weight:700; }
+  #tk-place { top:470px; font-size:44px; }
+  #tk-card { position:absolute; left:100px; top:620px; width:880px; height:470px; background:var(--paper); color:#111; border-radius:18px; box-shadow:0 30px 80px rgba(0,0,0,.5); overflow:hidden; }
+  #tk-card .band { position:absolute; left:0; top:0; width:100%; height:90px; background:#B3261E; color:#fff; font-family:'Space Mono',monospace; font-size:30px; letter-spacing:.15em; line-height:90px; padding-left:44px; }
+  #tk-card .route { position:absolute; left:44px; top:130px; font-size:120px; font-weight:700; letter-spacing:.02em; }
+  #tk-card .f { position:absolute; left:44px; top:290px; font-family:'Space Mono',monospace; font-size:30px; color:#444; }
+  #tk-card .v { position:absolute; left:44px; top:330px; font-size:64px; font-weight:600; }
+  #tk-card .pay { position:absolute; right:44px; top:300px; width:230px; text-align:center; font-family:'Space Mono',monospace; font-size:28px; color:#B3261E; border:5px solid #B3261E; border-radius:10px; padding:10px 0; transform:rotate(-8deg); }
+</style>
+  <div id="root" data-composition-id="ticket" data-width="1080" data-height="1920">
+
+    <div id="tk-w" class="clip" data-start="0" data-duration="13.3">
+      <div id="tk-date" class="center">24.11.1971</div>
+      <div id="tk-place" class="center lbl y">Portland · USA</div>
+      <div id="tk-card">
+        <div class="band">BORDKARTE · FLUG 305</div>
+        <div class="route">PDX → SEA</div>
+        <div class="pay" id="tk-pay">BAR<br/>BEZAHLT</div>
+        <div class="f">PASSAGIER</div>
+        <div class="v" id="tk-name">DAN COOPER</div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#tk-date", {opacity:0, y:30}, {opacity:1, y:0, duration:0.45, ease:"power3.out"}, 0.17);
+    tl.fromTo("#tk-place", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 3.76);
+
+    tl.fromTo("#tk-card", {y:160, rotation:4, opacity:0}, {y:0, rotation:-1.5, opacity:1, duration:0.55, ease:"power3.out"}, 5.8);
+    tl.fromTo("#tk-pay", {scale:2, opacity:0}, {scale:1, opacity:1, duration:0.22, ease:"power4.in"}, 7.8);
+    tl.fromTo("#tk-name", {opacity:0, x:-30}, {opacity:1, x:0, duration:0.35}, 11.15);
+    tl.to("#tk-card", {scale:1.04, duration:6.8, ease:"none"}, 6.4);
+    tl.to("#tk-w > *", {opacity:0, duration:0.25}, 13.0);
+
+    window.__timelines["ticket"] = tl;
+  </script>
+</template>

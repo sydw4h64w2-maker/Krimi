@@ -1,0 +1,1459 @@
+{
+"words": [
+{
+"text": "Er",
+"start": 0.0,
+"end": 0.235
+},
+{
+"text": "entführt",
+"start": 0.235,
+"end": 0.706
+},
+{
+"text": "ein",
+"start": 0.706,
+"end": 0.941
+},
+{
+"text": "Flugzeug,",
+"start": 0.941,
+"end": 1.412
+},
+{
+"text": "kassiert",
+"start": 1.412,
+"end": 1.882
+},
+{
+"text": "zweihunderttausend",
+"start": 1.882,
+"end": 3.058
+},
+{
+"text": "Dollar",
+"start": 3.058,
+"end": 3.529
+},
+{
+"text": "–",
+"start": 3.529,
+"end": 3.764
+},
+{
+"text": "und",
+"start": 4.148,
+"end": 4.401
+},
+{
+"text": "springt",
+"start": 4.401,
+"end": 4.655
+},
+{
+"text": "mit",
+"start": 4.655,
+"end": 4.908
+},
+{
+"text": "dem",
+"start": 4.908,
+"end": 5.162
+},
+{
+"text": "Fallschirm",
+"start": 5.162,
+"end": 5.669
+},
+{
+"text": "in",
+"start": 5.669,
+"end": 5.922
+},
+{
+"text": "die",
+"start": 5.922,
+"end": 6.176
+},
+{
+"text": "Nacht.",
+"start": 6.176,
+"end": 6.429
+},
+{
+"text": "Bis",
+"start": 6.899,
+"end": 7.172
+},
+{
+"text": "heute",
+"start": 7.172,
+"end": 7.717
+},
+{
+"text": "weiß",
+"start": 7.717,
+"end": 7.99
+},
+{
+"text": "niemand,",
+"start": 7.99,
+"end": 8.536
+},
+{
+"text": "wer",
+"start": 8.536,
+"end": 8.809
+},
+{
+"text": "er",
+"start": 8.809,
+"end": 9.082
+},
+{
+"text": "war.",
+"start": 9.082,
+"end": 9.355
+},
+{
+"text": "Vierundzwanzigster",
+"start": 9.973,
+"end": 10.99
+},
+{
+"text": "November",
+"start": 10.99,
+"end": 11.6
+},
+{
+"text": "neunzehnhunderteinundsiebzig.",
+"start": 11.6,
+"end": 13.227
+},
+{
+"text": "Portland,",
+"start": 13.565,
+"end": 14.111
+},
+{
+"text": "USA.",
+"start": 14.368,
+"end": 15.014
+},
+{
+"text": "Ein",
+"start": 15.524,
+"end": 15.761
+},
+{
+"text": "unauffälliger",
+"start": 15.761,
+"end": 16.945
+},
+{
+"text": "Mann",
+"start": 16.945,
+"end": 17.182
+},
+{
+"text": "kauft",
+"start": 17.182,
+"end": 17.419
+},
+{
+"text": "bar",
+"start": 17.419,
+"end": 17.656
+},
+{
+"text": "ein",
+"start": 17.656,
+"end": 17.893
+},
+{
+"text": "Ticket",
+"start": 17.893,
+"end": 18.367
+},
+{
+"text": "für",
+"start": 18.367,
+"end": 18.604
+},
+{
+"text": "Flug",
+"start": 18.604,
+"end": 18.841
+},
+{
+"text": "dreihundertfünf",
+"start": 18.841,
+"end": 19.788
+},
+{
+"text": "nach",
+"start": 19.788,
+"end": 20.025
+},
+{
+"text": "Seattle.",
+"start": 20.025,
+"end": 20.499
+},
+{
+"text": "Er",
+"start": 20.933,
+"end": 21.185
+},
+{
+"text": "nennt",
+"start": 21.185,
+"end": 21.438
+},
+{
+"text": "sich",
+"start": 21.438,
+"end": 21.946
+},
+{
+"text": "Dan",
+"start": 21.946,
+"end": 22.198
+},
+{
+"text": "Cooper.",
+"start": 22.198,
+"end": 22.704
+},
+{
+"text": "Kurz",
+"start": 23.197,
+"end": 23.411
+},
+{
+"text": "nach",
+"start": 23.411,
+"end": 23.625
+},
+{
+"text": "dem",
+"start": 23.625,
+"end": 23.839
+},
+{
+"text": "Start",
+"start": 23.839,
+"end": 24.053
+},
+{
+"text": "reicht",
+"start": 24.053,
+"end": 24.267
+},
+{
+"text": "er",
+"start": 24.267,
+"end": 24.481
+},
+{
+"text": "einer",
+"start": 24.481,
+"end": 24.909
+},
+{
+"text": "Flugbegleiterin",
+"start": 24.909,
+"end": 25.978
+},
+{
+"text": "einen",
+"start": 25.978,
+"end": 26.406
+},
+{
+"text": "Zettel.",
+"start": 26.406,
+"end": 26.834
+},
+{
+"text": "Sie",
+"start": 27.299,
+"end": 27.479
+},
+{
+"text": "hält",
+"start": 27.479,
+"end": 27.66
+},
+{
+"text": "ihn",
+"start": 27.66,
+"end": 27.841
+},
+{
+"text": "zuerst",
+"start": 27.841,
+"end": 28.022
+},
+{
+"text": "für",
+"start": 28.022,
+"end": 28.202
+},
+{
+"text": "eine",
+"start": 28.202,
+"end": 28.564
+},
+{
+"text": "Telefonnummer.",
+"start": 28.564,
+"end": 29.468
+},
+{
+"text": "Dann",
+"start": 29.848,
+"end": 30.07
+},
+{
+"text": "sagt",
+"start": 30.07,
+"end": 30.293
+},
+{
+"text": "er",
+"start": 30.293,
+"end": 30.515
+},
+{
+"text": "ihr:",
+"start": 30.515,
+"end": 30.738
+},
+{
+"text": "Er",
+"start": 31.166,
+"end": 31.336
+},
+{
+"text": "hat",
+"start": 31.336,
+"end": 31.506
+},
+{
+"text": "eine",
+"start": 31.506,
+"end": 31.847
+},
+{
+"text": "Bombe.",
+"start": 31.847,
+"end": 32.188
+},
+{
+"text": "Seine",
+"start": 32.7,
+"end": 33.045
+},
+{
+"text": "Forderung:",
+"start": 33.045,
+"end": 33.562
+},
+{
+"text": "zweihunderttausend",
+"start": 33.917,
+"end": 35.101
+},
+{
+"text": "Dollar",
+"start": 35.101,
+"end": 35.575
+},
+{
+"text": "und",
+"start": 35.575,
+"end": 35.812
+},
+{
+"text": "vier",
+"start": 35.812,
+"end": 36.048
+},
+{
+"text": "Fallschirme.",
+"start": 36.048,
+"end": 36.759
+},
+{
+"text": "In",
+"start": 37.257,
+"end": 37.478
+},
+{
+"text": "Seattle",
+"start": 37.478,
+"end": 37.919
+},
+{
+"text": "bekommt",
+"start": 37.919,
+"end": 38.361
+},
+{
+"text": "er",
+"start": 38.361,
+"end": 38.582
+},
+{
+"text": "beides.",
+"start": 38.582,
+"end": 39.023
+},
+{
+"text": "Zehntausend",
+"start": 39.42,
+"end": 40.094
+},
+{
+"text": "Zwanzig-Dollar-Scheine.",
+"start": 40.094,
+"end": 41.443
+},
+{
+"text": "Das",
+"start": 41.886,
+"end": 42.111
+},
+{
+"text": "FBI",
+"start": 42.111,
+"end": 42.337
+},
+{
+"text": "hat",
+"start": 42.337,
+"end": 42.562
+},
+{
+"text": "vorher",
+"start": 42.562,
+"end": 43.014
+},
+{
+"text": "jede",
+"start": 43.014,
+"end": 43.465
+},
+{
+"text": "einzelne",
+"start": 43.465,
+"end": 44.141
+},
+{
+"text": "Seriennummer",
+"start": 44.141,
+"end": 45.043
+},
+{
+"text": "fotografiert.",
+"start": 45.043,
+"end": 45.946
+},
+{
+"text": "Die",
+"start": 46.408,
+"end": 46.598
+},
+{
+"text": "sechsunddreißig",
+"start": 46.598,
+"end": 47.354
+},
+{
+"text": "Passagiere",
+"start": 47.354,
+"end": 48.111
+},
+{
+"text": "dürfen",
+"start": 48.111,
+"end": 48.49
+},
+{
+"text": "aussteigen.",
+"start": 48.49,
+"end": 49.057
+},
+{
+"text": "Dann",
+"start": 49.488,
+"end": 49.69
+},
+{
+"text": "geht",
+"start": 49.69,
+"end": 49.892
+},
+{
+"text": "es",
+"start": 49.892,
+"end": 50.094
+},
+{
+"text": "wieder",
+"start": 50.094,
+"end": 50.497
+},
+{
+"text": "in",
+"start": 50.497,
+"end": 50.699
+},
+{
+"text": "die",
+"start": 50.699,
+"end": 50.901
+},
+{
+"text": "Luft.",
+"start": 50.901,
+"end": 51.103
+},
+{
+"text": "Kurs:",
+"start": 51.522,
+"end": 51.948
+},
+{
+"text": "Mexiko-Stadt,",
+"start": 52.223,
+"end": 53.153
+},
+{
+"text": "mit",
+"start": 53.436,
+"end": 53.669
+},
+{
+"text": "Tankstopp",
+"start": 53.669,
+"end": 54.134
+},
+{
+"text": "in",
+"start": 54.134,
+"end": 54.366
+},
+{
+"text": "Reno.",
+"start": 54.366,
+"end": 54.831
+},
+{
+"text": "Cooper",
+"start": 55.336,
+"end": 55.758
+},
+{
+"text": "verlangt:",
+"start": 55.758,
+"end": 56.181
+},
+{
+"text": "niedrig",
+"start": 56.54,
+"end": 56.953
+},
+{
+"text": "fliegen,",
+"start": 56.953,
+"end": 57.366
+},
+{
+"text": "Fahrwerk",
+"start": 57.633,
+"end": 58.068
+},
+{
+"text": "ausgefahren.",
+"start": 58.068,
+"end": 58.937
+},
+{
+"text": "Etwa",
+"start": 59.416,
+"end": 59.828
+},
+{
+"text": "dreißig",
+"start": 59.828,
+"end": 60.239
+},
+{
+"text": "Minuten",
+"start": 60.239,
+"end": 60.856
+},
+{
+"text": "nach",
+"start": 60.856,
+"end": 61.062
+},
+{
+"text": "dem",
+"start": 61.062,
+"end": 61.267
+},
+{
+"text": "Start",
+"start": 61.267,
+"end": 61.473
+},
+{
+"text": "öffnet",
+"start": 61.473,
+"end": 61.885
+},
+{
+"text": "er",
+"start": 61.885,
+"end": 62.09
+},
+{
+"text": "die",
+"start": 62.09,
+"end": 62.296
+},
+{
+"text": "hintere",
+"start": 62.296,
+"end": 62.913
+},
+{
+"text": "Tür,",
+"start": 62.913,
+"end": 63.119
+},
+{
+"text": "lässt",
+"start": 63.421,
+"end": 63.58
+},
+{
+"text": "die",
+"start": 63.58,
+"end": 63.739
+},
+{
+"text": "Treppe",
+"start": 63.739,
+"end": 64.057
+},
+{
+"text": "herunter",
+"start": 64.057,
+"end": 64.533
+},
+{
+"text": "–",
+"start": 64.533,
+"end": 64.692
+},
+{
+"text": "und",
+"start": 65.101,
+"end": 65.503
+},
+{
+"text": "springt.",
+"start": 65.503,
+"end": 65.906
+},
+{
+"text": "Irgendwo",
+"start": 66.349,
+"end": 66.95
+},
+{
+"text": "über",
+"start": 66.95,
+"end": 67.351
+},
+{
+"text": "dem",
+"start": 67.351,
+"end": 67.552
+},
+{
+"text": "Südwesten",
+"start": 67.552,
+"end": 68.153
+},
+{
+"text": "des",
+"start": 68.153,
+"end": 68.354
+},
+{
+"text": "Bundesstaats",
+"start": 68.354,
+"end": 68.955
+},
+{
+"text": "Washington.",
+"start": 68.955,
+"end": 69.556
+},
+{
+"text": "Nachts.",
+"start": 69.937,
+"end": 70.478
+},
+{
+"text": "Mit",
+"start": 70.901,
+"end": 71.163
+},
+{
+"text": "dem",
+"start": 71.163,
+"end": 71.426
+},
+{
+"text": "Geld.",
+"start": 71.426,
+"end": 71.688
+},
+{
+"text": "Die",
+"start": 72.216,
+"end": 72.41
+},
+{
+"text": "Maschine",
+"start": 72.41,
+"end": 72.992
+},
+{
+"text": "landet",
+"start": 72.992,
+"end": 73.38
+},
+{
+"text": "in",
+"start": 73.38,
+"end": 73.574
+},
+{
+"text": "Reno.",
+"start": 73.574,
+"end": 73.963
+},
+{
+"text": "Von",
+"start": 74.386,
+"end": 74.635
+},
+{
+"text": "Cooper:",
+"start": 74.635,
+"end": 75.135
+},
+{
+"text": "keine",
+"start": 75.461,
+"end": 75.984
+},
+{
+"text": "Spur.",
+"start": 75.984,
+"end": 76.245
+},
+{
+"text": "Ein",
+"start": 76.712,
+"end": 76.919
+},
+{
+"text": "Reporter",
+"start": 76.919,
+"end": 77.54
+},
+{
+"text": "versteht",
+"start": 77.54,
+"end": 77.953
+},
+{
+"text": "seinen",
+"start": 77.953,
+"end": 78.367
+},
+{
+"text": "Namen",
+"start": 78.367,
+"end": 78.781
+},
+{
+"text": "falsch:",
+"start": 78.781,
+"end": 78.988
+},
+{
+"text": "D.",
+"start": 79.385,
+"end": 79.673
+},
+{
+"text": "B.",
+"start": 79.673,
+"end": 79.961
+},
+{
+"text": "Cooper.",
+"start": 79.961,
+"end": 80.537
+},
+{
+"text": "So",
+"start": 80.897,
+"end": 81.159
+},
+{
+"text": "kennt",
+"start": 81.159,
+"end": 81.422
+},
+{
+"text": "ihn",
+"start": 81.422,
+"end": 81.684
+},
+{
+"text": "heute",
+"start": 81.684,
+"end": 82.209
+},
+{
+"text": "die",
+"start": 82.209,
+"end": 82.471
+},
+{
+"text": "ganze",
+"start": 82.471,
+"end": 82.996
+},
+{
+"text": "Welt.",
+"start": 82.996,
+"end": 83.259
+},
+{
+"text": "Neunzehnhundertachtzig.",
+"start": 83.894,
+"end": 85.181
+},
+{
+"text": "Ein",
+"start": 85.638,
+"end": 85.83
+},
+{
+"text": "achtjähriger",
+"start": 85.83,
+"end": 86.597
+},
+{
+"text": "Junge",
+"start": 86.597,
+"end": 86.981
+},
+{
+"text": "spielt",
+"start": 86.981,
+"end": 87.172
+},
+{
+"text": "am",
+"start": 87.172,
+"end": 87.364
+},
+{
+"text": "Ufer",
+"start": 87.364,
+"end": 87.748
+},
+{
+"text": "des",
+"start": 87.748,
+"end": 87.94
+},
+{
+"text": "Columbia",
+"start": 87.94,
+"end": 88.515
+},
+{
+"text": "River.",
+"start": 88.515,
+"end": 88.899
+},
+{
+"text": "Im",
+"start": 89.319,
+"end": 89.606
+},
+{
+"text": "Sand:",
+"start": 89.606,
+"end": 89.894
+},
+{
+"text": "verrottete",
+"start": 90.195,
+"end": 91.004
+},
+{
+"text": "Zwanzig-Dollar-Scheine.",
+"start": 91.004,
+"end": 92.217
+},
+{
+"text": "Rund",
+"start": 92.697,
+"end": 92.939
+},
+{
+"text": "fünftausendachthundert",
+"start": 92.939,
+"end": 94.391
+},
+{
+"text": "Dollar.",
+"start": 94.391,
+"end": 94.875
+},
+{
+"text": "Die",
+"start": 95.325,
+"end": 95.542
+},
+{
+"text": "Seriennummern",
+"start": 95.542,
+"end": 96.411
+},
+{
+"text": "passen.",
+"start": 96.411,
+"end": 96.846
+},
+{
+"text": "Der",
+"start": 97.311,
+"end": 97.578
+},
+{
+"text": "Rest",
+"start": 97.578,
+"end": 97.844
+},
+{
+"text": "des",
+"start": 97.844,
+"end": 98.11
+},
+{
+"text": "Geldes",
+"start": 98.11,
+"end": 98.643
+},
+{
+"text": "ist",
+"start": 98.643,
+"end": 98.91
+},
+{
+"text": "nie",
+"start": 98.91,
+"end": 99.176
+},
+{
+"text": "aufgetaucht.",
+"start": 99.176,
+"end": 99.975
+},
+{
+"text": "Fünfundvierzig",
+"start": 100.416,
+"end": 101.366
+},
+{
+"text": "Jahre",
+"start": 101.366,
+"end": 101.841
+},
+{
+"text": "lang",
+"start": 101.841,
+"end": 102.079
+},
+{
+"text": "ermittelt",
+"start": 102.079,
+"end": 102.792
+},
+{
+"text": "das",
+"start": 102.792,
+"end": 103.029
+},
+{
+"text": "FBI.",
+"start": 103.029,
+"end": 103.267
+},
+{
+"text": "Zweitausendsechzehn",
+"start": 103.725,
+"end": 104.865
+},
+{
+"text": "stellt",
+"start": 104.865,
+"end": 105.093
+},
+{
+"text": "es",
+"start": 105.093,
+"end": 105.32
+},
+{
+"text": "die",
+"start": 105.32,
+"end": 105.548
+},
+{
+"text": "aktive",
+"start": 105.548,
+"end": 106.232
+},
+{
+"text": "Suche",
+"start": 106.232,
+"end": 106.688
+},
+{
+"text": "ein.",
+"start": 106.688,
+"end": 106.916
+},
+{
+"text": "Und",
+"start": 107.364,
+"end": 107.573
+},
+{
+"text": "Cooper",
+"start": 107.573,
+"end": 107.99
+},
+{
+"text": "hat",
+"start": 107.99,
+"end": 108.198
+},
+{
+"text": "sogar",
+"start": 108.198,
+"end": 108.615
+},
+{
+"text": "die",
+"start": 108.615,
+"end": 108.824
+},
+{
+"text": "Luftfahrt",
+"start": 108.824,
+"end": 109.241
+},
+{
+"text": "verändert:",
+"start": 109.241,
+"end": 109.867
+},
+{
+"text": "Eine",
+"start": 110.289,
+"end": 110.747
+},
+{
+"text": "kleine",
+"start": 110.747,
+"end": 111.204
+},
+{
+"text": "Klappe,",
+"start": 111.204,
+"end": 111.662
+},
+{
+"text": "die",
+"start": 111.662,
+"end": 111.891
+},
+{
+"text": "Cooper",
+"start": 111.891,
+"end": 112.349
+},
+{
+"text": "Vane,",
+"start": 112.349,
+"end": 112.806
+},
+{
+"text": "sorgt",
+"start": 112.806,
+"end": 113.035
+},
+{
+"text": "seitdem",
+"start": 113.035,
+"end": 113.493
+},
+{
+"text": "dafür,",
+"start": 113.493,
+"end": 113.951
+},
+{
+"text": "dass",
+"start": 113.951,
+"end": 114.18
+},
+{
+"text": "sich",
+"start": 114.18,
+"end": 114.409
+},
+{
+"text": "die",
+"start": 114.409,
+"end": 114.637
+},
+{
+"text": "Hecktreppe",
+"start": 114.637,
+"end": 115.324
+},
+{
+"text": "im",
+"start": 115.324,
+"end": 115.553
+},
+{
+"text": "Flug",
+"start": 115.553,
+"end": 115.782
+},
+{
+"text": "nicht",
+"start": 115.782,
+"end": 116.011
+},
+{
+"text": "mehr",
+"start": 116.011,
+"end": 116.239
+},
+{
+"text": "öffnen",
+"start": 116.239,
+"end": 116.697
+},
+{
+"text": "lässt.",
+"start": 116.697,
+"end": 116.926
+},
+{
+"text": "Hat",
+"start": 117.431,
+"end": 117.635
+},
+{
+"text": "er",
+"start": 117.635,
+"end": 117.838
+},
+{
+"text": "den",
+"start": 117.838,
+"end": 118.042
+},
+{
+"text": "Sprung",
+"start": 118.042,
+"end": 118.246
+},
+{
+"text": "überlebt?",
+"start": 118.246,
+"end": 118.857
+},
+{
+"text": "Schreib's",
+"start": 119.303,
+"end": 119.523
+},
+{
+"text": "in",
+"start": 119.523,
+"end": 119.743
+},
+{
+"text": "die",
+"start": 119.743,
+"end": 119.963
+},
+{
+"text": "Kommentare.",
+"start": 119.963,
+"end": 120.842
+}
+],
+"units": [
+[
+0.0,
+"Er entführt ein Flugzeug,"
+],
+[
+1.412,
+"kassiert zweihunderttausend Dollar –"
+],
+[
+4.148,
+"und springt mit dem Fallschirm in die Nacht."
+],
+[
+6.899,
+"Bis heute weiß niemand,"
+],
+[
+8.536,
+"wer er war."
+],
+[
+9.973,
+"Vierundzwanzigster November neunzehnhunderteinundsiebzig."
+],
+[
+13.565,
+"Portland,"
+],
+[
+14.368,
+"USA."
+],
+[
+15.524,
+"Ein unauffälliger Mann kauft bar ein Ticket für Flug dreihundertfünf nach Seattle."
+],
+[
+20.933,
+"Er nennt sich Dan Cooper."
+],
+[
+23.197,
+"Kurz nach dem Start reicht er einer Flugbegleiterin einen Zettel."
+],
+[
+27.299,
+"Sie hält ihn zuerst für eine Telefonnummer."
+],
+[
+29.848,
+"Dann sagt er ihr:"
+],
+[
+31.166,
+"Er hat eine Bombe."
+],
+[
+32.7,
+"Seine Forderung:"
+],
+[
+33.917,
+"zweihunderttausend Dollar und vier Fallschirme."
+],
+[
+37.257,
+"In Seattle bekommt er beides."
+],
+[
+39.42,
+"Zehntausend Zwanzig-Dollar-Scheine."
+],
+[
+41.886,
+"Das FBI hat vorher jede einzelne Seriennummer fotografiert."
+],
+[
+46.408,
+"Die sechsunddreißig Passagiere dürfen aussteigen."
+],
+[
+49.488,
+"Dann geht es wieder in die Luft."
+],
+[
+51.522,
+"Kurs:"
+],
+[
+52.223,
+"Mexiko-Stadt,"
+],
+[
+53.436,
+"mit Tankstopp in Reno."
+],
+[
+55.336,
+"Cooper verlangt:"
+],
+[
+56.54,
+"niedrig fliegen,"
+],
+[
+57.633,
+"Fahrwerk ausgefahren."
+],
+[
+59.416,
+"Etwa dreißig Minuten nach dem Start öffnet er die hintere Tür,"
+],
+[
+63.421,
+"lässt die Treppe herunter –"
+],
+[
+65.101,
+"und springt."
+],
+[
+66.349,
+"Irgendwo über dem Südwesten des Bundesstaats Washington."
+],
+[
+69.937,
+"Nachts."
+],
+[
+70.901,
+"Mit dem Geld."
+],
+[
+72.216,
+"Die Maschine landet in Reno."
+],
+[
+74.386,
+"Von Cooper:"
+],
+[
+75.461,
+"keine Spur."
+],
+[
+76.712,
+"Ein Reporter versteht seinen Namen falsch:"
+],
+[
+79.385,
+"D."
+],
+[
+79.673,
+"B."
+],
+[
+79.961,
+"Cooper."
+],
+[
+80.897,
+"So kennt ihn heute die ganze Welt."
+],
+[
+83.894,
+"Neunzehnhundertachtzig."
+],
+[
+85.638,
+"Ein achtjähriger Junge spielt am Ufer des Columbia River."
+],
+[
+89.319,
+"Im Sand:"
+],
+[
+90.195,
+"verrottete Zwanzig-Dollar-Scheine."
+],
+[
+92.697,
+"Rund fünftausendachthundert Dollar."
+],
+[
+95.325,
+"Die Seriennummern passen."
+],
+[
+97.311,
+"Der Rest des Geldes ist nie aufgetaucht."
+],
+[
+100.416,
+"Fünfundvierzig Jahre lang ermittelt das FBI."
+],
+[
+103.725,
+"Zweitausendsechzehn stellt es die aktive Suche ein."
+],
+[
+107.364,
+"Und Cooper hat sogar die Luftfahrt verändert:"
+],
+[
+110.289,
+"Eine kleine Klappe,"
+],
+[
+111.662,
+"die Cooper Vane,"
+],
+[
+112.806,
+"sorgt seitdem dafür,"
+],
+[
+113.951,
+"dass sich die Hecktreppe im Flug nicht mehr öffnen lässt."
+],
+[
+117.431,
+"Hat er den Sprung überlebt?"
+],
+[
+119.303,
+"Schreib's in die Kommentare."
+]
+]
+}

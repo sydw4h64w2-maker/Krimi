@@ -1,0 +1,36 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #fb-n { top:380px; font-size:260px; font-weight:700; line-height:1; }
+  #fb-l { top:660px; font-size:60px; font-weight:600; }
+  #fb-st { position:absolute; left:120px; top:830px; width:840px; text-align:center; border:12px solid var(--red); border-radius:14px; color:var(--red); padding:18px 0; }
+  #fb-st .a { font-size:110px; font-weight:700; line-height:1; } #fb-st .b { font-size:52px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="fbi" data-width="1080" data-height="1920">
+
+    <div id="fb-w" class="clip" data-start="0" data-duration="7.0">
+      <div id="fb-n" class="center y"><span id="fb-c">1971</span></div>
+      <div id="fb-l" class="center">45 Jahre Ermittlungen</div>
+      <div id="fb-st"><div class="a">EINGESTELLT</div><div class="b">FBI · AKTIVE SUCHE</div></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#fb-n", {opacity:0}, {opacity:1, duration:0.3}, 0.2);
+    const yr = {v:1971};
+    tl.fromTo(yr, {v:1971}, {v:2016, duration:2.6, ease:"power1.inOut", onUpdate:()=>{ document.querySelector("#fb-c").textContent = Math.round(yr.v); }}, 0.3);
+    tl.fromTo("#fb-l", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 1.0);
+
+    tl.fromTo("#fb-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 3.55);
+    tl.to("#fb-n", {scale:1.05, duration:3.4, ease:"none"}, 3.2);
+    tl.to("#fb-w > *", {opacity:0, duration:0.25}, 6.75);
+
+    window.__timelines["fbi"] = tl;
+  </script>
+</template>

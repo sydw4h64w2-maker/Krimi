@@ -1,0 +1,52 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #fd-y { top:300px; font-size:150px; font-weight:700; }
+  #fd-river { position:absolute; left:0; top:520px; width:1080px; height:200px; background:repeating-linear-gradient(90deg, #1d3550 0 60px, #24425f 60px 120px); }
+  #fd-riv { top:545px; font-size:46px; color:#cfe0f0; }
+  #fd-sand { position:absolute; left:0; top:720px; width:1080px; height:300px; background:#5b4a33; }
+  #fd-bills { position:absolute; left:300px; top:780px; width:480px; height:180px; }
+  #fd-bills .b { position:absolute; width:200px; height:90px; background:#56704f; border:4px solid #8aa585; border-radius:6px; opacity:.85; }
+  #fd-amt { top:1050px; font-size:110px; font-weight:700; }
+  #fd-ok { top:1180px; font-size:50px; font-weight:600; }
+  #fd-rest { top:480px; font-size:96px; font-weight:700; line-height:1.1; }
+  #fd-rest2 { top:720px; font-size:52px; }
+</style>
+  <div id="root" data-composition-id="fund" data-width="1080" data-height="1920">
+
+    <div id="fd-a" class="clip" data-start="0" data-duration="13.5">
+      <div id="fd-y" class="center">1980</div>
+      <div id="fd-river"></div><div id="fd-riv" class="center lbl">Columbia River</div>
+      <div id="fd-sand"></div>
+      <div id="fd-bills"><div class="b" style="left:0;top:40px;transform:rotate(-12deg)"></div><div class="b" style="left:140px;top:10px;transform:rotate(8deg)"></div><div class="b" style="left:270px;top:60px;transform:rotate(-4deg)"></div></div>
+      <div id="fd-amt" class="center y">≈ $5.800</div>
+      <div id="fd-ok" class="center">Seriennummern: <span class="y">✔ passen</span></div>
+    </div>
+    <div id="fd-b" class="clip" data-start="13.5" data-duration="3.0">
+      <div id="fd-rest" class="center">Der Rest<br/><span class="r">NIE GEFUNDEN</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fd-y", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#fd-river, #fd-riv", {opacity:0}, {opacity:1, duration:0.5}, 2.0);
+    tl.fromTo("#fd-river", {x:0}, {x:-240, duration:11.5, ease:"none"}, 2.0);
+    tl.fromTo("#fd-sand", {opacity:0}, {opacity:1, duration:0.5}, 2.5);
+    tl.fromTo("#fd-bills", {opacity:0, y:30}, {opacity:1, y:0, duration:0.5}, 6.6);
+    tl.fromTo("#fd-amt", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 9.1);
+    tl.fromTo("#fd-ok", {opacity:0, y:30}, {opacity:1, y:0, duration:0.3, ease:"power3.out"}, 11.7);
+
+    tl.to("#fd-a > *", {opacity:0, duration:0.25}, 13.25);
+    tl.fromTo("#fd-rest", {scale:1.2, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 13.65);
+    tl.to("#fd-rest", {scale:1.05, duration:2.4, ease:"none"}, 14.0);
+    tl.to("#fd-rest", {opacity:0, duration:0.25}, 16.25);
+
+    window.__timelines["fund"] = tl;
+  </script>
+</template>

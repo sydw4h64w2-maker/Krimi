@@ -1,0 +1,31 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #ct-q { top:500px; font-size:130px; font-weight:700; line-height:1.05; }
+  #ct-s { top:860px; font-size:56px; font-weight:500; }
+  #ct-arrow { top:980px; font-size:120px; }
+</style>
+  <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
+
+    <div id="ct-q" class="center clip" data-start="0" data-duration="4.7">Hat er den Sprung<br/><span class="y">überlebt?</span></div>
+    <div id="ct-s" class="center clip" data-start="1.9" data-duration="2.8">Schreib's in die Kommentare</div>
+    <div id="ct-arrow" class="center clip y" data-start="2.2" data-duration="2.5">↓</div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#ct-q", {scale:1.15, opacity:0}, {scale:1, opacity:1, duration:0.4, ease:"power4.out"}, 0.15);
+    tl.fromTo("#ct-s", {opacity:0, y:20}, {opacity:1, y:0, duration:0.35}, 2.0);
+    tl.fromTo("#ct-arrow", {y:-20, opacity:0}, {y:20, opacity:1, duration:0.6, ease:"sine.inOut"}, 2.2);
+    tl.to("#ct-arrow", {y:-10, duration:0.6, ease:"sine.inOut"}, 2.8);
+    tl.to("#ct-arrow", {y:20, duration:0.6, ease:"sine.inOut"}, 3.4);
+    tl.to("#ct-arrow", {y:-10, duration:0.6, ease:"sine.inOut"}, 4.0);
+
+    window.__timelines["cta"] = tl;
+  </script>
+</template>

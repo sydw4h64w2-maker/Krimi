@@ -1,0 +1,50 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #zt-note { position:absolute; left:200px; top:380px; width:680px; height:520px; background:#F4EFD8; box-shadow:0 25px 60px rgba(0,0,0,.55); padding:60px; color:#222; }
+  #zt-note .lines { position:absolute; inset:0; background:repeating-linear-gradient(0deg, transparent 0 58px, rgba(60,90,160,.25) 58px 60px); }
+  #zt-q { position:absolute; left:40px; top:70px; width:600px; text-align:center; font-size:58px; white-space:nowrap; font-weight:500; color:#555; }
+  #zt-bomb { position:absolute; left:60px; top:260px; width:560px; text-align:center; font-size:130px; font-weight:700; color:var(--red); }
+  #zt-cap { top:960px; font-size:46px; }
+  #zt-dem { top:400px; font-size:56px; }
+  #zt-m { top:500px; font-size:220px; font-weight:700; line-height:1; }
+  #zt-p { top:780px; font-size:96px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="zettel" data-width="1080" data-height="1920">
+
+    <div id="zt-a" class="clip" data-start="0" data-duration="9.5">
+      <div id="zt-note"><div class="lines"></div>
+        <div id="zt-q">☎ Telefonnummer?</div>
+        <div id="zt-bomb">BOMBE</div>
+      </div>
+      <div id="zt-cap" class="center lbl p">Ein Zettel für die Flugbegleiterin</div>
+    </div>
+    <div id="zt-b" class="clip" data-start="9.5" data-duration="4.6">
+      <div id="zt-dem" class="center lbl y">Die Forderung</div>
+      <div id="zt-m" class="center">$200.000</div>
+      <div id="zt-p" class="center">+ <span class="y">4</span> Fallschirme</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#zt-note", {x:-500, rotation:-12, opacity:0}, {x:0, rotation:-3, opacity:1, duration:0.6, ease:"power3.out"}, 0.2);
+    tl.fromTo("#zt-cap", {opacity:0}, {opacity:1, duration:0.3}, 1.1);
+    tl.fromTo("#zt-q", {opacity:0}, {opacity:1, duration:0.3}, 4.3);
+    tl.to("#zt-q", {opacity:0.25, duration:0.3}, 6.8);
+    tl.fromTo("#zt-bomb", {scale:2.2, opacity:0}, {scale:1, opacity:1, duration:0.22, ease:"power4.in"}, 8.3);
+    tl.to("#zt-note", {scale:1.05, duration:8.4, ease:"none"}, 0.8);
+    tl.to("#zt-a > *", {opacity:0, duration:0.25}, 9.25);
+    tl.fromTo("#zt-dem", {opacity:0}, {opacity:1, duration:0.25}, 9.6);
+    tl.fromTo("#zt-m", {scale:1.25, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 10.85);
+    tl.fromTo("#zt-p", {y:30, opacity:0}, {y:0, opacity:1, duration:0.3}, 12.5);
+    tl.to("#zt-b > *", {opacity:0, duration:0.25}, 13.85);
+
+    window.__timelines["zettel"] = tl;
+  </script>
+</template>

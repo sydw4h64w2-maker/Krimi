@@ -1,0 +1,44 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #vn-h { top:320px; font-size:52px; }
+  #vn-t { top:400px; font-size:140px; font-weight:700; }
+  #vn-svg { position:absolute; left:140px; top:600px; width:800px; height:420px; }
+  #vn-c { top:1080px; font-size:54px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="vane" data-width="1080" data-height="1920">
+
+    <div id="vn-w" class="clip" data-start="0" data-duration="10.1">
+      <div id="vn-h" class="center lbl y">Cooper verändert die Luftfahrt</div>
+      <div id="vn-t" class="center">COOPER VANE</div>
+      <svg id="vn-svg" viewBox="0 0 800 420">
+        <path d="M0,120 L720,120 Q790,120 800,150 L800,190 L0,190 Z" fill="#B8BCC4"/>
+        <rect id="vn-stair" x="360" y="190" width="260" height="22" fill="#F2C230"/>
+        <g id="vn-flap"><rect x="610" y="190" width="18" height="90" fill="#D2372E"/><path d="M628,200 L700,230 L628,262 Z" fill="#D2372E"/></g>
+        <text x="250" y="350" fill="#EDE6D6" font-family="Space Mono" font-size="30">Klappe sperrt die Treppe</text>
+        <path d="M660,320 L640,285" stroke="#EDE6D6" stroke-width="3"/>
+      </svg>
+      <div id="vn-c" class="center">Hecktreppe im Flug: <span class="r">gesperrt</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#vn-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#vn-t", {scale:1.2, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 3.3);
+    tl.fromTo("#vn-svg", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4}, 0.8);
+    tl.fromTo("#vn-flap", {rotation:-90, transformOrigin:"619px 190px", opacity:0}, {rotation:0, opacity:1, duration:0.6, ease:"back.out(2)"}, 3.8);
+    tl.fromTo("#vn-stair", {rotation:-14, transformOrigin:"360px 200px"}, {rotation:0, duration:0.5, ease:"power2.out"}, 6.8);
+    tl.fromTo("#vn-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 6.8);
+
+    tl.to("#vn-t", {scale:1.05, duration:6.2, ease:"none"}, 3.65);
+    tl.to("#vn-w > *", {opacity:0, duration:0.25}, 9.85);
+
+    window.__timelines["vane"] = tl;
+  </script>
+</template>
