@@ -1,0 +1,40 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #fd-a { top:300px; font-size:100px; font-weight:700; }
+  #fd-b { top:430px; font-size:46px; }
+  #fd-f { position:absolute; left:290px; top:520px; }
+  #fd-q { position:absolute; left:290px; top:690px; width:500px; text-align:center; font-size:90px; font-weight:700; color:var(--accent); }
+  #fd-n { top:1030px; font-size:64px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="fund" data-width="1080" data-height="1920">
+
+    <div id="fd-w" class="clip" data-start="0" data-duration="15.42">
+      <div id="fd-a" class="center">Mai 1945</div>
+      <div id="fd-b" class="center lbl y">Görings Sammlung</div>
+      <div id="fd-f"><svg viewBox="0 0 500 440" width="500" height="440"><rect x="6" y="6" width="488" height="428" fill="none" stroke="#C9A04A" stroke-width="12"/><rect x="22" y="22" width="456" height="396" fill="#2a2418"/></svg></div>
+      <div id="fd-q" data-layout-allow-overlap>„VERMEER“?</div>
+      <div id="fd-n" class="center">Spur → <span class="y">Han van Meegeren</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fd-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.1);
+    tl.fromTo("#fd-b", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 4.1);
+
+    tl.fromTo("#fd-f", {y:60, opacity:0}, {y:0, opacity:1, duration:0.5, ease:"power3.out"}, 4.7);
+    tl.fromTo("#fd-q", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 9.25);
+    tl.to("#fd-f", {scale:1.05, duration:10.82, ease:"none"}, 5.2);
+    tl.fromTo("#fd-n", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 10.96);
+    tl.to("#fd-a", {scale:1.06, duration:14.82, ease:"none"}, 0.5);
+
+    tl.to("#fd-w > *", {opacity:0, duration:0.25}, 15.17);
+
+    window.__timelines["fund"] = tl;
+  </script>
+</template>

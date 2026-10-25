@@ -1,0 +1,39 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #bw-h { top:300px; font-size:90px; font-weight:700; }
+  #bw-svg { position:absolute; left:140px; top:430px; width:800px; height:520px; }
+  #bw-t { top:990px; font-size:56px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="beweis" data-width="1080" data-height="1920">
+
+    <div id="bw-w" class="clip" data-start="0" data-duration="7.93">
+      <div id="bw-h" class="center">Der Beweis</div>
+      <svg id="bw-svg" viewBox="0 0 800 520">
+        <path d="M330,500 L400,90 L470,500" fill="none" stroke="#8a6a3d" stroke-width="12"/>
+        <rect x="270" y="60" width="260" height="330" fill="#EDE6D6" stroke="#8a6a3d" stroke-width="8"/>
+        <g id="bw-paint"><rect x="285" y="75" width="230" height="300" fill="#4a5a6a"/><path d="M285,260 Q360,220 400,250 T515,240 L515,375 L285,375 Z" fill="#6b5a3a"/><circle cx="400" cy="170" r="36" fill="#c8a26a"/><path d="M360,375 Q370,250 400,230 Q430,250 440,375 Z" fill="#2b3a5a"/></g>
+        <g transform="translate(30,330)"><circle cx="40" cy="40" r="30" fill="#6b7079"/><path d="M0,190 Q0,90 40,82 Q80,90 80,190 Z" fill="#6b7079"/></g><g transform="translate(130,330)"><circle cx="40" cy="40" r="30" fill="#6b7079"/><path d="M0,190 Q0,90 40,82 Q80,90 80,190 Z" fill="#6b7079"/></g><g transform="translate(600,330)"><circle cx="40" cy="40" r="30" fill="#6b7079"/><path d="M0,190 Q0,90 40,82 Q80,90 80,190 Z" fill="#6b7079"/></g><g transform="translate(700,330)"><circle cx="40" cy="40" r="30" fill="#6b7079"/><path d="M0,190 Q0,90 40,82 Q80,90 80,190 Z" fill="#6b7079"/></g>
+      </svg>
+      <div id="bw-t" class="center">„Jesus unter den <span class="y">Schriftgelehrten</span>“</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#bw-h", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.1);
+
+    tl.fromTo("#bw-svg", {opacity:0}, {opacity:1, duration:0.4}, 1.96);
+    tl.fromTo("#bw-paint", {clipPath:"inset(100% 0 0 0)"}, {clipPath:"inset(0% 0 0 0)", duration:3.86, ease:"steps(12)"}, 2.36);
+    tl.fromTo("#bw-t", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.82);
+
+    tl.to("#bw-svg", {scale:1.04, duration:5.97, ease:"none"}, 2.26);
+    tl.to("#bw-w > *", {opacity:0, duration:0.25}, 7.68);
+
+    window.__timelines["beweis"] = tl;
+  </script>
+</template>

@@ -71,6 +71,12 @@ faelle/
 | 008 | ElevenLabs_2026-10-25T17_39_37_Hans_-_Clear_and_Soft_pvc_sp100_s50_sb75_v4.mp3 | ✅ Tonhöhe 1,7 %, Klang 0,1 % |
 | 009 | ElevenLabs_2026-10-25T17_52_39_Hans_-_Clear_and_Soft_pvc_sp100_s50_sb75_v4_2.mp3 | ✅ Tonhöhe 3,2 %, Klang 1,9 % |
 
+## Video vorbauen ohne Aufnahme (ab Folge 10)
+
+- `tools/predict_timing.py` schätzt das Timing aus dem Text → Szenen werden an **Sätze** gehängt (`T("Satzanfang")`).
+- Sobald die mp3 da ist: Stimme prüfen → `tools/align.py` schreibt das echte Timing nach `video/assets/words.json`
+  → `python3 video/generate.py` → rendern. Alles rückt automatisch an die richtige Stelle.
+
 ## Tipps für die Aufnahme
 
 - Ruhiger Raum, Handy ca. 20 cm vom Mund, gern unter einer Decke oder im Kleiderschrank (dämpft Hall).

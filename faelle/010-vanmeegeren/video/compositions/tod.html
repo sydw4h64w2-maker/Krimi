@@ -1,0 +1,32 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #td-a { top:420px; font-size:80px; font-weight:700; }
+  #td-b { top:580px; font-size:110px; font-weight:700; }
+  #td-c { top:730px; font-size:56px; }
+</style>
+  <div id="root" data-composition-id="tod" data-width="1080" data-height="1920">
+
+    <div id="td-w" class="clip" data-start="0" data-duration="8.15">
+      <div id="td-a" class="center">Haft angetreten: <span class="r">nie</span></div>
+      <div id="td-b" class="center p">30.12.1947</div>
+      <div id="td-c" class="center lbl">Han van Meegeren stirbt · Herzversagen</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#td-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.1);
+    tl.fromTo("#td-b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.45, ease:"power3.out"}, 2.18);
+    tl.fromTo("#td-c", {opacity:0}, {opacity:1, duration:0.35, ease:"power3.out"}, 4.68);
+
+    tl.to("#td-b", {scale:1.05, duration:5.47, ease:"none"}, 2.63);
+    tl.to("#td-w > *", {opacity:0, duration:0.25}, 7.9);
+
+    window.__timelines["tod"] = tl;
+  </script>
+</template>

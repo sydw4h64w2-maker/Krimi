@@ -1,0 +1,35 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #hf-a { top:300px; font-size:110px; font-weight:700; }
+  #hf-b { top:440px; font-size:46px; }
+  #hf-c { top:560px; font-size:58px; font-weight:600; line-height:1.2; }
+  #hf-st { position:absolute; text-align:center; border:12px solid var(--red); border-radius:14px; color:var(--red); font-weight:700; white-space:nowrap; left:190px; top:780px; width:700px; font-size:110px; padding:6px 0; }
+</style>
+  <div id="root" data-composition-id="haft" data-width="1080" data-height="1920">
+
+    <div id="hf-w" class="clip" data-start="0" data-duration="13.29">
+      <div id="hf-a" class="center">29.05.1945</div>
+      <div id="hf-b" class="center lbl y">Verhaftung</div>
+      <div id="hf-c" class="center">Vorwurf: Kunstschatz<br/><span class="r">an die Nazis verkauft</span></div>
+      <div id="hf-st">TODESSTRAFE</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hf-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.1);
+    tl.fromTo("#hf-b", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 1.5);
+    tl.fromTo("#hf-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 6.03);
+
+    tl.fromTo("#hf-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 11.71);
+    tl.to("#hf-a", {scale:1.05, duration:12.69, ease:"none"}, 0.5);
+    tl.to("#hf-w > *", {opacity:0, duration:0.25}, 13.04);
+
+    window.__timelines["haft"] = tl;
+  </script>
+</template>

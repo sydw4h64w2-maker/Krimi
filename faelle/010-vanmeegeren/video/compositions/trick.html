@@ -1,0 +1,40 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #tr-h { top:300px; font-size:56px; font-weight:600; }
+  #tr-a { top:400px; font-size:66px; font-weight:600; }
+  #tr-b { top:500px; font-size:160px; font-weight:700; line-height:1; }
+  #tr-svg { position:absolute; left:290px; top:700px; width:500px; height:360px; }
+  #tr-c { top:1090px; font-size:56px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="trick" data-width="1080" data-height="1920">
+
+    <div id="tr-w" class="clip" data-start="0" data-duration="11.13">
+      <div id="tr-h" class="center lbl y">Sein Trick</div>
+      <div id="tr-a" class="center">Kunstharz in der Farbe:</div>
+      <div id="tr-b" class="center y">BAKELIT</div>
+      <svg id="tr-svg" viewBox="0 0 500 360"><rect x="20" y="20" width="460" height="320" rx="20" fill="#3b3f46" stroke="#6b6f76" stroke-width="8"/><rect x="60" y="60" width="380" height="200" rx="10" fill="#1a1d22"/><g id="tr-heat"><path d="M100,240 q15,-40 0,-80 q-15,-40 0,-80" stroke="#D2372E" stroke-width="8" fill="none" opacity=".85"/><path d="M170,240 q15,-40 0,-80 q-15,-40 0,-80" stroke="#D2372E" stroke-width="8" fill="none" opacity=".85"/><path d="M240,240 q15,-40 0,-80 q-15,-40 0,-80" stroke="#D2372E" stroke-width="8" fill="none" opacity=".85"/><path d="M310,240 q15,-40 0,-80 q-15,-40 0,-80" stroke="#D2372E" stroke-width="8" fill="none" opacity=".85"/><path d="M380,240 q15,-40 0,-80 q-15,-40 0,-80" stroke="#D2372E" stroke-width="8" fill="none" opacity=".85"/></g><circle cx="420" cy="300" r="14" fill="#F2C230"/></svg>
+      <div id="tr-c" class="center">🔥 im Ofen gehärtet – <span class="y">wie Jahrhunderte alt</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#tr-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.1);
+    tl.fromTo("#tr-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 2.17);
+
+    tl.fromTo("#tr-b", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.3, ease:"power4.out"}, 4.74);
+    tl.fromTo("#tr-svg", {y:60, opacity:0}, {y:0, opacity:1, duration:0.45, ease:"power3.out"}, 6.02);
+    tl.fromTo("#tr-heat", {y:20, opacity:0.2}, {y:-10, opacity:1, duration:0.6, ease:"sine.inOut", yoyo:true, repeat:5}, 6.32);
+    tl.fromTo("#tr-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 8.6);
+
+    tl.to("#tr-b", {scale:1.05, duration:5.89, ease:"none"}, 5.09);
+    tl.to("#tr-w > *", {opacity:0, duration:0.25}, 10.88);
+
+    window.__timelines["trick"] = tl;
+  </script>
+</template>
