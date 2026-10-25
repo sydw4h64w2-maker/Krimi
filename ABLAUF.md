@@ -40,6 +40,7 @@ faelle/
   005-crippen/     (Folge 5)
   006-gardner/     (Folge 6)
   007-alcatraz/    (Folge 7)
+  008-monalisa/    (Folge 8)
   <nr>-<fall>/
     skript.md     # Sprechertext + Caption + Quellen
     audio.*       # deine Aufnahme
