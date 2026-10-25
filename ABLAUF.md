@@ -38,6 +38,8 @@ faelle/
   003-dagobert/    (Folge 3)
   004-postzug/     (Folge 4)
   005-crippen/     (Folge 5)
+  006-gardner/     (Folge 6)
+  007-alcatraz/    (Folge 7)
   <nr>-<fall>/
     skript.md     # Sprechertext + Caption + Quellen
     audio.*       # deine Aufnahme
