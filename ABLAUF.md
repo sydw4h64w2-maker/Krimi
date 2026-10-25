@@ -27,7 +27,7 @@
 
 ```
 faelle/
-  001-dagobert/
+  001-antwerpen/
     skript.md     # Sprechertext + Caption + Quellen
     audio.*       # deine Aufnahme
     video.mp4     # fertiges Video

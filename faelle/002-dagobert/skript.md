@@ -1,4 +1,4 @@
-# Fall 001 – „Dagobert“: Der Erpresser, den ganz Deutschland kannte
+# Fall 002 – „Dagobert“: Der Erpresser, den ganz Deutschland kannte
 
 **Länge:** ca. 75 Sekunden · **Ton:** spannend, mit leichtem Augenzwinkern
 **Status:** Faktencheck v2 – jede Aussage einzeln mit Quelle belegt (siehe Tabelle unten)

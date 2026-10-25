@@ -1,0 +1,32 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); }
+
+  #hk-num { top:430px; font-size:420px; font-weight:700; line-height:1; }
+  #hk-sub { top:880px; font-size:96px; font-weight:600; letter-spacing:.02em; }
+  #hk-sub2 { top:1010px; font-size:44px; }
+  #hk-and { top:1140px; font-size:70px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+
+    <div id="hk-num" class="center clip y" data-start="0" data-duration="8">10</div>
+    <div id="hk-sub" class="center clip" data-start="0" data-duration="8">SICHERHEITSSCHICHTEN</div>
+    <div id="hk-sub2" class="center clip lbl" data-start="1.6" data-duration="6.4">Ein Tresor, der als unknackbar galt</div>
+    <div id="hk-and" class="center clip" data-start="4.2" data-duration="3.8">…verraten von einem <span class="y">Sandwich</span> 🥪</div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#hk-num", {scale:1.12, opacity:1}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0);
+    tl.fromTo("#hk-sub", {y:20, opacity:1}, {y:0, opacity:1, duration:0.4, ease:"power3.out"}, 0.15);
+    tl.fromTo("#hk-sub2", {opacity:0}, {opacity:1, duration:0.4}, 1.6);
+    tl.fromTo("#hk-and", {y:30, opacity:0}, {y:0, opacity:1, duration:0.4, ease:"back.out(2)"}, 4.2);
+    tl.to(["#hk-num","#hk-sub","#hk-sub2","#hk-and"], {opacity:0, duration:0.25}, 7.6);
+
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

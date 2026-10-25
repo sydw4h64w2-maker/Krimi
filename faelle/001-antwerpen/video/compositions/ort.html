@@ -1,0 +1,60 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); }
+
+  #or-city { top:300px; font-size:150px; font-weight:700; }
+  #or-land { top:480px; font-size:36px; }
+  #or-dc { top:600px; font-size:40px; color:var(--paper); opacity:.85; }
+  #or-vault { position:absolute; left:290px; top:700px; width:500px; height:500px; }
+  #or-vault .ring { position:absolute; inset:0; border:14px solid var(--accent); border-radius:50%; }
+  #or-vault .ring2 { position:absolute; inset:70px; border:6px dashed rgba(242,194,48,.55); border-radius:50%; }
+  #or-vault .hub { position:absolute; left:200px; top:200px; width:100px; height:100px; border-radius:50%; background:var(--accent); }
+  #or-vault .spoke { position:absolute; left:244px; top:40px; width:12px; height:420px; background:var(--accent); border-radius:6px; }
+  #or-boxes { top:1225px; font-size:64px; font-weight:600; }
+  #or-list { position:absolute; left:140px; width:800px; top:330px; }
+  #or-list .it { font-size:66px; font-weight:600; padding:14px 0; border-bottom:2px solid rgba(255,255,255,.12); opacity:0; }
+  #or-list .it span { font-family:'Space Mono',monospace; font-size:34px; color:var(--accent); margin-right:28px; }
+</style>
+  <div id="root" data-composition-id="ort" data-width="1080" data-height="1920">
+
+    <div id="or-a" class="clip" data-start="0" data-duration="8">
+      <div id="or-city" class="center">ANTWERPEN</div>
+      <div id="or-land" class="center lbl y">Belgien · Zentrum des Diamantenhandels</div>
+      <div id="or-dc" class="center lbl">Antwerp Diamond Centre</div>
+      <div id="or-vault"><div class="ring"></div><div class="ring2"></div><div class="spoke" id="or-sp1"></div><div class="spoke" id="or-sp2"></div><div class="hub"></div></div>
+      <div id="or-boxes" class="center"><span class="y">160</span> Schließfächer</div>
+    </div>
+    <div id="or-b" class="clip" data-start="8" data-duration="6">
+      <div id="or-list">
+        <div class="it" id="or-i1"><span>01</span>Zahlenschloss</div>
+        <div class="it" id="or-i2"><span>02</span>Wärmesensoren</div>
+        <div class="it" id="or-i3"><span>03</span>Radar</div>
+        <div class="it" id="or-i4"><span>04</span>Seismischer Sensor</div>
+        <div class="it" id="or-i5"><span>05</span>Magnetfeld</div>
+        <div class="it lbl" id="or-i6" style="font-size:40px;border:none;color:var(--paper)"><span>…</span>insgesamt 10 Schichten</div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#or-city", {y:50, opacity:0}, {y:0, opacity:1, duration:0.5, ease:"power3.out"}, 0);
+    tl.fromTo("#or-land", {opacity:0}, {opacity:1, duration:0.4}, 0.5);
+    tl.fromTo("#or-dc", {opacity:0}, {opacity:.85, duration:0.4}, 3.0);
+    tl.fromTo("#or-vault", {scale:0.6, opacity:0}, {scale:1, opacity:1, duration:0.6, ease:"power3.out"}, 3.0);
+    tl.fromTo("#or-sp1", {rotation:0}, {rotation:180, duration:5, ease:"none"}, 3.0);
+    tl.fromTo("#or-sp2", {rotation:90}, {rotation:270, duration:5, ease:"none"}, 3.0);
+    tl.fromTo("#or-boxes", {y:30, opacity:0}, {y:0, opacity:1, duration:0.4, ease:"power3.out"}, 5.0);
+    tl.to("#or-a > *", {opacity:0, duration:0.25}, 7.7);
+    ["#or-i1","#or-i2","#or-i3","#or-i4","#or-i5","#or-i6"].forEach((s,i)=>{
+      tl.fromTo(s, {x:-60, opacity:0}, {x:0, opacity:1, duration:0.3, ease:"power3.out"}, 8.2 + i*0.75);
+    });
+    tl.to("#or-list", {opacity:0, duration:0.25}, 13.7);
+
+    window.__timelines["ort"] = tl;
+  </script>
+</template>

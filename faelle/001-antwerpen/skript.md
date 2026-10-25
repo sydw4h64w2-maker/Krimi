@@ -1,6 +1,6 @@
-# Fall 002 – Antwerpen 2003: Der Raub des Jahrhunderts
+# Fall 001 – Antwerpen 2003: Der Raub des Jahrhunderts
 
-**Land:** Belgien · **Länge:** ca. 75 Sekunden · **Ton:** Heist-Spannung
+**Land:** Belgien · **Länge:** ca. 95–100 Sekunden · **Ton:** Heist-Spannung
 **Status:** Faktencheck v1 – jede Aussage mit Quelle (Tabelle unten)
 
 ## Sprechertext
@@ -26,9 +26,9 @@ Beute: nach Schätzungen über 100 Millionen Dollar.
 
 Am Montag fällt der Einbruch auf. Die Täter sind längst weg.
 
-Aber auf dem Weg werfen sie Müll aus dem Auto – in einem Waldstück an der Autobahn E19.
+Aber ihren Müll entsorgen sie in einem Waldstück an der Autobahn E19.
 Der Grundbesitzer findet die Säcke und ruft die Polizei.
-Darin: Unterlagen, Videobänder … und ein halb gegessenes Salami-Sandwich.
+Darin, zwischen anderem Müll: ein halb gegessenes Salami-Sandwich.
 Die DNA darauf führt zu Notarbartolo.
 
 2005 wird er in Belgien zu zehn Jahren Haft verurteilt, drei Komplizen zu je fünf Jahren.
@@ -70,14 +70,14 @@ Der Diamantenraub von Antwerpen 2003 – die Diamanten sind bis heute weg. Wo si
 | 5 | Haarspray gegen Sensor | ⚠️ im Text als „laut einem Buch“ gekennzeichnet | IDEX Online (über das Buch *Flawless*), UW Security Blog |
 | 6 | 123 von 160 Schließfächern aufgebrochen | ✅ | Wikipedia (en), Historiqly (eine Quelle nennt 109 – Zwischenstand) |
 | 7 | Beute nach Schätzungen > 100 Mio. $ | ✅ | Wikipedia (en), CBS |
-| 8 | Müll an der E19 entsorgt, Grundbesitzer (August Van Camp) fand ihn und rief Polizei | ✅ | Wikipedia (en) |
+| 8 | Müll in einem Waldstück an der E19 entsorgt, Grundbesitzer (August Van Camp) fand ihn und rief Polizei | ✅ | Wikipedia (en) |
 | 9 | Im Müll halb gegessenes Salami-Sandwich, DNA führte zu Notarbartolo | ✅ | Wikipedia (en), Soapcentral, NPR |
 | 10 | 2005 Urteil: Notarbartolo 10 Jahre; Finotto, D'Onorio, Tavano je 5 Jahre | ✅ | Wikipedia (en), Cinemaholic |
 | 11 | Diamanten bis heute nicht gefunden | ✅ | Wikipedia (en), Cinemaholic |
 | 12 | Notarbartolo behauptet geringere Beute / Versicherungsbetrug, unbelegt | ✅ | Wikipedia (en), UW Security Blog |
 
 **Bewusst weggelassen:** wie genau die Tresortür geöffnet wurde (ungeklärt, nur Spekulation),
-Rolle des Kassenbons, Spitznamen der Komplizen, genaues Festnahmedatum.
+Rolle des Kassenbons, genauer Inhalt der Müllsäcke (außer Sandwich), Spitznamen der Komplizen, genaues Festnahmedatum.
 
 ## Quellen
 
