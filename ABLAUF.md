@@ -14,6 +14,11 @@
 - **Fälle aus der ganzen Welt**, gesprochen auf Deutsch.
 - Bevorzugt abgeschlossene Fälle (Urteil) oder historische Fälle; dazu berühmte ungelöste Fälle.
 
+## Video-Vorgaben
+
+- **Keine Untertitel** (Wunsch ab Folge 2). Der Text auf dem Bildschirm kommt nur aus den Grafik-Einblendungen.
+- Hochformat 1080×1920, Akten-Look (dunkel, Absperrband gelb/schwarz, rote Stempel).
+
 ## Recherche-Regeln
 
 - Jede Aussage im Skript steht in der Faktencheck-Tabelle mit mindestens einer seriösen Quelle
