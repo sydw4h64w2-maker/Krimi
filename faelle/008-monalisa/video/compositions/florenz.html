@@ -1,0 +1,43 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #fz-d { top:300px; font-size:90px; font-weight:700; }
+  #fz-l { position:absolute; background:var(--paper); color:#1b1b1b; border-radius:10px; box-shadow:0 25px 60px rgba(0,0,0,.5); left:150px; top:440px; width:780px; height:380px; padding:44px 50px; background:#F3E9C8; font-family:'EB Garamond',serif; }
+  #fz-l .t { font-size:58px; font-style:italic; line-height:1.2; }
+  #fz-l .s { font-size:46px; text-align:right; margin-top:40px; }
+  #fz-u { top:880px; font-size:54px; font-weight:600; }
+  #fz-st { position:absolute; text-align:center; border:12px solid var(--red); border-radius:14px; color:var(--red); font-weight:700; white-space:nowrap; left:330px; top:990px; width:420px; font-size:96px; padding:2px 0; border-color:#3FBF5F; color:#3FBF5F; }
+  #fz-p { top:1160px; font-size:54px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="florenz" data-width="1080" data-height="1920">
+
+    <div id="fz-w" class="clip" data-start="0" data-duration="16.9">
+      <div id="fz-d" class="center">Nov. 1913 · Florenz</div>
+      <div id="fz-l"><div class="t">„Ich habe die Mona Lisa.“</div><div class="s">– „Leonardo Vincenzo“</div></div>
+      <div id="fz-u" class="center">Kunsthändler + <span class="y">Uffizien-Direktor</span> prüfen</div>
+      <div id="fz-st">ECHT</div>
+      <div id="fz-p" class="center r">📞 Polizei</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fz-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#fz-l", {y:120, rotation:4, opacity:0}, {y:0, rotation:-1.5, opacity:1, duration:0.5, ease:"power3.out"}, 2.5);
+    tl.fromTo("#fz-l .t", {clipPath:"inset(0 100% 0 0)"}, {clipPath:"inset(0 0% 0 0)", duration:1.4, ease:"steps(24)"}, 6.1);
+    tl.fromTo("#fz-u", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 8.1);
+
+    tl.fromTo("#fz-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-5, opacity:1, duration:0.22, ease:"power4.in"}, 13.3);
+    tl.fromTo("#fz-p", {opacity:0, y:30}, {opacity:1, y:0, duration:0.3, ease:"power3.out"}, 14.9);
+
+    tl.to("#fz-l", {scale:1.04, duration:14, ease:"none"}, 3.1);
+    tl.to("#fz-w > *", {opacity:0, duration:0.25}, 16.65);
+
+    window.__timelines["florenz"] = tl;
+  </script>
+</template>

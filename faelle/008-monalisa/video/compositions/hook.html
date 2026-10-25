@@ -1,0 +1,32 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #hk-p { position:absolute; left:360px; top:300px; }
+  #hk-t { top:820px; font-size:130px; font-weight:700; }
+  #hk-s { top:990px; font-size:56px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+
+    <div id="hk-w" class="clip" data-start="0" data-duration="7.2">
+      <div id="hk-p"><svg id="hk-pt" viewBox="0 0 360 480" width="360" height="480"><rect x="0" y="0" width="360" height="480" fill="#C9A04A"/><rect x="18" y="18" width="324" height="444" fill="#8A6A2A"/><rect x="30" y="30" width="300" height="420" fill="#4b5a3c"/><path d="M30,300 Q120,260 180,280 Q250,250 330,290 L330,450 L30,450 Z" fill="#3b4a30"/><ellipse cx="180" cy="190" rx="62" ry="80" fill="#c8a26a"/><path d="M110,170 Q120,90 180,92 Q240,90 250,170 L262,300 Q230,260 222,200 Q200,130 180,130 Q160,130 138,200 Q130,260 98,300 Z" fill="#2b2016"/><path d="M90,450 Q100,320 180,300 Q260,320 270,450 Z" fill="#2b2016"/><path d="M162,222 Q180,232 198,222" stroke="#6b4a2a" stroke-width="4" fill="none"/></svg></div>
+      <div id="hk-t" class="center y">MONA LISA</div>
+      <div id="hk-s" class="center">gestohlen – <span class="r">unter einem Kittel</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#hk-p", {scale:1.06, opacity:1}, {scale:1, opacity:1, duration:0.4, ease:"power3.out"}, 0);
+    tl.to("#hk-p", {scale:1.05, duration:6.4, ease:"none"}, 0.5);
+    tl.fromTo("#hk-t", {y:20, opacity:1}, {y:0, opacity:1, duration:0.35}, 0.05);
+    tl.fromTo("#hk-s", {opacity:0, y:20}, {opacity:1, y:0, duration:0.3}, 5.15);
+    tl.to("#hk-w > *", {opacity:0, duration:0.25}, 6.95);
+
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

@@ -1,0 +1,41 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #mt-h { top:300px; font-size:52px; }
+  #mt-svg { position:absolute; left:140px; top:390px; width:800px; height:480px; }
+  #mt-a { position:absolute; left:120px; top:900px; width:400px; text-align:center; font-size:58px; font-weight:700; }
+  #mt-b { position:absolute; left:560px; top:900px; width:400px; text-align:center; font-size:58px; font-weight:700; }
+</style>
+  <div id="root" data-composition-id="motiv" data-width="1080" data-height="1920">
+
+    <div id="mt-w" class="clip" data-start="0" data-duration="9.3">
+      <div id="mt-h" class="center lbl">Das Motiv?</div>
+      <svg id="mt-svg" viewBox="0 0 800 480"><rect x="390" y="80" width="20" height="380" fill="#9EA3AC"/><rect x="300" y="450" width="200" height="20" fill="#9EA3AC"/>
+        <g id="mt-beam"><rect x="100" y="70" width="600" height="16" fill="#C9A04A"/><g id="mt-l"><line x1="140" y1="86" x2="140" y2="220" stroke="#EDE6D6" stroke-width="4"/><path d="M60,220 L220,220 Q140,280 60,220 Z" fill="#EDE6D6"/><text x="140" y="210" text-anchor="middle" font-size="60">🇮🇹</text></g><g id="mt-r"><line x1="660" y1="86" x2="660" y2="220" stroke="#EDE6D6" stroke-width="4"/><path d="M580,220 L740,220 Q660,280 580,220 Z" fill="#EDE6D6"/><text x="660" y="210" text-anchor="middle" font-size="60">💰</text></g></g>
+      </svg>
+      <div id="mt-a">Patriotismus?</div>
+      <div id="mt-b" class="y">Geld?</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#mt-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#mt-svg", {opacity:0}, {opacity:1, duration:0.4}, 0.3);
+    tl.fromTo("#mt-beam", {rotation:0, svgOrigin:"400 78"}, {rotation:3, duration:1.6, ease:"sine.inOut"}, 0.7);
+    tl.to("#mt-beam", {rotation:-2, duration:1.6, ease:"sine.inOut"}, 2.3);
+    tl.to("#mt-beam", {rotation:-8, duration:0.8, ease:"power2.inOut"}, 4.0);
+    tl.to("#mt-beam", {rotation:8, duration:1.0, ease:"power2.inOut"}, 7.9);
+    tl.fromTo("#mt-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 4.0);
+    tl.fromTo("#mt-b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 7.9);
+
+    tl.to("#mt-w > *", {opacity:0, duration:0.25}, 9.05);
+
+    window.__timelines["motiv"] = tl;
+  </script>
+</template>

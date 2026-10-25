@@ -1,0 +1,1380 @@
+{
+"words": [
+{
+"text": "Das",
+"start": 0.0,
+"end": 0.199
+},
+{
+"text": "berühmteste",
+"start": 0.199,
+"end": 0.997
+},
+{
+"text": "Gemälde",
+"start": 0.997,
+"end": 1.595
+},
+{
+"text": "der",
+"start": 1.595,
+"end": 1.794
+},
+{
+"text": "Welt",
+"start": 1.794,
+"end": 1.993
+},
+{
+"text": "–",
+"start": 1.993,
+"end": 2.193
+},
+{
+"text": "einfach",
+"start": 2.623,
+"end": 3.079
+},
+{
+"text": "aus",
+"start": 3.079,
+"end": 3.306
+},
+{
+"text": "dem",
+"start": 3.306,
+"end": 3.534
+},
+{
+"text": "Louvre",
+"start": 3.534,
+"end": 3.989
+},
+{
+"text": "getragen.",
+"start": 3.989,
+"end": 4.672
+},
+{
+"text": "Unter",
+"start": 5.125,
+"end": 5.52
+},
+{
+"text": "einem",
+"start": 5.52,
+"end": 5.915
+},
+{
+"text": "Arbeitskittel.",
+"start": 5.915,
+"end": 6.706
+},
+{
+"text": "Einundzwanzigster",
+"start": 7.312,
+"end": 8.391
+},
+{
+"text": "August",
+"start": 8.391,
+"end": 8.822
+},
+{
+"text": "neunzehnhundertelf,",
+"start": 8.822,
+"end": 9.9
+},
+{
+"text": "Paris.",
+"start": 10.196,
+"end": 10.742
+},
+{
+"text": "Es",
+"start": 11.337,
+"end": 11.543
+},
+{
+"text": "ist",
+"start": 11.543,
+"end": 11.749
+},
+{
+"text": "Montag",
+"start": 11.749,
+"end": 12.162
+},
+{
+"text": "–",
+"start": 12.162,
+"end": 12.368
+},
+{
+"text": "der",
+"start": 12.789,
+"end": 12.981
+},
+{
+"text": "Louvre",
+"start": 12.981,
+"end": 13.366
+},
+{
+"text": "hat",
+"start": 13.366,
+"end": 13.558
+},
+{
+"text": "für",
+"start": 13.558,
+"end": 13.751
+},
+{
+"text": "Besucher",
+"start": 13.751,
+"end": 14.328
+},
+{
+"text": "geschlossen.",
+"start": 14.328,
+"end": 14.905
+},
+{
+"text": "Ein",
+"start": 15.36,
+"end": 15.565
+},
+{
+"text": "Mann",
+"start": 15.565,
+"end": 15.771
+},
+{
+"text": "versteckt",
+"start": 15.771,
+"end": 16.182
+},
+{
+"text": "sich",
+"start": 16.182,
+"end": 16.388
+},
+{
+"text": "in",
+"start": 16.388,
+"end": 16.594
+},
+{
+"text": "einer",
+"start": 16.594,
+"end": 17.005
+},
+{
+"text": "Abstellkammer.",
+"start": 17.005,
+"end": 17.828
+},
+{
+"text": "Er",
+"start": 18.296,
+"end": 18.524
+},
+{
+"text": "heißt",
+"start": 18.524,
+"end": 18.753
+},
+{
+"text": "Vincenzo",
+"start": 18.753,
+"end": 19.439
+},
+{
+"text": "Peruggia,",
+"start": 19.439,
+"end": 20.125
+},
+{
+"text": "ein",
+"start": 20.466,
+"end": 20.668
+},
+{
+"text": "Italiener,",
+"start": 20.668,
+"end": 21.479
+},
+{
+"text": "der",
+"start": 21.479,
+"end": 21.681
+},
+{
+"text": "früher",
+"start": 21.681,
+"end": 22.087
+},
+{
+"text": "im",
+"start": 22.087,
+"end": 22.289
+},
+{
+"text": "Louvre",
+"start": 22.289,
+"end": 22.694
+},
+{
+"text": "gearbeitet",
+"start": 22.694,
+"end": 23.302
+},
+{
+"text": "hat.",
+"start": 23.302,
+"end": 23.505
+},
+{
+"text": "Unter",
+"start": 23.94,
+"end": 24.31
+},
+{
+"text": "anderem",
+"start": 24.31,
+"end": 24.866
+},
+{
+"text": "hat",
+"start": 24.866,
+"end": 25.051
+},
+{
+"text": "er",
+"start": 25.051,
+"end": 25.236
+},
+{
+"text": "Schutzgläser",
+"start": 25.236,
+"end": 25.791
+},
+{
+"text": "für",
+"start": 25.791,
+"end": 25.976
+},
+{
+"text": "die",
+"start": 25.976,
+"end": 26.162
+},
+{
+"text": "Gemälde",
+"start": 26.162,
+"end": 26.717
+},
+{
+"text": "eingebaut.",
+"start": 26.717,
+"end": 27.272
+},
+{
+"text": "Er",
+"start": 27.71,
+"end": 27.901
+},
+{
+"text": "nimmt",
+"start": 27.901,
+"end": 28.092
+},
+{
+"text": "die",
+"start": 28.092,
+"end": 28.283
+},
+{
+"text": "Mona",
+"start": 28.283,
+"end": 28.665
+},
+{
+"text": "Lisa",
+"start": 28.665,
+"end": 29.048
+},
+{
+"text": "von",
+"start": 29.048,
+"end": 29.239
+},
+{
+"text": "der",
+"start": 29.239,
+"end": 29.43
+},
+{
+"text": "Wand,",
+"start": 29.43,
+"end": 29.621
+},
+{
+"text": "versteckt",
+"start": 29.982,
+"end": 30.427
+},
+{
+"text": "sie",
+"start": 30.427,
+"end": 30.649
+},
+{
+"text": "unter",
+"start": 30.649,
+"end": 31.093
+},
+{
+"text": "seinem",
+"start": 31.093,
+"end": 31.537
+},
+{
+"text": "Kittel",
+"start": 31.537,
+"end": 31.981
+},
+{
+"text": "und",
+"start": 31.981,
+"end": 32.204
+},
+{
+"text": "spaziert",
+"start": 32.204,
+"end": 32.648
+},
+{
+"text": "hinaus.",
+"start": 32.648,
+"end": 33.092
+},
+{
+"text": "Und",
+"start": 33.573,
+"end": 33.852
+},
+{
+"text": "niemand",
+"start": 33.852,
+"end": 34.41
+},
+{
+"text": "merkt",
+"start": 34.41,
+"end": 34.689
+},
+{
+"text": "etwas.",
+"start": 34.689,
+"end": 35.247
+},
+{
+"text": "Erst",
+"start": 35.698,
+"end": 35.933
+},
+{
+"text": "am",
+"start": 35.933,
+"end": 36.168
+},
+{
+"text": "nächsten",
+"start": 36.168,
+"end": 36.638
+},
+{
+"text": "Tag",
+"start": 36.638,
+"end": 36.873
+},
+{
+"text": "kommt",
+"start": 36.873,
+"end": 37.108
+},
+{
+"text": "ein",
+"start": 37.108,
+"end": 37.343
+},
+{
+"text": "Maler,",
+"start": 37.343,
+"end": 37.813
+},
+{
+"text": "der",
+"start": 37.813,
+"end": 38.048
+},
+{
+"text": "das",
+"start": 38.048,
+"end": 38.283
+},
+{
+"text": "Bild",
+"start": 38.283,
+"end": 38.518
+},
+{
+"text": "abzeichnen",
+"start": 38.518,
+"end": 39.223
+},
+{
+"text": "will.",
+"start": 39.223,
+"end": 39.458
+},
+{
+"text": "An",
+"start": 39.893,
+"end": 40.111
+},
+{
+"text": "der",
+"start": 40.111,
+"end": 40.329
+},
+{
+"text": "Wand:",
+"start": 40.329,
+"end": 40.547
+},
+{
+"text": "nur",
+"start": 40.946,
+"end": 41.206
+},
+{
+"text": "noch",
+"start": 41.206,
+"end": 41.466
+},
+{
+"text": "vier",
+"start": 41.466,
+"end": 41.726
+},
+{
+"text": "Eisenhaken.",
+"start": 41.726,
+"end": 42.765
+},
+{
+"text": "Die",
+"start": 43.213,
+"end": 43.463
+},
+{
+"text": "Polizei",
+"start": 43.463,
+"end": 44.212
+},
+{
+"text": "sucht",
+"start": 44.212,
+"end": 44.462
+},
+{
+"text": "fieberhaft.",
+"start": 44.462,
+"end": 45.211
+},
+{
+"text": "Verhaftet",
+"start": 45.61,
+"end": 46.193
+},
+{
+"text": "wird",
+"start": 46.193,
+"end": 46.387
+},
+{
+"text": "ausgerechnet",
+"start": 46.387,
+"end": 47.165
+},
+{
+"text": "der",
+"start": 47.165,
+"end": 47.36
+},
+{
+"text": "Dichter",
+"start": 47.36,
+"end": 47.748
+},
+{
+"text": "Guillaume",
+"start": 47.748,
+"end": 48.332
+},
+{
+"text": "Apollinaire.",
+"start": 48.332,
+"end": 49.304
+},
+{
+"text": "Auch",
+"start": 49.719,
+"end": 49.942
+},
+{
+"text": "sein",
+"start": 49.942,
+"end": 50.166
+},
+{
+"text": "Freund",
+"start": 50.166,
+"end": 50.389
+},
+{
+"text": "Pablo",
+"start": 50.389,
+"end": 50.836
+},
+{
+"text": "Picasso",
+"start": 50.836,
+"end": 51.506
+},
+{
+"text": "wird",
+"start": 51.506,
+"end": 51.729
+},
+{
+"text": "verhört.",
+"start": 51.729,
+"end": 52.176
+},
+{
+"text": "Beide",
+"start": 52.589,
+"end": 53.017
+},
+{
+"text": "werden",
+"start": 53.017,
+"end": 53.445
+},
+{
+"text": "entlastet.",
+"start": 53.445,
+"end": 54.086
+},
+{
+"text": "Peruggia",
+"start": 54.489,
+"end": 55.1
+},
+{
+"text": "wird",
+"start": 55.1,
+"end": 55.304
+},
+{
+"text": "ebenfalls",
+"start": 55.304,
+"end": 55.915
+},
+{
+"text": "befragt",
+"start": 55.915,
+"end": 56.323
+},
+{
+"text": "–",
+"start": 56.323,
+"end": 56.526
+},
+{
+"text": "aber",
+"start": 56.867,
+"end": 57.369
+},
+{
+"text": "nie",
+"start": 57.369,
+"end": 57.62
+},
+{
+"text": "ernsthaft",
+"start": 57.62,
+"end": 58.122
+},
+{
+"text": "verdächtigt.",
+"start": 58.122,
+"end": 58.875
+},
+{
+"text": "Zwei",
+"start": 59.32,
+"end": 59.52
+},
+{
+"text": "Jahre",
+"start": 59.52,
+"end": 59.919
+},
+{
+"text": "lang",
+"start": 59.919,
+"end": 60.118
+},
+{
+"text": "versteckt",
+"start": 60.118,
+"end": 60.518
+},
+{
+"text": "er",
+"start": 60.518,
+"end": 60.717
+},
+{
+"text": "die",
+"start": 60.717,
+"end": 60.917
+},
+{
+"text": "Mona",
+"start": 60.917,
+"end": 61.316
+},
+{
+"text": "Lisa",
+"start": 61.316,
+"end": 61.715
+},
+{
+"text": "in",
+"start": 61.715,
+"end": 61.915
+},
+{
+"text": "seiner",
+"start": 61.915,
+"end": 62.314
+},
+{
+"text": "Wohnung,",
+"start": 62.314,
+"end": 62.713
+},
+{
+"text": "in",
+"start": 63.1,
+"end": 63.268
+},
+{
+"text": "einem",
+"start": 63.268,
+"end": 63.604
+},
+{
+"text": "Koffer.",
+"start": 63.604,
+"end": 63.94
+},
+{
+"text": "November",
+"start": 64.537,
+"end": 65.156
+},
+{
+"text": "neunzehnhundertdreizehn.",
+"start": 65.156,
+"end": 66.394
+},
+{
+"text": "Unter",
+"start": 66.83,
+"end": 67.248
+},
+{
+"text": "falschem",
+"start": 67.248,
+"end": 67.666
+},
+{
+"text": "Namen",
+"start": 67.666,
+"end": 68.084
+},
+{
+"text": "schreibt",
+"start": 68.084,
+"end": 68.293
+},
+{
+"text": "er",
+"start": 68.293,
+"end": 68.502
+},
+{
+"text": "einem",
+"start": 68.502,
+"end": 68.92
+},
+{
+"text": "Kunsthändler",
+"start": 68.92,
+"end": 69.548
+},
+{
+"text": "in",
+"start": 69.548,
+"end": 69.757
+},
+{
+"text": "Florenz:",
+"start": 69.757,
+"end": 70.175
+},
+{
+"text": "Er",
+"start": 70.471,
+"end": 70.665
+},
+{
+"text": "habe",
+"start": 70.665,
+"end": 71.053
+},
+{
+"text": "die",
+"start": 71.053,
+"end": 71.247
+},
+{
+"text": "Mona",
+"start": 71.247,
+"end": 71.635
+},
+{
+"text": "Lisa.",
+"start": 71.635,
+"end": 72.023
+},
+{
+"text": "Der",
+"start": 72.453,
+"end": 72.654
+},
+{
+"text": "Händler",
+"start": 72.654,
+"end": 73.058
+},
+{
+"text": "holt",
+"start": 73.058,
+"end": 73.259
+},
+{
+"text": "den",
+"start": 73.259,
+"end": 73.461
+},
+{
+"text": "Direktor",
+"start": 73.461,
+"end": 74.066
+},
+{
+"text": "der",
+"start": 74.066,
+"end": 74.268
+},
+{
+"text": "Uffizien",
+"start": 74.268,
+"end": 74.873
+},
+{
+"text": "dazu.",
+"start": 74.873,
+"end": 75.276
+},
+{
+"text": "Die",
+"start": 75.668,
+"end": 75.891
+},
+{
+"text": "beiden",
+"start": 75.891,
+"end": 76.337
+},
+{
+"text": "prüfen",
+"start": 76.337,
+"end": 76.784
+},
+{
+"text": "das",
+"start": 76.784,
+"end": 77.007
+},
+{
+"text": "Bild.",
+"start": 77.007,
+"end": 77.23
+},
+{
+"text": "Es",
+"start": 77.688,
+"end": 78.055
+},
+{
+"text": "ist",
+"start": 78.055,
+"end": 78.423
+},
+{
+"text": "echt.",
+"start": 78.423,
+"end": 78.79
+},
+{
+"text": "Und",
+"start": 79.181,
+"end": 79.405
+},
+{
+"text": "sie",
+"start": 79.405,
+"end": 79.629
+},
+{
+"text": "rufen",
+"start": 79.629,
+"end": 80.076
+},
+{
+"text": "die",
+"start": 80.076,
+"end": 80.3
+},
+{
+"text": "Polizei.",
+"start": 80.3,
+"end": 80.971
+},
+{
+"text": "Peruggia",
+"start": 81.454,
+"end": 82.029
+},
+{
+"text": "sagt,",
+"start": 82.029,
+"end": 82.22
+},
+{
+"text": "er",
+"start": 82.22,
+"end": 82.411
+},
+{
+"text": "wollte",
+"start": 82.411,
+"end": 82.794
+},
+{
+"text": "das",
+"start": 82.794,
+"end": 82.986
+},
+{
+"text": "Bild",
+"start": 82.986,
+"end": 83.177
+},
+{
+"text": "nach",
+"start": 83.177,
+"end": 83.369
+},
+{
+"text": "Italien",
+"start": 83.369,
+"end": 83.943
+},
+{
+"text": "zurückbringen",
+"start": 83.943,
+"end": 84.709
+},
+{
+"text": "–",
+"start": 84.709,
+"end": 84.9
+},
+{
+"text": "aus",
+"start": 85.292,
+"end": 85.551
+},
+{
+"text": "Patriotismus.",
+"start": 85.551,
+"end": 86.588
+},
+{
+"text": "Manche",
+"start": 87.015,
+"end": 87.386
+},
+{
+"text": "Historiker",
+"start": 87.386,
+"end": 88.129
+},
+{
+"text": "glauben",
+"start": 88.129,
+"end": 88.5
+},
+{
+"text": "eher:",
+"start": 88.5,
+"end": 88.872
+},
+{
+"text": "Es",
+"start": 89.187,
+"end": 89.454
+},
+{
+"text": "ging",
+"start": 89.454,
+"end": 89.72
+},
+{
+"text": "ums",
+"start": 89.72,
+"end": 89.987
+},
+{
+"text": "Geld.",
+"start": 89.987,
+"end": 90.254
+},
+{
+"text": "Er",
+"start": 90.684,
+"end": 90.859
+},
+{
+"text": "bekommt",
+"start": 90.859,
+"end": 91.209
+},
+{
+"text": "nur",
+"start": 91.209,
+"end": 91.384
+},
+{
+"text": "eine",
+"start": 91.384,
+"end": 91.734
+},
+{
+"text": "kurze",
+"start": 91.734,
+"end": 92.084
+},
+{
+"text": "Strafe",
+"start": 92.084,
+"end": 92.433
+},
+{
+"text": "–",
+"start": 92.433,
+"end": 92.608
+},
+{
+"text": "am",
+"start": 92.921,
+"end": 93.132
+},
+{
+"text": "Ende",
+"start": 93.132,
+"end": 93.553
+},
+{
+"text": "rund",
+"start": 93.553,
+"end": 93.764
+},
+{
+"text": "sieben",
+"start": 93.764,
+"end": 94.186
+},
+{
+"text": "Monate.",
+"start": 94.186,
+"end": 94.818
+},
+{
+"text": "Im",
+"start": 95.287,
+"end": 95.508
+},
+{
+"text": "Januar",
+"start": 95.508,
+"end": 95.951
+},
+{
+"text": "neunzehnhundertvierzehn",
+"start": 95.951,
+"end": 97.279
+},
+{
+"text": "kehrt",
+"start": 97.279,
+"end": 97.5
+},
+{
+"text": "die",
+"start": 97.5,
+"end": 97.722
+},
+{
+"text": "Mona",
+"start": 97.722,
+"end": 98.164
+},
+{
+"text": "Lisa",
+"start": 98.164,
+"end": 98.607
+},
+{
+"text": "zurück",
+"start": 98.607,
+"end": 99.049
+},
+{
+"text": "nach",
+"start": 99.049,
+"end": 99.271
+},
+{
+"text": "Paris.",
+"start": 99.271,
+"end": 99.713
+},
+{
+"text": "Und",
+"start": 100.084,
+"end": 100.296
+},
+{
+"text": "viele",
+"start": 100.296,
+"end": 100.721
+},
+{
+"text": "sagen:",
+"start": 100.721,
+"end": 101.146
+},
+{
+"text": "Erst",
+"start": 101.516,
+"end": 101.785
+},
+{
+"text": "dieser",
+"start": 101.785,
+"end": 102.325
+},
+{
+"text": "Diebstahl",
+"start": 102.325,
+"end": 102.864
+},
+{
+"text": "hat",
+"start": 102.864,
+"end": 103.133
+},
+{
+"text": "sie",
+"start": 103.133,
+"end": 103.403
+},
+{
+"text": "wirklich",
+"start": 103.403,
+"end": 103.942
+},
+{
+"text": "weltberühmt",
+"start": 103.942,
+"end": 104.75
+},
+{
+"text": "gemacht.",
+"start": 104.75,
+"end": 105.289
+},
+{
+"text": "Patriot",
+"start": 105.849,
+"end": 106.429
+},
+{
+"text": "oder",
+"start": 106.429,
+"end": 107.009
+},
+{
+"text": "einfach",
+"start": 107.009,
+"end": 107.589
+},
+{
+"text": "ein",
+"start": 107.589,
+"end": 107.879
+},
+{
+"text": "Dieb?",
+"start": 107.879,
+"end": 108.169
+},
+{
+"text": "Schreib's",
+"start": 108.609,
+"end": 108.823
+},
+{
+"text": "in",
+"start": 108.823,
+"end": 109.037
+},
+{
+"text": "die",
+"start": 109.037,
+"end": 109.251
+},
+{
+"text": "Kommentare.",
+"start": 109.251,
+"end": 110.106
+}
+],
+"units": [
+[
+0.0,
+"Das berühmteste Gemälde der Welt –"
+],
+[
+2.623,
+"einfach aus dem Louvre getragen."
+],
+[
+5.125,
+"Unter einem Arbeitskittel."
+],
+[
+7.312,
+"Einundzwanzigster August neunzehnhundertelf,"
+],
+[
+10.196,
+"Paris."
+],
+[
+11.337,
+"Es ist Montag –"
+],
+[
+12.789,
+"der Louvre hat für Besucher geschlossen."
+],
+[
+15.36,
+"Ein Mann versteckt sich in einer Abstellkammer."
+],
+[
+18.296,
+"Er heißt Vincenzo Peruggia,"
+],
+[
+20.466,
+"ein Italiener,"
+],
+[
+21.479,
+"der früher im Louvre gearbeitet hat."
+],
+[
+23.94,
+"Unter anderem hat er Schutzgläser für die Gemälde eingebaut."
+],
+[
+27.71,
+"Er nimmt die Mona Lisa von der Wand,"
+],
+[
+29.982,
+"versteckt sie unter seinem Kittel und spaziert hinaus."
+],
+[
+33.573,
+"Und niemand merkt etwas."
+],
+[
+35.698,
+"Erst am nächsten Tag kommt ein Maler,"
+],
+[
+37.813,
+"der das Bild abzeichnen will."
+],
+[
+39.893,
+"An der Wand:"
+],
+[
+40.946,
+"nur noch vier Eisenhaken."
+],
+[
+43.213,
+"Die Polizei sucht fieberhaft."
+],
+[
+45.61,
+"Verhaftet wird ausgerechnet der Dichter Guillaume Apollinaire."
+],
+[
+49.719,
+"Auch sein Freund Pablo Picasso wird verhört."
+],
+[
+52.589,
+"Beide werden entlastet."
+],
+[
+54.489,
+"Peruggia wird ebenfalls befragt –"
+],
+[
+56.867,
+"aber nie ernsthaft verdächtigt."
+],
+[
+59.32,
+"Zwei Jahre lang versteckt er die Mona Lisa in seiner Wohnung,"
+],
+[
+63.1,
+"in einem Koffer."
+],
+[
+64.537,
+"November neunzehnhundertdreizehn."
+],
+[
+66.83,
+"Unter falschem Namen schreibt er einem Kunsthändler in Florenz:"
+],
+[
+70.471,
+"Er habe die Mona Lisa."
+],
+[
+72.453,
+"Der Händler holt den Direktor der Uffizien dazu."
+],
+[
+75.668,
+"Die beiden prüfen das Bild."
+],
+[
+77.688,
+"Es ist echt."
+],
+[
+79.181,
+"Und sie rufen die Polizei."
+],
+[
+81.454,
+"Peruggia sagt,"
+],
+[
+82.22,
+"er wollte das Bild nach Italien zurückbringen –"
+],
+[
+85.292,
+"aus Patriotismus."
+],
+[
+87.015,
+"Manche Historiker glauben eher:"
+],
+[
+89.187,
+"Es ging ums Geld."
+],
+[
+90.684,
+"Er bekommt nur eine kurze Strafe –"
+],
+[
+92.921,
+"am Ende rund sieben Monate."
+],
+[
+95.287,
+"Im Januar neunzehnhundertvierzehn kehrt die Mona Lisa zurück nach Paris."
+],
+[
+100.084,
+"Und viele sagen:"
+],
+[
+101.516,
+"Erst dieser Diebstahl hat sie wirklich weltberühmt gemacht."
+],
+[
+105.849,
+"Patriot oder einfach ein Dieb?"
+],
+[
+108.609,
+"Schreib's in die Kommentare."
+]
+]
+}

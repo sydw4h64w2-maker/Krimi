@@ -1,0 +1,46 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #lv-d { top:300px; font-size:110px; font-weight:700; }
+  #lv-o { top:440px; font-size:46px; }
+  #lv-sign { position:absolute; left:300px; top:540px; width:480px; text-align:center; background:#1f2a44; color:#fff; border:6px solid #EDE6D6; border-radius:10px; font-size:60px; font-weight:700; padding:10px 0; }
+  #lv-sign span { display:block; font-family:'Space Mono',monospace; font-size:28px; font-weight:400; }
+  #lv-card { position:absolute; background:var(--paper); color:#1b1b1b; border-radius:10px; box-shadow:0 25px 60px rgba(0,0,0,.5); left:140px; top:720px; width:800px; padding:32px 44px; }
+  #lv-card .hd { font-family:'Space Mono',monospace; font-size:28px; letter-spacing:.12em; border-bottom:3px solid #1b1b1b; padding-bottom:12px; }
+  #lv-card .v { font-size:56px; font-weight:700; margin-top:14px; }
+  #lv-card .r2 { font-size:40px; font-weight:500; margin-top:8px; }
+</style>
+  <div id="root" data-composition-id="louvre" data-width="1080" data-height="1920">
+
+    <div id="lv-w" class="clip" data-start="0" data-duration="20.4">
+      <div id="lv-d" class="center">21.08.1911</div>
+      <div id="lv-o" class="center lbl y">Paris · Louvre</div>
+      <div id="lv-sign">MONTAG<span>FERMÉ · geschlossen</span></div>
+      <div id="lv-card"><div class="hd">AKTE · IN DER ABSTELLKAMMER</div>
+        <div class="v" id="lv-n">Vincenzo Peruggia</div>
+        <div class="r2" id="lv-a">Italiener · früher im Louvre beschäftigt</div>
+        <div class="r2" id="lv-b">baute <b>Schutzgläser</b> für die Gemälde ein</div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#lv-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.45, ease:"power3.out"}, 0.2);
+    tl.fromTo("#lv-o", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 3.0);
+
+    tl.fromTo("#lv-sign", {rotation:-8, y:-40, opacity:0}, {rotation:-2, y:0, opacity:1, duration:0.45, ease:"back.out(1.8)"}, 4.2);
+    tl.fromTo("#lv-card", {y:120, opacity:0}, {y:0, opacity:1, duration:0.5, ease:"power3.out"}, 8.2);
+    tl.fromTo("#lv-n", {opacity:0}, {opacity:1, duration:0.3}, 11.2);
+    tl.fromTo("#lv-a", {opacity:0}, {opacity:1, duration:0.3}, 13.3);
+    tl.fromTo("#lv-b", {opacity:0}, {opacity:1, duration:0.3}, 16.8);
+    tl.to("#lv-d", {scale:1.05, duration:19.5, ease:"none"}, 0.7);
+    tl.to("#lv-w > *", {opacity:0, duration:0.25}, 20.15);
+
+    window.__timelines["louvre"] = tl;
+  </script>
+</template>

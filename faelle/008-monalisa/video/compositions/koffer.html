@@ -1,0 +1,38 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #kf-a { top:300px; font-size:60px; font-weight:600; }
+  #kf-b { top:390px; font-size:52px; }
+  #kf-n { top:500px; font-size:170px; font-weight:700; line-height:1; }
+  #kf-svg { position:absolute; left:340px; top:760px; width:400px; height:300px; }
+</style>
+  <div id="root" data-composition-id="koffer" data-width="1080" data-height="1920">
+
+    <div id="kf-w" class="clip" data-start="0" data-duration="10.0">
+      <div id="kf-a" class="center">Peruggia: befragt</div>
+      <div id="kf-b" class="center lbl y">nie ernsthaft verdächtigt</div>
+      <div id="kf-n" class="center"><span id="kf-c">0</span> JAHRE</div>
+      <svg id="kf-svg" viewBox="0 0 400 300"><rect x="20" y="80" width="360" height="200" rx="16" fill="#6b4f2a" stroke="#c9a46a" stroke-width="8"/><rect x="150" y="40" width="100" height="50" rx="10" fill="none" stroke="#c9a46a" stroke-width="10"/><rect x="20" y="160" width="360" height="12" fill="#c9a46a"/><rect id="kf-gold" x="120" y="110" width="160" height="140" fill="#C9A04A" opacity="0"/></svg>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#kf-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 0.2);
+    tl.fromTo("#kf-b", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 2.6);
+
+    tl.fromTo("#kf-n", {opacity:0}, {opacity:1, duration:0.3}, 5.0);
+    const k = {v:0};
+    tl.fromTo(k, {v:0}, {v:2, duration:1.6, ease:"steps(2)", onUpdate:()=>{ document.querySelector("#kf-c").textContent = Math.round(k.v); }}, 5.1);
+    tl.fromTo("#kf-svg", {y:60, opacity:0}, {y:0, opacity:1, duration:0.45, ease:"power3.out"}, 7.1);
+    tl.to("#kf-gold", {opacity:0.35, duration:0.3, yoyo:true, repeat:3}, 8.7);
+    tl.to("#kf-n", {scale:1.05, duration:4.5, ease:"none"}, 5.4);
+    tl.to("#kf-w > *", {opacity:0, duration:0.25}, 9.75);
+
+    window.__timelines["koffer"] = tl;
+  </script>
+</template>
