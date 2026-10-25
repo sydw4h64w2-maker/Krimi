@@ -42,7 +42,7 @@ Hinter Dagobert steckt Arno Funke, ein Schildermaler und Autolackierer aus Berli
 Heute arbeitet er als Autor und Cartoonist.
 
 Viele feierten ihn damals wie einen Volkshelden.
-Aber bei einem seiner Anschläge wurden zwei Menschen verletzt.
+Aber bei einem seiner Anschläge wurden zwei Menschen leicht verletzt.
 Und seine Bomben hätten jederzeit noch mehr Menschen treffen können.
 
 Genialer Tüftler oder einfach nur Glück?
