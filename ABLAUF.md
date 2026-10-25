@@ -33,6 +33,13 @@ faelle/
     video.mp4     # fertiges Video
 ```
 
+## Stimme (ElevenLabs)
+
+- **Voice-ID:** `VGcePI2GWNz1BlgRb8wB`
+- Modell: Eleven Multilingual v2 (versteht `<break time="…" />`-Pausen)
+- Startwerte: Stability 45–55 %, Similarity ~75 %, Style 0–15 %
+- Pro Folge liegt der fertige Text in `faelle/<nr>/elevenlabs.txt`.
+
 ## Tipps für die Aufnahme
 
 - Ruhiger Raum, Handy ca. 20 cm vom Mund, gern unter einer Decke oder im Kleiderschrank (dämpft Hall).
