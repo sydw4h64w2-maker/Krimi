@@ -1,0 +1,46 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #es-a { top:300px; font-size:90px; font-weight:700; }
+  #es-b { top:420px; font-size:46px; }
+  #es-svg { position:absolute; left:140px; top:500px; width:800px; height:520px; }
+  #es-c { top:1060px; font-size:80px; font-weight:700; }
+</style>
+  <div id="root" data-composition-id="einstieg" data-width="1080" data-height="1920">
+
+    <div id="es-w" class="clip" data-start="0" data-duration="12.7">
+      <div id="es-a" class="center">Osterwochenende</div>
+      <div id="es-b" class="center lbl y">April 2015</div>
+      <svg id="es-svg" viewBox="0 0 800 520">
+        <rect x="60" y="0" width="120" height="520" fill="#1a1d22" stroke="#6b6f76" stroke-width="4"/><text x="120" y="40" text-anchor="middle" fill="#EDE6D6" font-family="Oswald" font-size="28">AUFZUG</text>
+        <path id="es-path" d="M120,60 L120,400 L330,400" fill="none" stroke="#F2C230" stroke-width="8" stroke-dasharray="560" stroke-dashoffset="560"/>
+        <rect x="330" y="250" width="110" height="270" fill="#8f9399"/><circle id="es-h0" cx="385" cy="330" r="22" fill="#0b0b0b" opacity="0"/><circle id="es-h1" cx="385" cy="378" r="22" fill="#0b0b0b" opacity="0"/><circle id="es-h2" cx="385" cy="426" r="22" fill="#0b0b0b" opacity="0"/><circle id="es-h3" cx="385" cy="474" r="22" fill="#0b0b0b" opacity="0"/>
+        <rect x="440" y="250" width="360" height="270" fill="#1a1d22"/><rect x="460" y="270" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="515" y="270" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="570" y="270" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="625" y="270" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="680" y="270" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="735" y="270" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="460" y="325" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="515" y="325" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="570" y="325" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="625" y="325" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="680" y="325" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="735" y="325" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="460" y="380" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="515" y="380" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="570" y="380" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="625" y="380" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="680" y="380" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="735" y="380" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="460" y="435" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="515" y="435" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="570" y="435" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="625" y="435" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="680" y="435" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/><rect x="735" y="435" width="45" height="45" fill="#3b3f46" stroke="#6b6f76" stroke-width="2"/>
+        <g id="es-drill"><rect x="200" y="380" width="110" height="40" rx="8" fill="#D2372E"/><rect x="300" y="392" width="40" height="16" fill="#9EA3AC"/></g>
+      </svg>
+      <div id="es-c" class="center">50 cm <span class="y">Beton</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#es-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.1);
+    tl.fromTo("#es-b", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 1.3);
+
+    tl.fromTo("#es-svg", {opacity:0}, {opacity:1, duration:0.4}, 3.4);
+    tl.fromTo("#es-path", {strokeDashoffset:560}, {strokeDashoffset:0, duration:2.6, ease:"power1.inOut"}, 3.6);
+    tl.fromTo("#es-drill", {x:-40, opacity:0}, {x:0, opacity:1, duration:0.4}, 6.9);
+    tl.to("#es-drill", {x:6, duration:0.08, yoyo:true, repeat:30, ease:"none"}, 7.4);
+    for (let i=0;i<4;i++) tl.fromTo("#es-h"+i, {opacity:0, scale:0.3, svgOrigin:"385 "+(330+i*48)}, {opacity:1, scale:1, duration:0.4}, 7.7+i*0.6);
+
+    tl.fromTo("#es-c", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.3, ease:"power4.out"}, 10.6);
+    tl.to("#es-svg", {scale:1.04, duration:9, ease:"none"}, 3.8);
+    tl.to("#es-w > *", {opacity:0, duration:0.25}, 12.45);
+
+    window.__timelines["einstieg"] = tl;
+  </script>
+</template>

@@ -1,0 +1,39 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #bx-g { position:absolute; left:140px; top:300px; width:800px; display:grid; grid-template-columns:repeat(8,1fr); gap:10px; }
+  #bx-g .b { height:80px; background:#3b3f46; border:3px solid #6b6f76; }
+  #bx-i { top:700px; font-size:58px; font-weight:600; white-space:nowrap; }
+  #bx-l { top:830px; font-size:38px; white-space:nowrap; }
+  #bx-m { top:920px; font-size:160px; font-weight:700; line-height:1; }
+</style>
+  <div id="root" data-composition-id="boxes" data-width="1080" data-height="1920">
+
+    <div id="bx-w" class="clip" data-start="0" data-duration="12.7">
+      <div id="bx-g"><div class="b" id="bx-b0"></div><div class="b" id="bx-b1"></div><div class="b" id="bx-b2"></div><div class="b" id="bx-b3"></div><div class="b" id="bx-b4"></div><div class="b" id="bx-b5"></div><div class="b" id="bx-b6"></div><div class="b" id="bx-b7"></div><div class="b" id="bx-b8"></div><div class="b" id="bx-b9"></div><div class="b" id="bx-b10"></div><div class="b" id="bx-b11"></div><div class="b" id="bx-b12"></div><div class="b" id="bx-b13"></div><div class="b" id="bx-b14"></div><div class="b" id="bx-b15"></div><div class="b" id="bx-b16"></div><div class="b" id="bx-b17"></div><div class="b" id="bx-b18"></div><div class="b" id="bx-b19"></div><div class="b" id="bx-b20"></div><div class="b" id="bx-b21"></div><div class="b" id="bx-b22"></div><div class="b" id="bx-b23"></div><div class="b" id="bx-b24"></div><div class="b" id="bx-b25"></div><div class="b" id="bx-b26"></div><div class="b" id="bx-b27"></div><div class="b" id="bx-b28"></div><div class="b" id="bx-b29"></div><div class="b" id="bx-b30"></div><div class="b" id="bx-b31"></div></div>
+      <div id="bx-i" class="center">💵 Bargeld · 🪙 Gold · 💍 Schmuck</div>
+      <div id="bx-l" class="center lbl">Beute laut offiziellen Angaben</div>
+      <div id="bx-m" class="center y">bis £14 Mio.</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#bx-g", {opacity:0}, {opacity:1, duration:0.3}, 0.1);
+    const ob=[]; for (let i=0;i<32;i++) if ((i*13)%32<26) ob.push("#bx-b"+i);
+    ob.forEach((s,k)=>tl.fromTo(s, {backgroundColor:"#3b3f46", borderColor:"#6b6f76"}, {backgroundColor:"#C9A04A", borderColor:"#F2C230", duration:0.08}, 0.6+k*(3.2/ob.length)));
+    tl.fromTo("#bx-i", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 4.5);
+    tl.fromTo("#bx-l", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 7.0);
+
+    tl.fromTo("#bx-m", {scale:1.3, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 10.25);
+    tl.to("#bx-g", {scale:1.04, duration:12, ease:"none"}, 0.5);
+    tl.to("#bx-w > *", {opacity:0, duration:0.25}, 12.45);
+
+    window.__timelines["boxes"] = tl;
+  </script>
+</template>

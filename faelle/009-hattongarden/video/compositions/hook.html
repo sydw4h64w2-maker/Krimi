@@ -1,0 +1,36 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #hk-a { top:330px; font-size:56px; font-weight:600; }
+  #hk-n { top:410px; font-size:250px; font-weight:700; line-height:1; }
+  #hk-b { top:700px; font-size:66px; font-weight:600; }
+  #hk-c { top:860px; font-size:62px; font-weight:700; line-height:1.15; }
+</style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+
+    <div id="hk-w" class="clip" data-start="0" data-duration="10.1">
+      <div id="hk-a" class="center">Durchschnittsalter</div>
+      <div id="hk-n" class="center y">60+</div>
+      <div id="hk-b" class="center">👴 der Älteste: <span class="y">76</span></div>
+      <div id="hk-c" class="center">Größter Einbruch der<br/><span class="r">englischen Rechtsgeschichte</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#hk-n", {scale:1.08, opacity:1}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0);
+    tl.to("#hk-n", {scale:1.06, duration:9.3, ease:"none"}, 0.4);
+    tl.fromTo("#hk-a", {y:20, opacity:1}, {y:0, opacity:1, duration:0.4}, 0.1);
+    tl.fromTo("#hk-b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 2.7);
+    tl.fromTo("#hk-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 5.8);
+
+    tl.to("#hk-w > *", {opacity:0, duration:0.25}, 9.85);
+
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

@@ -1,0 +1,40 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #sq-a { top:300px; font-size:58px; font-weight:600; }
+  #sq-b { top:390px; font-size:140px; font-weight:700; }
+  #sq-c { top:590px; font-size:46px; font-weight:600; white-space:nowrap; }
+  #sq-d { top:740px; font-size:96px; font-weight:700; }
+  #sq-e { top:880px; font-size:50px; }
+</style>
+  <div id="root" data-composition-id="squad" data-width="1080" data-height="1920">
+
+    <div id="sq-w" class="clip" data-start="0" data-duration="14.8">
+      <div id="sq-a" class="center">Nach Ostern: <span class="r">Einbruch entdeckt</span></div>
+      <div id="sq-b" class="center">FLYING SQUAD</div>
+      <div id="sq-c" class="center">🔍 Die Ermittler kommen der Bande auf die Spur</div>
+      <div id="sq-d" class="center y">„Diamond Wheezers“</div>
+      <div id="sq-e" class="center lbl p">die keuchenden Diamantendiebe</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#sq-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#sq-b", {scale:1.25, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 3.0);
+    tl.to("#sq-b", {scale:1.05, duration:11, ease:"none"}, 3.4);
+    tl.fromTo("#sq-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.8);
+
+    tl.fromTo("#sq-d", {scale:1.3, opacity:0, rotation:-4}, {scale:1, opacity:1, rotation:-2, duration:0.35, ease:"back.out(1.8)"}, 10.5);
+    tl.fromTo("#sq-e", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 12.5);
+
+    tl.to("#sq-w > *", {opacity:0, duration:0.25}, 14.55);
+
+    window.__timelines["squad"] = tl;
+  </script>
+</template>

@@ -1,0 +1,30 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #ut-a { top:420px; font-size:60px; }
+  #ut-st { position:absolute; text-align:center; border:12px solid var(--red); border-radius:14px; color:var(--red); font-weight:700; white-space:nowrap; left:160px; top:540px; width:760px; padding:16px 0; }
+  #ut-st .a { font-size:130px; line-height:1; } #ut-st .b { font-size:56px; }
+</style>
+  <div id="root" data-composition-id="urteil" data-width="1080" data-height="1920">
+
+    <div id="ut-w" class="clip" data-start="0" data-duration="5.9">
+      <div id="ut-a" class="center lbl y">März 2016 · Haupttäter</div>
+      <div id="ut-st"><div class="a">BIS 7 JAHRE</div><div class="b">HAFT</div></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ut-a", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#ut-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 2.6);
+    tl.to("#ut-st", {scale:1.05, duration:2.8, ease:"none"}, 2.85);
+    tl.to("#ut-w > *", {opacity:0, duration:0.25}, 5.65);
+
+    window.__timelines["urteil"] = tl;
+  </script>
+</template>

@@ -1,0 +1,42 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #bs-h { top:300px; font-size:66px; font-weight:600; }
+  #bs-c { position:absolute; background:var(--paper); color:#1b1b1b; border-radius:10px; box-shadow:0 25px 60px rgba(0,0,0,.5); left:340px; top:410px; width:400px; padding:20px 16px; text-align:center; }
+  #bs-c .ph { height:300px; background:#d9d2c0; border:4px solid #1b1b1b; position:relative; }
+  #bs-q { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:200px; font-weight:700; color:#1b1b1b; }
+  #bs-c .nm { font-size:60px; font-weight:700; margin-top:10px; }
+  #bs-r { top:900px; font-size:58px; font-weight:600; }
+  #bs-u { top:1000px; font-size:60px; font-weight:700; }
+</style>
+  <div id="root" data-composition-id="basil" data-width="1080" data-height="1920">
+
+    <div id="bs-w" class="clip" data-start="0" data-duration="13.8">
+      <div id="bs-h" class="center">Einer fehlt noch …</div>
+      <div id="bs-c"><div class="ph"><div id="bs-face" style="position:absolute; inset:0"><svg viewBox="0 0 100 100" width="100%" height="100%"><circle cx="50" cy="38" r="20" fill="#6b7079"/><path d="M14,100 Q14,64 50,60 Q86,64 86,100 Z" fill="#6b7079"/></svg></div><div id="bs-q">?</div></div><div class="nm">„Basil“</div></div>
+      <div id="bs-r" class="center">= <span class="y">Michael Seed</span> · Alarm-Experte</div>
+      <div id="bs-u" class="center r">2019 · 10 Jahre</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#bs-h", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#bs-c", {y:100, rotation:-6, opacity:0}, {y:0, rotation:-2, opacity:1, duration:0.5, ease:"power3.out"}, 2.1);
+    tl.fromTo("#bs-face", {opacity:0}, {opacity:0, duration:0.1}, 2.1);
+    tl.to("#bs-q", {opacity:0, duration:0.3}, 7.5);
+    tl.to("#bs-face", {opacity:1, duration:0.3}, 7.5);
+    tl.fromTo("#bs-r", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 7.7);
+    tl.fromTo("#bs-u", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 11.0);
+
+    tl.to("#bs-c", {scale:1.04, duration:11, ease:"none"}, 2.7);
+    tl.to("#bs-w > *", {opacity:0, duration:0.25}, 13.55);
+
+    window.__timelines["basil"] = tl;
+  </script>
+</template>
