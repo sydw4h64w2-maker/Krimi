@@ -37,6 +37,7 @@ faelle/
   002-dbcooper/    (Folge 2)
   003-dagobert/    (Folge 3)
   004-postzug/     (Folge 4)
+  005-crippen/     (Folge 5)
   <nr>-<fall>/
     skript.md     # Sprechertext + Caption + Quellen
     audio.*       # deine Aufnahme
