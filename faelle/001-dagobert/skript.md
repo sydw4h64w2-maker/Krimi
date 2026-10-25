@@ -1,77 +1,107 @@
-# Fall 001 – „Dagobert“: Der Erpresser, den ganz Deutschland mochte
+# Fall 001 – „Dagobert“: Der Erpresser, den ganz Deutschland kannte
 
-**Länge:** ca. 70 Sekunden · **Ton:** spannend, mit leichtem Augenzwinkern
+**Länge:** ca. 75 Sekunden · **Ton:** spannend, mit leichtem Augenzwinkern
+**Status:** Faktencheck v2 – jede Aussage einzeln mit Quelle belegt (siehe Tabelle unten)
 
 ## Sprechertext
 
 > *(Pause nach jedem Absatz)*
 
-Sechs Jahre lang hat ein Mann die Berliner Polizei an der Nase herumgeführt.
-Mit selbstgebauten Bomben, einer Spielzeug-Eisenbahn … und einer Sandkiste.
+Er erpresste Deutschlands bekannteste Kaufhäuser.
+Mit Bomben, einer selbstgebauten Lore … und einer Sandkiste.
 
-1988 explodiert im Berliner KaDeWe ein Sprengsatz. Kurz darauf ein Brief:
-Fünfhunderttausend Mark – oder es knallt wieder.
+Mai 1988. Ein Unbekannter verlangt vom Berliner KaDeWe fünfhunderttausend Mark.
+In der Nacht zum 25. Mai explodiert im Kaufhaus eine Bombe.
+Das KaDeWe zahlt. Der Täter entkommt – unerkannt.
 
-Ein paar Jahre später trifft es Karstadt. Wieder Bomben, wieder Erpresserbriefe.
-Seine Forderung: am Ende über eine Million Mark.
-In Zeitungsanzeigen nennt er sich nach einer Comicfigur: „Dagobert“.
+Vier Jahre später, Juni 1992: Rohrbombe in einem Hamburger Karstadt.
+Die neue Forderung: 1,4 Millionen Mark.
+Als Zeichen, dass Karstadt zahlt, soll eine Zeitungsanzeige erscheinen:
+„Onkel Dagobert grüßt seine Neffen.“
+Ab da hat der Erpresser einen Namen: Dagobert.
 
-Und dann wird es absurd.
-Für eine Geldübergabe baut er eine Lore, die auf Bahngleisen fahren soll – mit dem Geld obendrauf.
-Nach knapp einem Kilometer springt sie aus den Schienen. Das Geld fällt raus.
+Und dann beginnt ein Katz-und-Maus-Spiel.
 
-Ein anderes Mal soll die Polizei das Geld in eine Streusandkiste legen.
-Was die Polizei nicht weiß: Die Kiste steht über einem Gully.
-Dagobert greift von unten zu – und verschwindet in der Kanalisation.
+April 1993, Berlin-Steglitz. Das Geld soll in eine Sandkiste.
+Was die Polizei nicht weiß: Die Kiste steht auf einem präparierten Gullydeckel.
+Dagobert holt das Paket von unten – und flieht durch die Kanalisation.
+Echtes Geld war allerdings nicht drin.
 
-Halb Deutschland feiert ihn inzwischen wie einen Volkshelden.
+Januar 1994. Diesmal baut er eine Lore, die auf Bahngleisen fahren soll.
+Die Polizei legt tatsächlich 1,4 Millionen Mark hinein.
+Kurz vor dem Ziel entgleist die Lore.
+Pech – oder hat die Polizei nachgeholfen? Darüber wird bis heute gestritten.
+Dagobert flieht ohne Geld.
 
-Doch am 22. April 1994 ist Schluss:
-Die Polizei schnappt ihn in einer Berliner Telefonzelle – mitten im Gespräch.
+Am 22. April 1994 ist Schluss.
+Er ruft aus einer Telefonzelle in Berlin-Johannisthal an, um die nächste Übergabe anzukündigen.
+Die Polizei ist schon da.
 
-Hinter Dagobert steckt Arno Funke, ein arbeitsloser Lackierer aus Berlin.
-Er bekommt neun Jahre Haft und kommt im Jahr 2000 vorzeitig frei.
-Heute zeichnet er Cartoons.
+Hinter Dagobert steckt Arno Funke, ein Schildermaler und Autolackierer aus Berlin.
+1996 wird er zu neun Jahren Haft verurteilt, im Jahr 2000 kommt er vorzeitig frei.
+Heute arbeitet er als Autor und Cartoonist.
 
-Aber eins darf man nicht vergessen: Seine Bomben hätten jederzeit Menschen treffen können.
+Viele feierten ihn damals wie einen Volkshelden.
+Aber bei einem seiner Anschläge wurden zwei Menschen verletzt.
+Und seine Bomben hätten jederzeit noch mehr Menschen treffen können.
 
-Genialer Bastler oder einfach nur Glück?
+Genialer Tüftler oder einfach nur Glück?
 Schreib's in die Kommentare.
 
 ## Bildschirm-Texte (für das Video)
 
-- „6 JAHRE. 1 ERPRESSER. 0 SPUREN.“
-- „1988 – KaDeWe, Berlin“
-- „Forderung: 500.000 DM“
-- „Codename: DAGOBERT“
-- „Plan A: Die Lore“ / „Plan B: Die Sandkiste“
-- „22.04.1994 – Festnahme“
-- „Urteil: 9 Jahre Haft“
+- „KaDeWe · 25.05.1988 · Forderung: 500.000 DM“
+- „Hamburg · Juni 1992 · Forderung: 1,4 Mio. DM“
+- „Codewort: ‚Onkel Dagobert grüßt seine Neffen‘“
+- „April 1993 · Die Sandkiste“
+- „Januar 1994 · Die Lore“
+- „22.04.1994 · Festnahme“
+- „1996 · Urteil: 9 Jahre Haft“
 
 ## Caption
 
-Er baute eine Lore, nutzte die Kanalisation und narrte die Polizei sechs Jahre lang 🦆💣
+Er erpresste das KaDeWe und Karstadt, floh durch die Kanalisation und baute eine eigene Lore 🦆💣
 Der Fall „Dagobert“ – Deutschlands bekanntester Kaufhauserpresser. Genie oder Glück? 👇
 
 `#truecrime #truecrimedeutschland #dagobert #kriminalfall #berlin #krimi #wahregeschichte`
 
-## Faktencheck – bitte kurz prüfen
+## Faktencheck – jede Aussage
 
-- ✅ Festnahme 22.04.1994 in einer Berliner Telefonzelle (t-online/dpa, Prisma)
-- ✅ Verurteilung wegen schwerer räuberischer Erpressung: erst 7 J. 9 Mon. (LG Berlin),
-  nach Revision **9 Jahre** – vorzeitige Entlassung 13.08.2000
-- ✅ KaDeWe 1988, Forderung 500.000 DM; Karstadt-Forderung später 1,4 Mio. DM
-- ✅ Lore entgleiste nach knapp 1 km; Streusandkiste über einem Gully (u. a. Galileo, Berliner Zeitung)
-- ⚠️ Herkunft des Namens: Codewort in Zeitungsanzeigen („Onkel Dagobert grüßt seine Neffen“) –
-  gängige Darstellung, in meinen Quellen nicht eindeutig bestätigt. Im Text daher bewusst vage formuliert.
-- ⚠️ Beruf „Lackierer“ – gängige Angabe, bitte bei Zweifel streichen.
+| # | Aussage im Skript | Beleg | Quelle(n) |
+|---|---|---|---|
+| 1 | Mai 1988 Forderung 500.000 DM an KaDeWe, **vor** der Bombe | ✅ | WiWo, Weser-Kurier |
+| 2 | Bombe explodiert in der Nacht zum 25.05.1988 | ✅ | WiWo / dewiki (erste Bombe am 10.05. versagte) |
+| 3 | KaDeWe zahlte, Täter entkam unerkannt | ✅ | WiWo, dewiki |
+| 4 | Juni 1992 Rohrbombe Karstadt Hamburg, Forderung 1,4 Mio. DM | ✅ | web.de, Prisma |
+| 5 | Anzeige „Onkel Dagobert grüßt seine Neffen“ → daher der Name | ✅ | web.de, NWZ |
+| 6 | April 1993 Sandkiste in Steglitz auf präpariertem Gullydeckel, Flucht durch Kanalisation, kein echtes Geld | ✅ | Tagesspiegel |
+| 7 | 22.01.1994 Lore, Polizei legte 1,4 Mio. DM hinein, entgleiste kurz vor dem Ziel, Flucht ohne Geld | ✅ | Tagesspiegel, web.de, Berliner Zeitung |
+| 8 | Ursache des Entgleisens umstritten | ✅ | taz („Dagoberts Trick“: Polizei soll nachgeholfen haben; offiziell: entgleist) |
+| 9 | Festnahme 22.04.1994, Kartentelefon Hagedornstraße, Johannisthal, beim Anruf zur nächsten Übergabe | ✅ | taz, Berliner Zeitung, Tagesspiegel |
+| 10 | Beruf: gelernter Schilder- und Lichtreklamehersteller, freiberuflich Autos lackiert | ✅ | Eifel-Kulturtage-Bio, Skoobe (Buchbio) |
+| 11 | 1995 erstes Urteil, BGH hob auf (5 StR 713/94, 15.09.1995), **14.06.1996** LG Berlin: 9 Jahre | ✅ | hrr-strafrecht.de, Berliner Zeitung, kriminalpolizei.de |
+| 12 | Vorzeitige Entlassung 13.08.2000 | ✅ | netzwelt, Prisma |
+| 13 | Heute Autor und Cartoonist | ✅ | Skoobe (Buchbio), t-online |
+| 14 | Bei einem Anschlag zwei Menschen leicht verletzt | ✅ | WiWo |
+| 15 | „Volksheld“ | ✅ | Tagesspiegel („Verbrecher und Volksheld“) |
+
+**Bewusst weggelassen** (nicht sicher belegt): Geldübergabe aus einer fahrenden S-Bahn 1988,
+genaue Zahl der Übergabeversuche, Gesamtschadenshöhe, „Polizist rutschte auf Hundekot aus“.
 
 ## Quellen
 
-- https://www.t-online.de/nachrichten/panorama/vermischtes/id_100390454/kaufhaus-erpresser-dagobert-vor-30-jahren-festgenommen.html
-- https://www.berliner-zeitung.de/article/er-war-der-lustigste-verbrecher-des-landes-litt-aber-unter-depressionen-kaufhaus-erpresser-arno-funke-kriminelles-aus-berlin-serie-teil-14-dagoberts-welt-902145
-- https://taz.de/Sportlich-fair-in-den-Knast/!1516562/
-- https://www.netzwelt.de/news/234769-dagobert-macht-ehemalige-kaufhauserpresser-arno-funke-heute.html
-- https://www.prisma.de/news/tv/Jagd-auf-Dagobert-Die-grosse-Buehne-fuer-einen-kriminellen-Volkshelden,40099566
-- https://www.wissen.de/podcast/das-jahr-1994
-- https://www.joyn.de/serien/galileo-true-crime-experiment/1-5-dagobert-und-der-trick-mit-der-streusandkiste
+- WiWo History: https://www.wiwo.de/unternehmen/wiwo-history-was-wurde-eigentlich-aus-deutschland-auf-entenjagd-die-geschichte-von-kaufhaus-erpresser-dagobert/29970122.html
+- Weser-Kurier: https://www.weser-kurier.de/bremen/der-fall-des-karstadt-erpressers-arno-funke-alias-dagobert-doc7itl9ub72jdcqosebh3
+- dewiki: https://dewiki.de/Lexikon/Arno_Funke
+- web.de (20 Jahre): https://web.de/magazine/panorama/20-jahren-kaufhaus-erpresser-arno-funke-alias-dagobert-gefasst-18841252
+- NWZ Porträt: https://www.nwzonline.de/panorama/berlin-portraet-er-ist-der-ewige-dagobert_a_50,7,2361651352.html
+- Tagesspiegel: https://www.tagesspiegel.de/berlin/verbrecher-und-volksheld-4850761.html
+- taz „Dagoberts Trick“: https://taz.de/Dagoberts-Trick/!1580588/
+- taz „Entenhausen liegt in Tempelhof“: https://taz.de/Entenhausen-liegt-in-Tempelhof/!1565937/
+- Berliner Zeitung (30 Jahre): https://www.berliner-zeitung.de/mensch-metropole/30-jahre-dagobert-wie-ein-kaufhauserpresser-und-ein-polizist-beste-freunde-wurden-li.234959
+- Berliner Zeitung (Urteil): https://www.berliner-zeitung.de/article/neun-jahre-haft-fuer-erpresser-arno-funke-dagobert-laenger-hinter-gittern-und-hohe-schulden-7068
+- BGH 5 StR 713/94: https://www.hrr-strafrecht.de/5/94/5-713-94.php
+- Eifel-Kulturtage (Bio): https://www.eifel-kulturtage.de/jahresrueckblicke/jahresrueckblick-2021/11-06-21-arno-funke-mein-leben-als-dagobert/
+- Skoobe (Buchbio): https://www.skoobe.de/books/arno-funke/mein-leben-als-dagobert
+- netzwelt: https://www.netzwelt.de/news/234769-dagobert-macht-ehemalige-kaufhauserpresser-arno-funke-heute.html
+- Prisma: https://www.prisma.de/news/tv/Jagd-auf-Dagobert-Die-grosse-Buehne-fuer-einen-kriminellen-Volkshelden,40099566

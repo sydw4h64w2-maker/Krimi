@@ -9,6 +9,14 @@
 | 5. Video bauen (Untertitel, Grafiken, Musik, 9:16) | Claude | fertige `video.mp4` |
 | 6. Posten (TikTok, Reels, Shorts) + Caption & Hashtags | **Du** (Caption liefert Claude) | Video online |
 
+## Recherche-Regeln
+
+- Jede Aussage im Skript steht in der Faktencheck-Tabelle mit mindestens einer seriösen Quelle
+  (Zeitung, Gericht, Biografie). Widersprechen sich Quellen, wird das im Text gesagt oder die Aussage gestrichen.
+- Was nicht sicher belegt ist, kommt nicht ins Video – auch wenn es spannend wäre.
+- Keine erfundenen Dialoge, Gedanken oder Szenen. Nur was dokumentiert ist.
+- Daten, Orte, Summen und Urteile werden einzeln geprüft.
+
 ## Ordnerstruktur
 
 ```
