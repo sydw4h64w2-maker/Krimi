@@ -12,7 +12,7 @@
 </style>
   <div id="root" data-composition-id="haft" data-width="1080" data-height="1920">
 
-    <div id="hf-w" class="clip" data-start="0" data-duration="13.29">
+    <div id="hf-w" class="clip" data-start="0" data-duration="13.21">
       <div id="hf-a" class="center">29.05.1945</div>
       <div id="hf-b" class="center lbl y">Verhaftung</div>
       <div id="hf-c" class="center">Vorwurf: Kunstschatz<br/><span class="r">an die Nazis verkauft</span></div>
@@ -24,11 +24,11 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#hf-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.1);
     tl.fromTo("#hf-b", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 1.5);
-    tl.fromTo("#hf-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 6.03);
+    tl.fromTo("#hf-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 5.96);
 
-    tl.fromTo("#hf-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 11.71);
-    tl.to("#hf-a", {scale:1.05, duration:12.69, ease:"none"}, 0.5);
-    tl.to("#hf-w > *", {opacity:0, duration:0.25}, 13.04);
+    tl.fromTo("#hf-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 11.62);
+    tl.to("#hf-a", {scale:1.05, duration:12.61, ease:"none"}, 0.5);
+    tl.to("#hf-w > *", {opacity:0, duration:0.25}, 12.96);
 
     window.__timelines["haft"] = tl;
   </script>

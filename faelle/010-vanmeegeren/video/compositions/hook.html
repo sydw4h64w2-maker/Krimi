@@ -11,7 +11,7 @@
 </style>
   <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
 
-    <div id="hk-w" class="clip" data-start="0" data-duration="8.73">
+    <div id="hk-w" class="clip" data-start="0" data-duration="8.57">
       <div id="hk-a" class="center r">TODESSTRAFE</div>
       <div id="hk-b" class="center">Seine einzige Rettung:</div>
       <div id="hk-c" class="center">Beweisen, dass er<br/><span class="y">ein Betrüger ist</span></div>
@@ -22,11 +22,11 @@
     const tl = gsap.timeline({ paused: true });
 
     tl.fromTo("#hk-a", {scale:1.08, opacity:1}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0);
-    tl.to("#hk-a", {scale:1.06, duration:8.13, ease:"none"}, 0.4);
-    tl.fromTo("#hk-b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 2.14);
-    tl.fromTo("#hk-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 5.34);
+    tl.to("#hk-a", {scale:1.06, duration:7.97, ease:"none"}, 0.4);
+    tl.fromTo("#hk-b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 2.35);
+    tl.fromTo("#hk-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 5.24);
 
-    tl.to("#hk-w > *", {opacity:0, duration:0.25}, 8.48);
+    tl.to("#hk-w > *", {opacity:0, duration:0.25}, 8.32);
 
     window.__timelines["hook"] = tl;
   </script>

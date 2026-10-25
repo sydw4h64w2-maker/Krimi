@@ -11,19 +11,19 @@
 </style>
   <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
 
-    <div id="ct-q" class="center clip" data-start="0" data-duration="6.16">Genialer Held<br/><span class="y">oder Betrüger?</span></div>
-    <div id="ct-s" class="center clip" data-start="3.25" data-duration="2.91">Schreib's in die Kommentare</div>
-    <div id="ct-arrow" class="center clip y" data-start="3.55" data-duration="2.61">↓</div>
+    <div id="ct-q" class="center clip" data-start="0" data-duration="6.49">Genialer Held<br/><span class="y">oder Betrüger?</span></div>
+    <div id="ct-s" class="center clip" data-start="3.64" data-duration="2.85">Schreib's in die Kommentare</div>
+    <div id="ct-arrow" class="center clip y" data-start="3.94" data-duration="2.55">↓</div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
 
     tl.fromTo("#ct-q", {scale:1.15, opacity:0}, {scale:1, opacity:1, duration:0.4, ease:"power4.out"}, 0.25);
-    tl.to("#ct-q", {scale:1.04, duration:5.36, ease:"none"}, 0.7);
-    tl.fromTo("#ct-s", {opacity:0, y:20}, {opacity:1, y:0, duration:0.35}, 3.35);
-    tl.fromTo("#ct-arrow", {y:-20, opacity:0}, {y:20, opacity:1, duration:0.6, ease:"sine.inOut"}, 3.55);
-    tl.to("#ct-arrow", {y:-10, duration:0.6, ease:"sine.inOut"}, 4.15);
+    tl.to("#ct-q", {scale:1.04, duration:5.69, ease:"none"}, 0.7);
+    tl.fromTo("#ct-s", {opacity:0, y:20}, {opacity:1, y:0, duration:0.35}, 3.74);
+    tl.fromTo("#ct-arrow", {y:-20, opacity:0}, {y:20, opacity:1, duration:0.6, ease:"sine.inOut"}, 3.94);
+    tl.to("#ct-arrow", {y:-10, duration:0.6, ease:"sine.inOut"}, 4.54);
 
     window.__timelines["cta"] = tl;
   </script>

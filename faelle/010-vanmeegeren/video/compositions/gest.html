@@ -13,7 +13,7 @@
 </style>
   <div id="root" data-composition-id="gest" data-width="1080" data-height="1920">
 
-    <div id="gs-w" class="clip" data-start="0" data-duration="11.34">
+    <div id="gs-w" class="clip" data-start="0" data-duration="11.58">
       <div id="gs-h" class="center lbl y">Van Meegeren sagt</div>
       <div id="gs-1">„Das ist kein Vermeer.“</div>
       <div id="gs-2">„Ich habe es <span style="color:#B3261E">selbst gemalt</span>.“</div>
@@ -25,16 +25,16 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#gs-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.1);
-    tl.fromTo("#gs-1", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.4, ease:"back.out(1.6)"}, 1.96);
-    tl.fromTo("#gs-2", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.4, ease:"back.out(1.6)"}, 3.89);
+    tl.fromTo("#gs-1", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.4, ease:"back.out(1.6)"}, 1.93);
+    tl.fromTo("#gs-2", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.4, ease:"back.out(1.6)"}, 3.88);
 
-    tl.to("#gs-1, #gs-2", {opacity:0.4, duration:0.3}, 5.81);
-    tl.fromTo("#gs-n", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.81);
-    tl.fromTo("#gs-e", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 7.09);
-    tl.to("#gs-e", {scale:1.05, duration:3.65, ease:"none"}, 7.49);
+    tl.to("#gs-1, #gs-2", {opacity:0.4, duration:0.3}, 5.7);
+    tl.fromTo("#gs-n", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.7);
+    tl.fromTo("#gs-e", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 7.35);
+    tl.to("#gs-e", {scale:1.05, duration:3.63, ease:"none"}, 7.75);
 
-    tl.to("#gs-2", {scale:1.04, duration:1.92, ease:"none"}, 4.29);
-    tl.to("#gs-w > *", {opacity:0, duration:0.25}, 11.09);
+    tl.to("#gs-2", {scale:1.04, duration:1.82, ease:"none"}, 4.28);
+    tl.to("#gs-w > *", {opacity:0, duration:0.25}, 11.33);
 
     window.__timelines["gest"] = tl;
   </script>

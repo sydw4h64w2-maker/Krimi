@@ -11,7 +11,7 @@
 </style>
   <div id="root" data-composition-id="beweis" data-width="1080" data-height="1920">
 
-    <div id="bw-w" class="clip" data-start="0" data-duration="7.93">
+    <div id="bw-w" class="clip" data-start="0" data-duration="8.81">
       <div id="bw-h" class="center">Der Beweis</div>
       <svg id="bw-svg" viewBox="0 0 800 520">
         <path d="M330,500 L400,90 L470,500" fill="none" stroke="#8a6a3d" stroke-width="12"/>
@@ -27,12 +27,12 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#bw-h", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.1);
 
-    tl.fromTo("#bw-svg", {opacity:0}, {opacity:1, duration:0.4}, 1.96);
-    tl.fromTo("#bw-paint", {clipPath:"inset(100% 0 0 0)"}, {clipPath:"inset(0% 0 0 0)", duration:3.86, ease:"steps(12)"}, 2.36);
-    tl.fromTo("#bw-t", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.82);
+    tl.fromTo("#bw-svg", {opacity:0}, {opacity:1, duration:0.4}, 2.19);
+    tl.fromTo("#bw-paint", {clipPath:"inset(100% 0 0 0)"}, {clipPath:"inset(0% 0 0 0)", duration:4.52, ease:"steps(12)"}, 2.59);
+    tl.fromTo("#bw-t", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 6.71);
 
-    tl.to("#bw-svg", {scale:1.04, duration:5.97, ease:"none"}, 2.26);
-    tl.to("#bw-w > *", {opacity:0, duration:0.25}, 7.68);
+    tl.to("#bw-svg", {scale:1.04, duration:6.62, ease:"none"}, 2.49);
+    tl.to("#bw-w > *", {opacity:0, duration:0.25}, 8.56);
 
     window.__timelines["beweis"] = tl;
   </script>

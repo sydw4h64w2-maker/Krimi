@@ -12,7 +12,7 @@
 </style>
   <div id="root" data-composition-id="urteil" data-width="1080" data-height="1920">
 
-    <div id="ur-w" class="clip" data-start="0" data-duration="11.15">
+    <div id="ur-w" class="clip" data-start="0" data-duration="10.94">
       <div id="ur-a" class="center">Kollaboration: <span class="y">fallen gelassen</span></div>
       <div id="ur-b" class="center">12.11.1947</div>
       <div id="ur-c" class="center lbl">schuldig wegen Fälschung &amp; Betrug</div>
@@ -23,13 +23,13 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#ur-a", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 0.1);
-    tl.to("#ur-a", {scale:1.05, duration:10.55, ease:"none"}, 0.5);
-    tl.fromTo("#ur-b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 3.9);
-    tl.fromTo("#ur-c", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 5.9);
+    tl.to("#ur-a", {scale:1.05, duration:10.34, ease:"none"}, 0.5);
+    tl.fromTo("#ur-b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 3.73);
+    tl.fromTo("#ur-c", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 5.73);
 
-    tl.fromTo("#ur-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 10.33);
-    tl.to("#ur-b", {scale:1.05, duration:6.75, ease:"none"}, 4.3);
-    tl.to("#ur-w > *", {opacity:0, duration:0.25}, 10.9);
+    tl.fromTo("#ur-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 9.83);
+    tl.to("#ur-b", {scale:1.05, duration:6.71, ease:"none"}, 4.13);
+    tl.to("#ur-w > *", {opacity:0, duration:0.25}, 10.69);
 
     window.__timelines["urteil"] = tl;
   </script>
