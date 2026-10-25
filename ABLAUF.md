@@ -47,6 +47,14 @@ faelle/
 - Modell: Eleven Multilingual v2 (versteht `<break time="…" />`-Pausen)
 - Startwerte: Stability 45–55 %, Similarity ~75 %, Style 0–15 %
 - Pro Folge liegt der fertige Text in `faelle/<nr>/elevenlabs.txt`.
+- Referenzstimme: **Hans – Clear and Soft**, Einstellungen `sp100_s50_sb75_v4` (aus dem ElevenLabs-Dateinamen).
+- **Bei jeder neuen Aufnahme zuerst prüfen:** `python3 tools/check_voice.py <audio.mp3> "<Original-Dateiname>"`
+  vergleicht Stimmname, Einstellungen, Tonhöhe und Klangfarbe mit Folge 1. Erst bei ✅ wird das Video gebaut.
+
+| Folge | Original-Datei | Prüfung |
+|---|---|---|
+| 001 | ElevenLabs_2026-10-25T14_11_47_Hans_-_Clear_and_Soft_pvc_sp100_s50_sb75_v4_2.mp3 | Referenz |
+| 002 | ElevenLabs_2026-10-25T14_46_19_Hans_-_Clear_and_Soft_pvc_sp100_s50_sb75_v4.mp3 | ✅ Tonhöhe 1,9 %, Klang 1,6 % |
 
 ## Tipps für die Aufnahme
 
