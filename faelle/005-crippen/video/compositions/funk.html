@@ -1,0 +1,30 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #fk-svg { position:absolute; left:340px; top:330px; width:400px; height:400px; }
+  #fk-t { top:780px; font-size:70px; font-weight:700; line-height:1.15; }
+</style>
+  <div id="root" data-composition-id="funk" data-width="1080" data-height="1920">
+
+    <div id="fk-w" class="clip" data-start="0" data-duration="5.0">
+      <svg id="fk-svg" viewBox="0 0 400 400"><path d="M200,380 L160,200 L240,200 Z" fill="#9EA3AC"/><rect x="190" y="150" width="20" height="60" fill="#9EA3AC"/><g id="fk-wv"><path d="M160,160 Q200,120 240,160" fill="none" stroke="#F2C230" stroke-width="6" opacity="1.0"/><path d="M130,136 Q200,80 270,136" fill="none" stroke="#F2C230" stroke-width="6" opacity="0.75"/><path d="M100,112 Q200,40 300,112" fill="none" stroke="#F2C230" stroke-width="6" opacity="0.5"/></g></svg>
+      <div id="fk-t" class="center">Einer der ersten Verbrecher,<br/><span class="y">gefasst per Funk</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#fk-svg", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4}, 0.2);
+    tl.fromTo("#fk-wv", {opacity:0.2, scale:0.7, transformOrigin:"200px 180px"}, {opacity:1, scale:1.1, duration:1.2, ease:"sine.inOut", yoyo:true, repeat:3}, 0.5);
+    tl.fromTo("#fk-t", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 0.7);
+
+    tl.to("#fk-w > *", {opacity:0, duration:0.25}, 4.75);
+
+    window.__timelines["funk"] = tl;
+  </script>
+</template>

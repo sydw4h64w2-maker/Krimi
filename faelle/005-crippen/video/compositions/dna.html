@@ -1,0 +1,39 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #dn-a { top:320px; font-size:38px; white-space:nowrap; }
+  #dn-svg { position:absolute; left:390px; top:410px; width:300px; height:420px; }
+  #dn-b { top:860px; font-size:62px; font-weight:600; }
+  #dn-c { top:960px; font-size:50px; font-weight:500; }
+  #dn-st { position:absolute; left:230px; top:1060px; width:620px; text-align:center; border:12px solid var(--accent); border-radius:14px; color:var(--accent); font-size:80px; font-weight:700; padding:4px 0; }
+</style>
+  <div id="root" data-composition-id="dna" data-width="1080" data-height="1920">
+
+    <div id="dn-w" class="clip" data-start="0" data-duration="12.2">
+      <div id="dn-a" class="center lbl y">Fast 100 Jahre später · DNA-Analyse</div>
+      <svg id="dn-svg" viewBox="0 0 300 420"><g id="dn-h"><line x1="150.0" y1="20" x2="150.0" y2="20" stroke="#EDE6D6" stroke-width="6"/><line x1="106.85170152562173" y1="40" x2="193.14829847437827" y2="40" stroke="#F2C230" stroke-width="6"/><line x1="74.26761136728932" y1="60" x2="225.7323886327107" y2="60" stroke="#EDE6D6" stroke-width="6"/><line x1="60.225451205635096" y1="80" x2="239.7745487943649" y2="80" stroke="#F2C230" stroke-width="6"/><line x1="68.16323158568865" y1="100" x2="231.83676841431134" y2="100" stroke="#EDE6D6" stroke-width="6"/><line x1="96.13750703064392" y1="120" x2="203.86249296935608" y2="120" stroke="#F2C230" stroke-width="6"/><line x1="137.29919927461196" y1="140" x2="162.70080072538804" y2="140" stroke="#EDE6D6" stroke-width="6"/><line x1="181.5704904920658" y1="160" x2="118.42950950793421" y2="160" stroke="#F2C230" stroke-width="6"/><line x1="218.11222457771353" y1="180" x2="81.88777542228647" y2="180" stroke="#EDE6D6" stroke-width="6"/><line x1="237.97771058985873" y1="200" x2="62.02228941014127" y2="200" stroke="#F2C230" stroke-width="6"/><line x1="236.30318471968246" y1="220" x2="63.69681528031754" y2="220" stroke="#EDE6D6" stroke-width="6"/><line x1="213.49862930133526" y1="240" x2="86.50137069866473" y2="240" stroke="#F2C230" stroke-width="6"/><line x1="175.14739483790333" y1="260" x2="124.85260516209667" y2="260" stroke="#EDE6D6" stroke-width="6"/><line x1="130.6392010720966" y1="280" x2="169.3607989279034" y2="280" stroke="#F2C230" stroke-width="6"/><line x1="90.87120611530898" y1="300" x2="209.12879388469102" y2="300" stroke="#EDE6D6" stroke-width="6"/><line x1="65.5800020902735" y1="320" x2="234.4199979097265" y2="320" stroke="#F2C230" stroke-width="6"/><line x1="60.957757803895646" y1="340" x2="239.04224219610435" y2="340" stroke="#EDE6D6" stroke-width="6"/><line x1="78.13615986388588" y1="360" x2="221.8638401361141" y2="360" stroke="#F2C230" stroke-width="6"/><line x1="112.9093363282419" y1="380" x2="187.09066367175808" y2="380" stroke="#EDE6D6" stroke-width="6"/><line x1="156.76360084156283" y1="400" x2="143.23639915843717" y2="400" stroke="#F2C230" stroke-width="6"/></g></svg>
+      <div id="dn-b" class="center">Überreste <span class="r">nicht von Cora?</span></div>
+      <div id="dn-c" class="center">Andere Fachleute: nicht überzeugend</div>
+      <div id="dn-st">UMSTRITTEN</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#dn-a", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.3);
+
+    tl.fromTo("#dn-svg", {opacity:0, scale:0.8}, {opacity:1, scale:1, duration:0.5, ease:"power3.out"}, 2.5);
+    tl.fromTo("#dn-h", {scaleX:1, transformOrigin:"150px 210px"}, {scaleX:-1, duration:2.4, ease:"sine.inOut", yoyo:true, repeat:3}, 2.9);
+    tl.fromTo("#dn-b", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.4);
+    tl.fromTo("#dn-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 8.9);
+
+    tl.fromTo("#dn-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 10.7);
+    tl.to("#dn-w > *", {opacity:0, duration:0.25}, 11.95);
+
+    window.__timelines["dna"] = tl;
+  </script>
+</template>

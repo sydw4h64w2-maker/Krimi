@@ -1,0 +1,54 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #sc-h { top:300px; font-size:80px; font-weight:700; }
+  #sc-svg { position:absolute; left:0; top:420px; width:1080px; height:280px; }
+  #sc-n { top:720px; font-size:60px; font-weight:600; }
+  #sc-v { top:810px; font-size:52px; }
+  #sc-tg { position:absolute; left:110px; top:350px; width:860px; height:620px; background:#F3E9C8; color:#1b1b1b; box-shadow:0 25px 60px rgba(0,0,0,.55); padding:50px 56px; font-family:'Space Mono',monospace; }
+  #sc-tg .hd { font-size:30px; letter-spacing:.2em; border-bottom:3px solid #1b1b1b; padding-bottom:14px; }
+  #sc-tg .ln { font-size:36px; line-height:1.4; margin-top:30px; text-transform:uppercase; }
+  #sc-k { top:1020px; font-size:52px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="schiff" data-width="1080" data-height="1920">
+
+    <div id="sc-a" class="clip" data-start="0" data-duration="11.7">
+      <div id="sc-h" class="center">FAHNDUNG</div>
+      <svg id="sc-svg" viewBox="0 0 1080 280"><rect x="0" y="190" width="1080" height="90" fill="#16324a"/><g transform="translate(400,90)"><g id="sc-ship"><path d="M0,60 L260,60 L230,100 L30,100 Z" fill="#3b3f46"/><rect x="60" y="30" width="150" height="30" fill="#B8BCC4"/><rect x="95" y="0" width="22" height="32" fill="#D2372E"/><rect x="145" y="0" width="22" height="32" fill="#D2372E"/></g></g><text x="530" y="80" text-anchor="middle" fill="#EDE6D6" font-family="Oswald" font-size="40">SS MONTROSE → Kanada</text></svg>
+      <div id="sc-n" class="center">👦 Le Neve <span class="y">als Junge verkleidet</span></div>
+      <div id="sc-v" class="center">Kapitän Henry Kendall <span class="r">erkennt sie</span></div>
+    </div>
+    <div id="sc-b" class="clip" data-start="11.7" data-duration="7.1">
+      <div id="sc-tg"><div class="hd">FUNKTELEGRAMM · SS MONTROSE</div>
+        <div class="ln" id="sc-l1">Komplizin als Junge verkleidet.</div>
+        <div class="ln" id="sc-l2">Statur eindeutig ein Mädchen.</div>
+      </div>
+      <div id="sc-k" class="center lbl y">📡 an Scotland Yard</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#sc-h", {scale:1.2, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0.3);
+    tl.fromTo("#sc-svg", {opacity:0}, {opacity:1, duration:0.4}, 1.8);
+    tl.fromTo("#sc-ship", {x:-60}, {x:60, duration:9.6, ease:"none"}, 1.8);
+    tl.fromTo("#sc-n", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 6.5);
+    tl.fromTo("#sc-v", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 9.0);
+
+    tl.to("#sc-a > *", {opacity:0, duration:0.25}, 11.45);
+    tl.fromTo("#sc-tg", {y:150, rotation:3, opacity:0}, {y:0, rotation:-1.5, opacity:1, duration:0.5, ease:"power3.out"}, 11.9);
+    tl.fromTo("#sc-k", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 12.7);
+
+    tl.fromTo("#sc-l1", {clipPath:"inset(0 100% 0 0)"}, {clipPath:"inset(0 0% 0 0)", duration:1.6, ease:"steps(30)"}, 14.55);
+    tl.fromTo("#sc-l2", {clipPath:"inset(0 100% 0 0)"}, {clipPath:"inset(0 0% 0 0)", duration:1.6, ease:"steps(28)"}, 16.6);
+    tl.to("#sc-tg", {scale:1.04, duration:6.5, ease:"none"}, 12.4);
+    tl.to("#sc-b > *", {opacity:0, duration:0.25}, 18.55);
+
+    window.__timelines["schiff"] = tl;
+  </script>
+</template>

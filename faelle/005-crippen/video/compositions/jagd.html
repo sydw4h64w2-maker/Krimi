@@ -1,0 +1,44 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #jg-svg { position:absolute; left:0; top:330px; width:1080px; height:520px; }
+  #jg-d { top:880px; font-size:96px; font-weight:700; }
+  #jg-o { top:1000px; font-size:36px; white-space:nowrap; }
+  #jg-st { position:absolute; left:220px; top:1100px; width:640px; text-align:center; border:12px solid var(--red); border-radius:14px; color:var(--red); font-size:76px; font-weight:700; padding:4px 0; }
+</style>
+  <div id="root" data-composition-id="jagd" data-width="1080" data-height="1920">
+
+    <div id="jg-w" class="clip" data-start="0" data-duration="14.4">
+      <svg id="jg-svg" viewBox="0 0 1080 520">
+        <rect x="0" y="0" width="1080" height="520" fill="#0f2233" rx="20"/>
+        <path d="M1080,40 L960,40 L940,140 L1080,200 Z" fill="#2c3b24"/><text x="1000" y="110" fill="#EDE6D6" font-family="Oswald" font-size="30">Europa</text>
+        <path d="M0,280 L120,300 L160,420 L0,520 Z" fill="#2c3b24"/><text x="20" y="380" fill="#EDE6D6" font-family="Oswald" font-size="30">Kanada</text>
+        <g id="jg-m"><circle r="16" fill="#B8BCC4"/><text x="0" y="-26" text-anchor="middle" fill="#B8BCC4" font-family="Oswald" font-size="30">Montrose</text></g>
+        <g id="jg-l"><circle r="16" fill="#F2C230"/><text x="0" y="46" text-anchor="middle" fill="#F2C230" font-family="Oswald" font-size="30">Dew</text></g>
+      </svg>
+      <div id="jg-d" class="center">31.07.1910</div>
+      <div id="jg-o" class="center lbl y">Sankt-Lorenz-Strom · Dew als Lotse</div>
+      <div id="jg-st">FESTGENOMMEN</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#jg-svg", {opacity:0}, {opacity:1, duration:0.4}, 0.2);
+    tl.fromTo("#jg-m", {x:700, y:200}, {x:220, y:330, duration:5.5, ease:"none"}, 0.3);
+    tl.fromTo("#jg-l", {x:950, y:160}, {x:190, y:360, duration:4.6, ease:"power1.inOut"}, 0.9);
+    tl.fromTo("#jg-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.4, ease:"power3.out"}, 5.7);
+    tl.fromTo("#jg-o", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 8.2);
+
+    tl.fromTo("#jg-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 12.8);
+    tl.to("#jg-svg", {scale:1.03, duration:13, ease:"none"}, 0.7);
+    tl.to("#jg-w > *", {opacity:0, duration:0.25}, 14.15);
+
+    window.__timelines["jagd"] = tl;
+  </script>
+</template>

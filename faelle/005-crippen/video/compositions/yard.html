@@ -1,0 +1,39 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #yd-a { top:340px; font-size:130px; font-weight:700; }
+  #yd-b { top:540px; font-size:46px; }
+  #yd-c { top:610px; font-size:96px; font-weight:700; }
+  #yd-d { top:800px; font-size:56px; font-weight:500; }
+  #yd-st { position:absolute; left:170px; top:920px; width:740px; text-align:center; border:12px solid var(--red); border-radius:14px; color:var(--red); font-size:70px; font-weight:700; padding:8px 0; white-space:nowrap; }
+</style>
+  <div id="root" data-composition-id="yard" data-width="1080" data-height="1920">
+
+    <div id="yd-w" class="clip" data-start="0" data-duration="13.0">
+      <div id="yd-a" class="center">SCOTLAND YARD</div>
+      <div id="yd-b" class="center lbl y">Chief Inspector</div>
+      <div id="yd-c" class="center">Walter Dew</div>
+      <div id="yd-d" class="center">1. Durchsuchung: <span class="p">nichts</span></div>
+      <div id="yd-st">CRIPPEN &amp; LE NEVE: WEG</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#yd-a", {scale:1.2, opacity:0}, {scale:1, opacity:1, duration:0.35, ease:"power4.out"}, 0.4);
+    tl.to("#yd-a", {scale:1.05, duration:12, ease:"none"}, 0.8);
+    tl.fromTo("#yd-b", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 4.4);
+    tl.fromTo("#yd-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 4.7);
+    tl.fromTo("#yd-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 7.7);
+
+    tl.fromTo("#yd-st", {scale:2, rotation:-12, opacity:0}, {scale:1, rotation:-4, opacity:1, duration:0.22, ease:"power4.in"}, 11.2);
+    tl.to("#yd-w > *", {opacity:0, duration:0.25}, 12.75);
+
+    window.__timelines["yard"] = tl;
+  </script>
+</template>

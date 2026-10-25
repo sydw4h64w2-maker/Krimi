@@ -1,0 +1,44 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #kl-h { top:300px; font-size:40px; }
+  #kl-floor { position:absolute; left:140px; top:390px; width:800px; height:420px; display:grid; grid-template-columns:repeat(8,1fr); gap:6px; background:#1a1410; padding:6px; }
+  #kl-floor .b { background:#6b3f2a; border-radius:3px; }
+  #kl-c { top:850px; font-size:56px; font-weight:600; }
+  #kl-r { top:950px; font-size:70px; font-weight:700; }
+  #kl-g { top:1070px; font-size:52px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="keller" data-width="1080" data-height="1920">
+
+    <div id="kl-w" class="clip" data-start="0" data-duration="13.7">
+      <div id="kl-h" class="center lbl y">2. Durchsuchung · Kohlenkeller</div>
+      <div id="kl-floor"><div class="b" id="kl-b0"></div><div class="b" id="kl-b1"></div><div class="b" id="kl-b2"></div><div class="b" id="kl-b3"></div><div class="b" id="kl-b4"></div><div class="b" id="kl-b5"></div><div class="b" id="kl-b6"></div><div class="b" id="kl-b7"></div><div class="b" id="kl-b8"></div><div class="b" id="kl-b9"></div><div class="b" id="kl-b10"></div><div class="b" id="kl-b11"></div><div class="b" id="kl-b12"></div><div class="b" id="kl-b13"></div><div class="b" id="kl-b14"></div><div class="b" id="kl-b15"></div><div class="b" id="kl-b16"></div><div class="b" id="kl-b17"></div><div class="b" id="kl-b18"></div><div class="b" id="kl-b19"></div><div class="b" id="kl-b20"></div><div class="b" id="kl-b21"></div><div class="b" id="kl-b22"></div><div class="b" id="kl-b23"></div><div class="b" id="kl-b24"></div><div class="b" id="kl-b25"></div><div class="b" id="kl-b26"></div><div class="b" id="kl-b27"></div><div class="b" id="kl-b28"></div><div class="b" id="kl-b29"></div><div class="b" id="kl-b30"></div><div class="b" id="kl-b31"></div><div class="b" id="kl-b32"></div><div class="b" id="kl-b33"></div><div class="b" id="kl-b34"></div><div class="b" id="kl-b35"></div><div class="b" id="kl-b36"></div><div class="b" id="kl-b37"></div><div class="b" id="kl-b38"></div><div class="b" id="kl-b39"></div><div class="b" id="kl-b40"></div><div class="b" id="kl-b41"></div><div class="b" id="kl-b42"></div><div class="b" id="kl-b43"></div><div class="b" id="kl-b44"></div><div class="b" id="kl-b45"></div><div class="b" id="kl-b46"></div><div class="b" id="kl-b47"></div></div>
+      <div id="kl-c" class="center">ein <span class="y">loser Ziegelstein</span></div>
+      <div id="kl-r" class="center r">Menschliche Überreste</div>
+      <div id="kl-g" class="center">☠ Spuren von Gift – <span class="y">vorher gekauft</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#kl-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+
+    tl.fromTo("#kl-floor", {opacity:0}, {opacity:1, duration:0.4}, 0.4);
+    tl.fromTo("#kl-b27", {backgroundColor:"#6b3f2a"}, {backgroundColor:"#F2C230", duration:0.3}, 3.8);
+    tl.to("#kl-b27", {y:-40, rotation:12, duration:0.5, ease:"power2.out"}, 4.2);
+    tl.fromTo("#kl-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 3.9);
+
+    tl.to("#kl-floor", {opacity:0.35, duration:0.5}, 6.6);
+    tl.fromTo("#kl-r", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 6.8);
+    tl.fromTo("#kl-g", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 8.7);
+
+    tl.to("#kl-floor", {scale:1.04, duration:13, ease:"none"}, 0.6);
+    tl.to("#kl-w > *", {opacity:0, duration:0.25}, 13.45);
+
+    window.__timelines["keller"] = tl;
+  </script>
+</template>

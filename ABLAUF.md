@@ -60,6 +60,7 @@ faelle/
 | 002 | ElevenLabs_2026-10-25T14_46_19_Hans_-_Clear_and_Soft_pvc_sp100_s50_sb75_v4.mp3 | ✅ Tonhöhe 1,9 %, Klang 1,6 % |
 | 003 | ElevenLabs_2026-10-25T16_02_45_Hans_-_Clear_and_Soft_pvc_sp100_s50_sb75_v4.mp3 | ✅ Tonhöhe 0,0 %, Klang 0,8 % |
 | 004 | ElevenLabs_2026-10-25T16_45_43_Hans_-_Clear_and_Soft_pvc_sp100_s50_sb75_v4.mp3 | ✅ Tonhöhe 2,6 %, Klang 0,9 % |
+| 005 | ElevenLabs_2026-10-25T17_03_05_Hans_-_Clear_and_Soft_pvc_sp100_s50_sb75_v4.mp3 | ✅ Tonhöhe 1,4 %, Klang 2,3 % |
 
 ## Tipps für die Aufnahme
 

@@ -1,0 +1,41 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #lg-h { top:300px; font-size:46px; }
+  #lg-b1 { position:absolute; left:120px; width:840px; background:#EDE6D6; color:#1b1b1b; border-radius:30px; padding:30px 40px; font-size:56px; font-weight:600; text-align:center; top:380px; }
+  #lg-b2 { position:absolute; left:120px; width:840px; background:#EDE6D6; color:#1b1b1b; border-radius:30px; padding:30px 40px; font-size:56px; font-weight:600; text-align:center; top:560px; }
+  #lg-e { top:820px; font-size:72px; font-weight:700; }
+  #lg-j { top:940px; font-size:56px; font-weight:500; }
+</style>
+  <div id="root" data-composition-id="luegen" data-width="1080" data-height="1920">
+
+    <div id="lg-w" class="clip" data-start="0" data-duration="14.3">
+      <div id="lg-h" class="center lbl">Crippen erzählt</div>
+      <div id="lg-b1">„Sie ist zurück in Amerika.“</div>
+      <div id="lg-b2">„Sie ist dort gestorben.“</div>
+      <div id="lg-e" class="center y">Ethel Le Neve zieht ein</div>
+      <div id="lg-j" class="center">💍 trägt <span class="r">Coras Kleider &amp; Schmuck</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#lg-h", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.2);
+    tl.fromTo("#lg-b1", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.4, ease:"back.out(1.6)"}, 1.1);
+    tl.fromTo("#lg-b2", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.4, ease:"back.out(1.6)"}, 5.4);
+
+    tl.to("#lg-b1", {scale:1.04, duration:4.2, ease:"none"}, 1.5);
+    tl.to("#lg-b1, #lg-b2", {opacity:0.35, duration:0.4}, 7.3);
+    tl.fromTo("#lg-e", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 7.9);
+    tl.fromTo("#lg-j", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 11.2);
+
+    tl.to("#lg-e", {scale:1.05, duration:6, ease:"none"}, 8.3);
+    tl.to("#lg-w > *", {opacity:0, duration:0.25}, 14.05);
+
+    window.__timelines["luegen"] = tl;
+  </script>
+</template>

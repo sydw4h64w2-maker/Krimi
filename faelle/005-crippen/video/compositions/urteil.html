@@ -1,0 +1,36 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; font-family:'Oswald',sans-serif; color:var(--ink); }
+  .lbl { font-family:'Space Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+  .center { position:absolute; left:0; width:100%; text-align:center; }
+  .y { color:var(--accent); } .r { color:var(--red); } .p { color:var(--paper); }
+
+  #ut-a { top:330px; font-size:56px; }
+  #ut-b { top:410px; font-size:130px; font-weight:700; }
+  #ut-c { top:640px; font-size:64px; font-weight:600; }
+  #ut-d { top:780px; font-size:64px; font-weight:600; }
+</style>
+  <div id="root" data-composition-id="urteil" data-width="1080" data-height="1920">
+
+    <div id="ut-w" class="clip" data-start="0" data-duration="10.8">
+      <div id="ut-a" class="center lbl y">Oktober 1910 · London</div>
+      <div id="ut-b" class="center r">SCHULDIG</div>
+      <div id="ut-c" class="center">23.11.1910 · <span class="p">hingerichtet</span></div>
+      <div id="ut-d" class="center">Ethel Le Neve: <span class="y">freigesprochen</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ut-a", {opacity:0}, {opacity:1, duration:0.3, ease:"power3.out"}, 0.3);
+
+    tl.fromTo("#ut-b", {scale:1.4, opacity:0}, {scale:1, opacity:1, duration:0.3, ease:"power4.out"}, 2.9);
+    tl.to("#ut-b", {scale:1.05, duration:7.5, ease:"none"}, 3.2);
+    tl.fromTo("#ut-c", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 5.0);
+    tl.fromTo("#ut-d", {opacity:0, y:30}, {opacity:1, y:0, duration:0.35, ease:"power3.out"}, 8.3);
+
+    tl.to("#ut-w > *", {opacity:0, duration:0.25}, 10.55);
+
+    window.__timelines["urteil"] = tl;
+  </script>
+</template>
